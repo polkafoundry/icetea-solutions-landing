@@ -53,7 +53,7 @@ const TechnicalStack = () => {
             <button
               key={index}
               className={clsx(
-                "px-[30px] py-[8px] bg-white rounded-[60px] text-[14px] cursor-pointer",
+                "px-[30px] py-[8px] bg-white rounded-[60px] text-[14px] cursor-pointer font-bold",
                 item?.type === currentTechnical ? "" : "opacity-[0.5]"
               )}
               onClick={() => setCurrentTechnical(item?.type)}
