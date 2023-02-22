@@ -3,15 +3,28 @@ import Image from "next/image";
 
 interface Props {
   src: string;
-  className: string;
+  className?: string;
   alt: string;
   priority?: boolean;
+  imageClass?: string;
 }
 
-export const ImageComponent = ({ src, className, alt, priority }: Props) => {
+export const ImageComponent = ({
+  src,
+  className,
+  alt,
+  priority,
+  imageClass,
+}: Props) => {
   return (
     <div className={clsx(className, "relative")}>
-      <Image src={src} fill alt={alt} priority={priority} />
+      <Image
+        src={src}
+        className={imageClass}
+        fill
+        alt={alt}
+        priority={priority}
+      />
     </div>
   );
 };

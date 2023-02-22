@@ -22,3 +22,63 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+.home-bottom-banner {
+  background-image: url("/images/home/under_top_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.white-label-bg {
+  background-image: url("/images/home/white_label_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.firebird-chain-bg {
+  background-image: url("/images/home/firebird_chain.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.redkite-chain-bg {
+  background-image: url("/images/home/red_kite_launchpad.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.powered-bg {
+  background-image: url("/images/home/powered_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.consult_us_bg {
+  background-image: url("/images/consult_us_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.footer_bg {
+  background-image: url("/images/footer_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.button_gradient_purple_blue {
+  position: relative;
+}
+
+.button_gradient_purple_blue::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 1px;
+  background: linear-gradient(200deg, #18C8FF, #933FFE);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
