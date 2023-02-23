@@ -29,7 +29,7 @@ export default function Home() {
       <DevelopmentValue />
       <PoweredBy />
       <Partners />
-      <FooterComponent />
+      <FooterComponent isMail />
     </div>
   );
 }
