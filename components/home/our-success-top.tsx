@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import { ImageComponent } from "../global/image";
 
@@ -28,10 +29,12 @@ const OurSuccessTop = () => {
             />
             Cosmos SDK, Tendermint BFT Consensus, Golang, Protobuf/gRPC
           </p>
-          <button className="hidden md:flex flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[20px] font-[600] items-center">
-            Live website
-            <FaArrowRight fontSize={"16px"} color="white" />
-          </button>
+          <Link href={"https://gamefi.org/nft/marketplace"} target={"_blank"}>
+            <button className="hidden md:flex hover:scale-110 duration-500 flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[20px] font-[600] items-center">
+              Live website
+              <FaArrowRight fontSize={"16px"} color="white" />
+            </button>
+          </Link>
           <ImageComponent
             src="/images/home/firebird_chain.png"
             className="w-full md:hidden h-[200px] mt-auto"
@@ -145,10 +148,12 @@ const OurSuccessTop = () => {
             />
             Node.js, React, Solidity, Redis, AWS
           </p>
-          <button className="hidden md:flex flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[50px] font-[600] items-center">
-            Live website
-            <FaArrowRight fontSize={"16px"} color="white" />
-          </button>
+          <Link href={"https://redkitepad.com/#/"} target="_blank">
+            <button className="hidden md:flex hover:scale-110 duration-500 flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[50px] font-[600] items-center">
+              Live website
+              <FaArrowRight fontSize={"16px"} color="white" />
+            </button>
+          </Link>
           <ImageComponent
             src="/images/home/red_kite_launchpad_mobile.png"
             className="w-full md:hidden h-[200px] mt-auto"

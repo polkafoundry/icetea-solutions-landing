@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 const PoweredBy = () => {
@@ -7,10 +8,12 @@ const PoweredBy = () => {
         <div className="text-[40px] md:text-[50px] text-center md:text-left xl:text-[60px] font-[600] md:leading-[64px] xl:leading-[72px]">
           Powered by Icetea Labs
         </div>
-        <button className="hidden md:flex px-[30px] py-[10px] items-center gap-[10px] border-[1px] border-white rounded-[40px] mt-[30px]">
-          Discover
-          <FaArrowRight fontSize={"16px"} />
-        </button>
+        <Link href={"https://icetea.io/"} target="_blank">
+          <button className="hidden hover:scale-110 duration-500 md:flex px-[30px] py-[10px] items-center gap-[10px] border-[1px] border-white rounded-[40px] mt-[30px]">
+            Discover
+            <FaArrowRight fontSize={"16px"} />
+          </button>
+        </Link>
       </div>
       <div>
         <div className="text-center md:text-left xl:text-[20px] font-[300] opacity-[0.8]">
