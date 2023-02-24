@@ -4,8 +4,8 @@ import { ImageComponent } from "../global/image";
 const OurSuccessBot = () => {
   return (
     <div>
-      <div className="flex gap-[20px] mt-5">
-        <div className="grid pt-[30px] px-2 bg-[#050512] w-full max-w-[387px]">
+      <div className="md:flex gap-[20px] mt-5">
+        <div className="grid pt-[30px] px-2 bg-[#050512] w-full md:max-w-[387px]">
           <div className="mb-[20px] px-6">
             <p className="text-[14px] text-[#61FF8D] uppercase font-bold">
               WEB3 APPLICATION
@@ -32,7 +32,7 @@ const OurSuccessBot = () => {
             alt="gamefi.org"
           />
         </div>
-        <div className="grid pt-[30px] bg-[#050512] w-full max-w-[387px]">
+        <div className="grid pt-[30px] bg-[#050512] w-full md:max-w-[387px] mt-5">
           <div className="mb-[20px] px-7">
             <p className="text-[14px] text-[#E961FF] uppercase font-bold">
               DATA & STATISTICS
@@ -61,7 +61,7 @@ const OurSuccessBot = () => {
             alt="gamefi.org"
           />
         </div>
-        <div className="grid px-7 pt-[30px] bg-[#050512] w-full max-w-[387px]">
+        <div className="grid px-7 pt-[30px] bg-[#050512] w-full md:max-w-[387px] mt-5">
           <div className="mb-[20px]">
             <p className="text-[14px] text-[#FFDC61] uppercase font-bold">
               COMMUNITY BUILDING
@@ -91,7 +91,7 @@ const OurSuccessBot = () => {
         </div>
       </div>
       <div className="flex mt-5 gap-5 flex-wrap">
-        <div className="token_airdrop_bg w-[590px] p-[40px] text-white">
+        <div className="token_airdrop_bg xl:w-[590px] p-[40px] text-white">
           <p className="text-[14px] text-[#618CFF] font-bold">OTHER SERVICES</p>
           <p className="text-[32px] leading-[40px] mt-3">Token Airdrop & Distribution</p>
           <p className="text-[14px] mt-[12px] opacity-[0.7]">
@@ -109,7 +109,7 @@ const OurSuccessBot = () => {
             smart contract
           </p>
         </div>
-        <div className="token_airdrop_bg w-[590px] p-[40px] text-white">
+        <div className="token_airdrop_bg xl:w-[590px] p-[40px] text-white">
           <p className="text-[14px] text-[#618CFF] font-bold">OTHER SERVICES</p>
           <p className="text-[32px] leading-[40px] mt-3">Token Airdrop & Distribution</p>
           <p className="text-[14px] mt-[12px] opacity-[0.7]">

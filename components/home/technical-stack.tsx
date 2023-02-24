@@ -37,17 +37,23 @@ const TechnicalStack = () => {
   }, [currentTechnical]);
 
   return (
-    <div className="mt-[180px] pb-[100px]">
-      <div className="flex text-white gap-[40px]">
-        <div className="text-[60px] leading-[72px] w-[440px] min-w-[440px] font-bold">
+    <div className="mt-[80px] xl:mt-[180px] pb-[80px] md:pb-[100px]">
+      <div className="md:flex text-white text-center md:text-left gap-[40px]">
+        <div
+          className={clsx(
+            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-bold",
+            "md:w-[300px] md:min-w-[300px]",
+            "xl:text-[60px] xl:leading-[72px] xl:w-[440px] xl:min-w-[440px]"
+          )}
+        >
           Technical Stacks
         </div>
-        <div className="text-[20px] opacity-[0.8] mt-[20px]">
+        <div className="text-[16px] xl:text-[20px] opacity-[0.8] mt-[20px]">
           An elite engineering team and the latest technologies joined with
           agile and modern business practices.
         </div>
       </div>
-      <div className="flex gap-[6px] flex-wrap mt-[50px]">
+      <div className="flex gap-[6px] flex-wrap mt-5 md:mt-[50px]">
         {listTechnicalStack?.map((item, index) => {
           return (
             <button
@@ -64,13 +70,13 @@ const TechnicalStack = () => {
         })}
       </div>
       <div className="h-[1px] bg-white opacity-[0.2] mt-5" />
-      <div className="flex flex-wrap gap-5 mt-5 justify-center xl:justify-start">
+      <div className="flex flex-wrap gap-0 md:gap-5 mt-5 justify-center xl:justify-start">
         {technicalStack &&
           technicalStack?.map((item, index) => {
             return (
               <div
                 key={index}
-                className="w-[183px] h-[96px] p-5 hover:bg-[#64646433]"
+                className="w-[150px] md:w-[183px] h-[80px] md:h-[96px] p-5 hover:bg-[#64646433]"
               >
                 <ImageComponent
                   className="w-full h-full"

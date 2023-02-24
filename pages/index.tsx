@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <HomeBannerTop />
       <div className="bg-[#111239] relative">
-        <div className="relative max-w-[1280px] px-10 mx-auto z-[1]">
+        <div className="relative max-w-[1280px] px-5 md:px-10 mx-auto z-[1]">
           <OurOffering />
           <OurSuccessStories />
           <TechnicalStack />

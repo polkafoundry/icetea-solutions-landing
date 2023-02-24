@@ -2,37 +2,47 @@ import { FaArrowRight } from "react-icons/fa";
 
 const PoweredBy = () => {
   return (
-    <div className="powered-bg flex w-full max-w-[1360px] mx-auto px-[80px] py-[60px] mt-[80px] text-white">
-      <div className="w-[440px] min-w-[440px]">
-        <div className="text-[60px] font-[600] leading-[72px]">
+    <div className="powered-bg md:flex w-full max-w-[1360px] mx-auto px-5 md:px-10 xl:px-[80px] py-[60px] mt-[80px] text-white">
+      <div className="md:w-[320px] xl:w-[440px] md:min-w-[320px] xl:min-w-[440px]">
+        <div className="text-[40px] md:text-[50px] text-center md:text-left xl:text-[60px] font-[600] md:leading-[64px] xl:leading-[72px]">
           Powered by Icetea Labs
         </div>
-        <button className="flex px-[30px] py-[10px] items-center gap-[10px] border-[1px] border-white rounded-[40px] mt-[30px]">
+        <button className="hidden md:flex px-[30px] py-[10px] items-center gap-[10px] border-[1px] border-white rounded-[40px] mt-[30px]">
           Discover
           <FaArrowRight fontSize={"16px"} />
         </button>
       </div>
       <div>
-        <div className="text-[20px] font-[300] opacity-[0.8]">
+        <div className="text-center md:text-left xl:text-[20px] font-[300] opacity-[0.8]">
           Icetea Labs is Asia&apos;s leading Web3 incubator and powerhouse with
           extraordinary impact, specializing in Web3 development services, game
           discovery layers, and user engagement initiatives
         </div>
-        <div className="flex gap-[20px] justify-between mt-5">
+        <div className="flex gap-[20px] flex-wrap md:flex-nowrap justify-between mt-5">
           <div className="w-full max-w-[180px]">
-            <p className="text-[58px] font-bold">60+</p>
-            <p className="font-[300] opacity-[0.7]">Games Onboarded into Binance Chain</p>
+            <p className="text-[40px] xl:text-[58px] font-bold">60+</p>
+            <p className="text-[14px] xl:text-[16px] font-[300] opacity-[0.7]">
+              Games Onboarded into Binance Chain
+            </p>
           </div>
           <div className="w-full max-w-[180px]">
-            <p className="text-[58px] font-bold">85+</p>
-            <p className="font-[300] opacity-[0.7]">Launched Token Projects</p>
+            <p className="text-[40px] xl:text-[58px] font-bold">85+</p>
+            <p className="text-[14px] xl:text-[16px] font-[300] opacity-[0.7]">
+              Launched Token Projects
+            </p>
           </div>
           <div className="w-full max-w-[180px]">
-            <p className="text-[58px] font-bold">5M+</p>
-            <p className="font-[300] opacity-[0.7]">Combined Community</p>
+            <p className="text-[40px] xl:text-[58px] font-bold">5M+</p>
+            <p className="text-[14px] xl:text-[16px] font-[300] opacity-[0.7]">
+              Combined Community
+            </p>
           </div>
         </div>
       </div>
+      <button className="flex w-full justify-center md:hidden px-[30px] py-[10px] items-center gap-[10px] border-[1px] border-white rounded-[40px] mt-[30px]">
+        Discover
+        <FaArrowRight fontSize={"16px"} />
+      </button>
     </div>
   );
 };

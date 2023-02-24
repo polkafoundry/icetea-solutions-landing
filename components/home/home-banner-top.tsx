@@ -1,13 +1,51 @@
 import HeaderComponent from "@/components/global/header";
 import { ImageComponent } from "../global/image";
 import { FaArrowRight } from "react-icons/fa";
+import clsx from "clsx";
+import Link from "next/link";
+import { nextPath } from "@/constants";
 
 const HomeBannerTop = () => {
   return (
-    <div>
-      <div className="relative home-top-banner h-[640px] text-white">
+    <div className="relative pb-[100px] md:pb-0">
+      <div
+        className={clsx(
+          "relative home-top-banner h-[840px] flex flex-col text-white",
+          "md:h-[680px] md:block"
+        )}
+      >
         <HeaderComponent />
-        <div className="text-[12px] flex items-center gap-[6px] justify-center mt-[100px]">
+        <h1
+          className={clsx(
+            "text-center text-[48px] leading-[60px] mt-[120px] px-5 font-bold",
+            "md:text-[58px] md:leading-[100px] md:mt-[80px]",
+            "xl:text-[88px] xl:leading-[123px] xl:mt-[100px]"
+          )}
+        >
+          Web3 Development Hub
+        </h1>
+        <h2 className="text-[20px] leading-[28px] md:text-[32px] md:leading-[40px] text-center font-[300]">
+          One-Stop Digital Transformation Services
+        </h2>
+        <div className="text-[16px] md:text-[18px] md:flex px-5 md:px-0 gap-[12px] mt-[40px] justify-center">
+          <Link href={`/${nextPath.CONTACT}`}>
+            <button className="w-full md:w-fit px-[30px] py-[10px] rounded-[40px] bg-white text-black font-[600px] hover:scale-110 duration-500">
+              Consult with us
+            </button>
+          </Link>
+          <Link href={`/${nextPath.PORTFOLIO}`}>
+            <button
+              className={clsx(
+                "w-full mt-[12px] justify-center px-[30px] py-[10px] flex flex-nowrap gap-[10px] items-center border-white border-[1px] rounded-[40px]",
+                "md:w-fit md:mt-0 hover:scale-110 duration-500"
+              )}
+            >
+              Our success stories
+              <FaArrowRight fontSize={"14px"} />
+            </button>
+          </Link>
+        </div>
+        <div className="text-[12px] mt-auto pb-3 md:mt-[160px] xl:mt-[130px] flex items-center gap-[6px] justify-center">
           Powered by
           <ImageComponent
             src={"/images/home/icetea_logo.svg"}
@@ -15,40 +53,40 @@ const HomeBannerTop = () => {
             alt="logo"
           />
         </div>
-        <h1 className="text-center text-[88px] font-bold">
-          Web3 Development Hub
-        </h1>
-        <h2 className="text-[40px] text-center font-[300]">
-          One-Stop Digital Transformation Services
-        </h2>
-        <div className="text-[18px] flex gap-[12px] mt-[60px] justify-center">
-          <button className="px-[30px] py-[10px] rounded-[40px] bg-white text-black font-[600px]">
-            Consult with us
-          </button>
-          <button className="px-[30px] py-[10px] flex flex-nowrap gap-[10px] items-center border-white border-[1px] rounded-[40px]">
-            Our success stories
-            <FaArrowRight fontSize={"14px"} />
-          </button>
-        </div>
       </div>
 
-      <div className="h-[200px] relative">
-        <div className="absolute w-[100%] max-w-[1340px] translate-x-[-50%] left-[50%] top-[-80px]">
-          <div className="h-[100px] bg-white" />
-          <div className="flex px-[70px] gap-[30px] justify-between">
+      <div className="md:h-[200px] relative">
+        <div className="md:absolute w-[100%] max-w-[1340px] md:translate-x-[-50%] md:left-[50%] md:top-[-80px]">
+          <div className="h-[80px] md:h-[100px] bg-white" />
+          <div className="md:flex px-5 md:px-[70px] gap-[30px] justify-between">
             <div>
-              <div className="text-[20px] font-bold">Our Mission</div>
-              <p className="text-[40px] font-[600] max-w-[740px]">
+              <div className="text-[14px] text-center md:text-left md:text-[16px] xl:text-[20px] font-bold">
+                Our Mission
+              </div>
+              <p
+                className={clsx(
+                  "text-[28px] font-[600] text-center max-w-[740px]",
+                  "md:text-[30px] md:text-left",
+                  "xl:text-[40px]"
+                )}
+              >
                 Icetea Solutions combines platform expertise, product thinking,
                 and exceptional customer experiences to develop{" "}
-                <span className="text-[40px] font-[600] text-transparent bg-clip-text bg-gradient-to-r from-[#2F34E1] to-[#DC52FF]">
+                <span
+                  className={clsx(
+                    "text-[28px] font-[600] text-transparent bg-clip-text bg-gradient-to-r from-[#2F34E1] to-[#DC52FF]",
+                    "md:text-[30px]",
+                    "xl:text-[40px]"
+                  )}
+                >
                   high-performing agile software delivery capabilities
                 </span>{" "}
                 that propels your business.
               </p>
             </div>
             <ImageComponent
-              className="w-[378px] min-w-[378px] h-[437px]"
+              className="w-full md:w-[378px] md:min-w-[378px] h-[300px] md:h-[437px]"
+              imageClass="object-contain"
               src="/images/home/earth_model.png"
               alt="earth model"
             />
@@ -56,7 +94,7 @@ const HomeBannerTop = () => {
         </div>
       </div>
 
-      <div className="home-bottom-banner h-[378px]" />
+      <div className="absolute md:relative bottom-0 left-0 home-bottom-banner w-full h-[378px]" />
     </div>
   );
 };

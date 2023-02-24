@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-size: 16px;
 }
 
@@ -86,6 +86,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.mobile_menu_bg {
+  background-image: url("/images/mobile_menu_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .button_gradient_purple_blue {
   position: relative;
 }
@@ -96,8 +102,22 @@ body {
   inset: 0;
   border-radius: 50px;
   padding: 1px;
-  background: linear-gradient(200deg, #18C8FF, #933FFE);
+  background: linear-gradient(200deg, #18c8ff, #933ffe);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+}
+
+@media (max-width: 767px) {
+  .home-top-banner {
+    background-image: url("/images/home/top_bg_mobile.png");
+  }
+
+  .gamefi_market_bg, .redkite-chain-bg {
+    background: #050512;
+  }
+
+.powered-bg {
+  background-image: url("/images/home/powered_bg_mobile.png");
+}
 }
