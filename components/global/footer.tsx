@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { nextPath } from "@/constants";
 import clsx from "clsx";
 import Link from "next/link";
@@ -11,6 +12,12 @@ interface Props {
 }
 
 const FooterComponent = ({ isMail }: Props) => {
+  const [emailInput, setEmailInput] = useState<string>("");
+
+  const handleChangeData = (value: string) => {
+    setEmailInput(value);
+  };
+
   return (
     <div>
       {isMail && (
@@ -35,10 +42,13 @@ const FooterComponent = ({ isMail }: Props) => {
                   type="email"
                   className="w-full px-[20px] outline-none bg-transparent"
                   placeholder="Enter your email address"
+                  onChange={(e) => handleChangeData(e?.target?.value)}
                 />
-                <button className="w-[160px] min-w-[160px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
-                  Consult with us
-                </button>
+                <Link href={`/${nextPath?.CONTACT}?email=${emailInput}`}>
+                  <button className="w-[160px] min-w-[160px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
+                    Consult with us
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="w-full md:hidden mt-10">
@@ -46,10 +56,13 @@ const FooterComponent = ({ isMail }: Props) => {
                 type="email"
                 className="w-full h-[64px] px-[20px] text-[18px] outline-none bg-transparent border-[1.5px] p-[4px] border-white rounded-[40px]"
                 placeholder="Enter your email address"
+                onChange={(e) => handleChangeData(e?.target?.value)}
               />
-              <button className="w-full h-[64px] min-w-[160px] text-[18px] mt-[12px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
-                Consult with us
-              </button>
+              <Link href={`/${nextPath?.CONTACT}?email=${emailInput}`}>
+                <button className="w-full h-[64px] min-w-[160px] text-[18px] mt-[12px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
+                  Consult with us
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -53,13 +53,13 @@ const TechnicalStack = () => {
           agile and modern business practices.
         </div>
       </div>
-      <div className="flex gap-[6px] flex-wrap mt-5 md:mt-[50px]">
+      <div className="flex gap-[6px] flex-wrap justify-center md:justify-start mt-5 md:mt-[50px]">
         {listTechnicalStack?.map((item, index) => {
           return (
             <button
               key={index}
               className={clsx(
-                "px-[30px] py-[8px] bg-white rounded-[60px] text-[14px] cursor-pointer font-bold",
+                "px-[20px] py-[8px] bg-white rounded-[60px] text-[14px] cursor-pointer font-bold uppercase",
                 item?.type === currentTechnical ? "" : "opacity-[0.5]"
               )}
               onClick={() => setCurrentTechnical(item?.type)}

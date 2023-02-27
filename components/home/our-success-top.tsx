@@ -23,9 +23,9 @@ const OurSuccessTop = () => {
           </p>
           <p className="flex text-[#61FF8D] text-[16px] gap-[8px] mt-5 mb-5">
             <FaCheckCircle
-              fontSize={"16px"}
+              size={"14px"}
               color={"#61FF8D"}
-              className="mt-[4px]"
+              className="mt-[4px] min-w-[14px]"
             />
             Cosmos SDK, Tendermint BFT Consensus, Golang, Protobuf/gRPC
           </p>
@@ -36,8 +36,8 @@ const OurSuccessTop = () => {
             </button>
           </Link>
           <ImageComponent
-            src="/images/home/firebird_chain.png"
-            className="w-full md:hidden h-[200px] mt-auto"
+            src="/images/home/gamefi_market_mobile.png"
+            className="w-full md:hidden h-[50vw] md:h-[200px] mt-auto"
             alt="gamefi.org"
           />
         </div>
@@ -60,14 +60,14 @@ const OurSuccessTop = () => {
               <FaCheckCircle
                 fontSize={"14px"}
                 color={"#FF8142"}
-                className="mt-[2px] min-w-[14px]"
+                className="mt-[2px] min-w-[16px]"
               />
               Cosmos SDK, Tendermint BFT Consensus, Golang, Protobuf/gRPC
             </p>
           </div>
           <ImageComponent
             src="/images/home/firebird_chain.png"
-            className="w-full h-[200px] mt-auto"
+            className="w-full h-[50vw] md:h-[15vw] xl:h-[200px] mt-auto"
             alt="gamefi.org"
           />
         </div>
@@ -95,7 +95,7 @@ const OurSuccessTop = () => {
           </div>
           <ImageComponent
             src="/images/home/polka_safe_wallet.png"
-            className="w-full h-[200px] mt-auto"
+            className="w-full h-[50vw] md:h-[15vw] xl:h-[200px] mt-auto"
             alt="gamefi.org"
           />
         </div>
@@ -124,7 +124,7 @@ const OurSuccessTop = () => {
           </div>
           <ImageComponent
             src="/images/home/metaforce_org.png"
-            className="w-full h-[200px] mt-auto"
+            className="w-full h-[50vw] md:h-[15vw] xl:h-[200px] mt-auto"
             alt="gamefi.org"
           />
         </div>
@@ -142,9 +142,9 @@ const OurSuccessTop = () => {
           </p>
           <p className="flex text-[#FF6161] text-[16px] gap-[8px] mt-5 mb-5">
             <FaCheckCircle
-              fontSize={"16px"}
+              fontSize={"14px"}
               color={"#FF6161"}
-              className="mt-[4px]"
+              className="mt-[4px] min-w-[16px]"
             />
             Node.js, React, Solidity, Redis, AWS
           </p>
@@ -156,7 +156,7 @@ const OurSuccessTop = () => {
           </Link>
           <ImageComponent
             src="/images/home/red_kite_launchpad_mobile.png"
-            className="w-full md:hidden h-[200px] mt-auto"
+            className="w-full md:hidden h-[50vw] md:h-[200px] mt-auto"
             alt="gamefi.org"
           />
         </div>

@@ -4,11 +4,15 @@ import Link from "next/link";
 import { ImageComponent } from "./image";
 import { useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const HeaderComponent = () => {
+  const router = useRouter();
   const [isShow, setIsShow] = useState<boolean>(false);
 
   const handleShow = () => setIsShow(!isShow);
+
+  console.log(router);
 
   return (
     <header
@@ -25,12 +29,28 @@ const HeaderComponent = () => {
           alt="logo"
         />
       </Link>
-      <div className="hidden gap-[60px] md:flex">
-        <button className="hover:scale-110 duration-500">
-          <Link href={`/${nextPath.PORTFOLIO}`}>Portfolio</Link>
-        </button>
+      <div className="hidden gap-[10px] md:flex">
+        <Link href={`/${nextPath.PORTFOLIO}`}>
+          <button
+            className={clsx(
+              "px-[30px] py-[10px] rounded-[40px]",
+              router?.pathname === `/${nextPath.PORTFOLIO}`
+                ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
+                : "hover:scale-110 duration-500"
+            )}
+          >
+            Portfolio
+          </button>
+        </Link>
         <Link href={`/${nextPath.CONTACT}`}>
-          <button className="px-[30px] py-[10px] rounded-[40px] bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]">
+          <button
+            className={clsx(
+              "px-[30px] py-[10px] rounded-[40px]",
+              router?.pathname === `/${nextPath.CONTACT}`
+                ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
+                : "hover:scale-110 duration-500"
+            )}
+          >
             Contact Us
           </button>
         </Link>
@@ -63,15 +83,29 @@ const HeaderComponent = () => {
 
           <div className="h-fit">
             <div className="text-center mt-[120px]">
-              <button className="hover:scale-110 duration-500">
-                <Link href={`/${nextPath.PORTFOLIO}`} className="text-[20px]">
+              <Link href={`/${nextPath.PORTFOLIO}`} className="text-[20px]">
+                <button
+                  className={clsx(
+                    "px-[60px] py-[10px] rounded-[40px] text-[18px]",
+                    router?.pathname === `/${nextPath.PORTFOLIO}`
+                      ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
+                      : "hover:scale-110 duration-500"
+                  )}
+                >
                   Portfolio
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
             <div className="text-center mt-8">
               <Link href={`/${nextPath.CONTACT}`}>
-                <button className="px-[30px] py-[10px] rounded-[40px] text-[18px] bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]">
+                <button
+                  className={clsx(
+                    "px-[60px] py-[10px] rounded-[40px] text-[18px]",
+                    router?.pathname === `/${nextPath.CONTACT}`
+                      ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
+                      : "hover:scale-110 duration-500"
+                  )}
+                >
                   Contact Us
                 </button>
               </Link>

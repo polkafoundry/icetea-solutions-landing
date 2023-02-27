@@ -1,9 +1,18 @@
+import { useState } from "react";
 import FooterComponent from "@/components/global/footer";
 import OurSuccessTop from "@/components/home/our-success-top";
 import OurSuccessBot from "@/components/home/our-successs-bot";
 import PortfolioBanner from "@/components/portfolio/portfolio-banner";
+import Link from "next/link";
+import { nextPath } from "@/constants";
 
 const Portfolio = () => {
+  const [emailInput, setEmailInput] = useState<string>("");
+
+  const handleChangeData = (value: string) => {
+    setEmailInput(value);
+  };
+
   return (
     <div>
       <div className="portfolio_bg h-[640px] md:h-[600px]">
@@ -26,20 +35,26 @@ const Portfolio = () => {
                 type="email"
                 className="w-full px-[20px] outline-none bg-transparent"
                 placeholder="Enter your email address"
+                onChange={(e) => handleChangeData(e?.target?.value)}
               />
-              <button className="w-[140px] min-w-[140px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
-                Talk with us
-              </button>
+              <Link href={`/${nextPath?.CONTACT}?email=${emailInput}`}>
+                <button className="w-[140px] min-w-[140px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
+                  Talk with us
+                </button>
+              </Link>
             </div>
             <div className="w-full md:hidden">
               <input
                 type="email"
                 className="w-full h-[64px] px-[20px] text-[18px] outline-none bg-transparent border-[1.5px] p-[4px] border-white rounded-[40px]"
                 placeholder="Enter your email address"
+                onChange={(e) => handleChangeData(e?.target?.value)}
               />
-              <button className="w-full h-[64px] min-w-[160px] text-[18px] mt-[12px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
-                Consult with us
-              </button>
+              <Link href={`/${nextPath?.CONTACT}?email=${emailInput}`}>
+                <button className="w-full h-[64px] min-w-[160px] text-[18px] mt-[12px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
+                  Consult with us
+                </button>
+              </Link>
             </div>
           </div>
         </div>

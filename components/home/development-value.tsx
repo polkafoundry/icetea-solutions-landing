@@ -20,7 +20,7 @@ const DevelopmentValue = () => {
           competitive edge.
         </div>
       </div>
-      <div className="flex flex-wrap gap-5 mt-8 md:mt-[60px]">
+      <div className="flex flex-wrap gap-5 mt-8 text-center md:text-left justify-center md:mt-[60px]">
         <div className="px-10 py-[60px] bg-[#111239] md:w-[386px] mx-auto md:mx-0">
           <ImageComponent
             src="/images/home/proven.png"
