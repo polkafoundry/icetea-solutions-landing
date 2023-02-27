@@ -108,16 +108,40 @@ body {
   mask-composite: exclude;
 }
 
+select:invalid,
+select[disabled] {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.select-wrap::after {
+  margin-left: -3em;
+  font-size: 0.75em;
+  pointer-events: none;
+  content: url("/images/arrow_down.svg");
+}
+
+.background-modal {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.tick_done_bg {
+  background: url("/images/contact/tick_border.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+}
+
 @media (max-width: 767px) {
   .home-top-banner {
     background-image: url("/images/home/top_bg_mobile.png");
   }
 
-  .gamefi_market_bg, .redkite-chain-bg {
+  .gamefi_market_bg,
+  .redkite-chain-bg {
     background: #050512;
   }
 
-.powered-bg {
-  background-image: url("/images/home/powered_bg_mobile.png");
-}
+  .powered-bg {
+    background-image: url("/images/home/powered_bg_mobile.png");
+  }
 }
