@@ -79,7 +79,7 @@ const FooterComponent = ({ isMail }: Props) => {
               <Link href="/">
                 <ImageComponent
                   src="/images/logo_icetea_solution.svg"
-                  className="w-[266px] md:w-[200px] h-[29px] md:h-[34px] mx-auto md:mx-0"
+                  className="w-[266px] md:w-[290px] h-[29px] md:h-[40px] mx-auto md:mx-0"
                   alt="logo"
                 />
               </Link>
@@ -114,7 +114,7 @@ const FooterComponent = ({ isMail }: Props) => {
               />
             </div>
           </div>
-          <div className="w-full max-w-[1280px] mx-auto h-[1px] bg-white opacity-[0.1]" />
+          <div className="w-full max-w-[1280px] mx-auto h-[1px] mt-5 bg-white opacity-[0.1]" />
           <div className="py-[12px] text-center text-[14px] text-white">
             Copyright © 2023, Icetea Solutions. All rights reserved.
           </div>

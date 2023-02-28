@@ -8,14 +8,14 @@ const OurOffering = () => {
       <div className="md:flex text-white text-center md:text-left gap-[40px]">
         <div
           className={clsx(
-            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-bold",
+            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-[700]",
             "md:w-[300px] md:min-w-[300px]",
             "xl:text-[60px] xl:leading-[72px] xl:w-[440px] xl:min-w-[440px]"
           )}
         >
           Our offerings
         </div>
-        <div className="text-[16px] xl:text-[20px] opacity-[0.8] mt-[20px]">
+        <div className="text-[16px] xl:text-[20px] font-[300] opacity-[0.8] mt-[20px]">
           We offer one-stop web3 development and transformation services,
           ranging from ideation, planning, product design, coding, testing,
           deployment, product operation, and maintenance.

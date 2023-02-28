@@ -43,7 +43,7 @@ const ModalSubmit = ({ isShow, handleClose }: Props) => {
             <div className="tick_done_bg w-[80px] h-[80px] mx-auto mt-5 flex justify-center items-center">
               <FaCheckCircle size={"30px"} color={"#8FFFD7"} />
             </div>
-            <h3 className="text-lg py-[10px] text-[20px] leading-[28px] font-bold">
+            <h3 className="text-lg py-[10px] text-[20px] leading-[28px] font-[700]">
               Thank you!
             </h3>
             <p className="text-[14px] leading-[22px]">

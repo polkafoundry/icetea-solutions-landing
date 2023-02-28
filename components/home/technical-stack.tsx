@@ -41,14 +41,14 @@ const TechnicalStack = () => {
       <div className="md:flex text-white text-center md:text-left gap-[40px]">
         <div
           className={clsx(
-            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-bold",
+            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-[700]",
             "md:w-[300px] md:min-w-[300px]",
             "xl:text-[60px] xl:leading-[72px] xl:w-[440px] xl:min-w-[440px]"
           )}
         >
           Technical Stacks
         </div>
-        <div className="text-[16px] xl:text-[20px] opacity-[0.8] mt-[20px]">
+        <div className="text-[16px] font-[300] xl:text-[20px] opacity-[0.8] mt-[20px]">
           An elite engineering team and the latest technologies joined with
           agile and modern business practices.
         </div>
@@ -59,7 +59,7 @@ const TechnicalStack = () => {
             <button
               key={index}
               className={clsx(
-                "px-[20px] py-[8px] bg-white rounded-[60px] text-[14px] cursor-pointer font-bold uppercase",
+                "px-[20px] py-[8px] bg-white rounded-[60px] text-[14px] cursor-pointer font-[700] uppercase",
                 item?.type === currentTechnical ? "" : "opacity-[0.5]"
               )}
               onClick={() => setCurrentTechnical(item?.type)}

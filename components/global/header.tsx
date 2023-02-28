@@ -25,7 +25,7 @@ const HeaderComponent = () => {
       <Link href="/">
         <ImageComponent
           src="/images/logo_icetea_solution.svg"
-          className="w-[160px] md:w-[200px] h-[18px] md:h-[34px]"
+          className="w-[160px] md:w-[233px] h-[18px] md:h-[32px]"
           alt="logo"
         />
       </Link>
@@ -33,7 +33,7 @@ const HeaderComponent = () => {
         <Link href={`/${nextPath.PORTFOLIO}`}>
           <button
             className={clsx(
-              "px-[30px] py-[10px] rounded-[40px]",
+              "px-[30px] py-[10px] font-[600] rounded-[40px]",
               router?.pathname === `/${nextPath.PORTFOLIO}`
                 ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
                 : "hover:scale-110 duration-500"
@@ -45,7 +45,7 @@ const HeaderComponent = () => {
         <Link href={`/${nextPath.CONTACT}`}>
           <button
             className={clsx(
-              "px-[30px] py-[10px] rounded-[40px]",
+              "px-[30px] py-[10px] font-[600] rounded-[40px]",
               router?.pathname === `/${nextPath.CONTACT}`
                 ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
                 : "hover:scale-110 duration-500"
@@ -86,7 +86,7 @@ const HeaderComponent = () => {
               <Link href={`/${nextPath.PORTFOLIO}`} className="text-[20px]">
                 <button
                   className={clsx(
-                    "px-[60px] py-[10px] rounded-[40px] text-[18px]",
+                    "px-[60px] py-[10px] font-[600] rounded-[40px] text-[18px]",
                     router?.pathname === `/${nextPath.PORTFOLIO}`
                       ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
                       : "hover:scale-110 duration-500"
@@ -100,7 +100,7 @@ const HeaderComponent = () => {
               <Link href={`/${nextPath.CONTACT}`}>
                 <button
                   className={clsx(
-                    "px-[60px] py-[10px] rounded-[40px] text-[18px]",
+                    "px-[60px] py-[10px] font-[600] rounded-[40px] text-[18px]",
                     router?.pathname === `/${nextPath.CONTACT}`
                       ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
                       : "hover:scale-110 duration-500"

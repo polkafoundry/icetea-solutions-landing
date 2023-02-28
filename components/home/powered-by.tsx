@@ -19,23 +19,23 @@ const PoweredBy = () => {
         <div className="text-center md:text-left xl:text-[20px] font-[300] opacity-[0.8]">
           Icetea Labs is Asia&apos;s leading Web3 incubator and powerhouse with
           extraordinary impact, specializing in Web3 development services, game
-          discovery layers, and user engagement initiatives
+          discovery layers, and user engagement initiatives.
         </div>
         <div className="flex gap-5 flex-wrap md:flex-nowrap justify-between mt-5">
           <div className="w-[120px] md:w-full max-w-[180px]">
-            <p className="text-[40px] xl:text-[58px] font-bold">60+</p>
+            <p className="text-[40px] xl:text-[58px] font-[700]">60+</p>
             <p className="text-[14px] xl:text-[16px] font-[300] opacity-[0.7]">
               Games Onboarded into Binance Chain
             </p>
           </div>
           <div className="w-[120px] md:w-full max-w-[180px]">
-            <p className="text-[40px] xl:text-[58px] font-bold">85+</p>
+            <p className="text-[40px] xl:text-[58px] font-[700]">85+</p>
             <p className="text-[14px] xl:text-[16px] font-[300] opacity-[0.7]">
               Launched Token Projects
             </p>
           </div>
           <div className="w-[120px] md:w-full max-w-[180px]">
-            <p className="text-[40px] xl:text-[58px] font-bold">5M+</p>
+            <p className="text-[40px] xl:text-[58px] font-[700]">5M+</p>
             <p className="text-[14px] xl:text-[16px] font-[300] opacity-[0.7]">
               Combined Community
             </p>

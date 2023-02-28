@@ -11,14 +11,14 @@ const OurSuccessStories = () => {
       <div className="md:flex text-white text-center md:text-left gap-[40px]">
         <div
           className={clsx(
-            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-bold",
+            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-[700]",
             "md:w-[300px] md:min-w-[300px]",
             "xl:text-[60px] xl:leading-[72px] xl:w-[440px] xl:min-w-[440px]"
           )}
         >
           Our success stories
         </div>
-        <div className="text-[16px] xl:text-[20px] opacity-[0.8] mt-[20px]">
+        <div className="text-[16px] xl:text-[20px] font-[300] opacity-[0.8] mt-[20px]">
           Icetea Solutions incorporates customer experience-led design thinking
           with software engineering excellence to transform your digital journey
           and meet customer&apos;s expanding demands.

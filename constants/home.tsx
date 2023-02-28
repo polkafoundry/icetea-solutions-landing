@@ -26,7 +26,7 @@ export const technicalStackType = {
 export const listTechnicalStack = [
   {
     type: technicalStackType.LAYER,
-    title: "Layer 1",
+    title: "Layer 1 & 2",
   },
   {
     type: technicalStackType.CONTRACT,

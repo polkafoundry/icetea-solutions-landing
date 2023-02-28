@@ -8,14 +8,14 @@ const Partners = () => {
       <div className="md:flex text-black text-center md:text-left gap-[40px]">
         <div
           className={clsx(
-            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-bold",
+            "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-[700]",
             "md:w-[300px] md:min-w-[300px]",
             "xl:text-[60px] xl:leading-[72px] xl:w-[440px] xl:min-w-[440px]"
           )}
         >
           Valued Partners
         </div>
-        <div className="text-[16px] xl:text-[20px] opacity-[0.8] mt-[20px]">
+        <div className="text-[16px] font-[300] xl:text-[20px] opacity-[0.8] mt-[20px]">
           Understanding your aspirations, readiness, and capabilities allows us
           to become the lifelong partner that deliver sustainable success and
           competitive edge.
@@ -24,7 +24,7 @@ const Partners = () => {
       {listPartners?.map((partner, index) => {
         return (
           <div key={index}>
-            <div className="text-[20px] text-center md:text-left font-bold uppercase text-[#618CFF] mt-10 md:mt-[60px]">
+            <div className="text-[20px] text-center md:text-left font-[700] uppercase text-[#618CFF] mt-10 md:mt-[60px]">
               {partner?.title}
             </div>
             <div className="flex gap-[10px] justify-center md:justify-start md:gap-[28px] flex-wrap">

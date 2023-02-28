@@ -18,7 +18,7 @@ const Portfolio = () => {
       <div className="portfolio_bg h-[640px] md:h-[600px]">
         <PortfolioBanner />
         <div className="md:flex text-center md:text-left gap-[40px] max-w-[1240px] px-5 mx-auto mt-[80px] md:mt-[140px] text-white">
-          <div className="font-be-vn md:min-w-[340px] xl:min-w-[440px] text-[40px] xl:text-[60px] leading-[50px] xl:leading-[72px] font-bold">
+          <div className="font-be-vn md:min-w-[340px] xl:min-w-[440px] text-[40px] xl:text-[60px] leading-[50px] xl:leading-[72px] font-[700]">
             Our success stories
           </div>
           <div>
@@ -27,7 +27,7 @@ const Portfolio = () => {
               innovation. Together we capitalize on technology to accelerate
               growth and seize opportunities.
             </p>
-            <p className="font-be-vn font-bold uppercase pt-[40px] pb-[22px] text-[14px]">
+            <p className="font-be-vn font-[700] uppercase pt-[40px] pb-[22px] text-[14px]">
               Reach out to us today for more details about our success stories.
             </p>
             <div className="w-full hidden md:flex max-w-[480px] border-[1.5px] p-[4px] border-white rounded-[40px] flex-nowrap">

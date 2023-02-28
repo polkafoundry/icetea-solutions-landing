@@ -85,7 +85,7 @@ const Contact = () => {
       <div className="portfolio_bg h-[400px] md:h-[480px]">
         <PortfolioBanner />
         <div className="md:flex text-center md:text-left gap-[40px] max-w-[1240px] px-5 mx-auto mt-[100px] md:mt-[130px] text-white">
-          <div className="font-be-vn md:min-w-[340px] xl:min-w-[440px] text-[40px] xl:text-[60px] leading-[50px] xl:leading-[72px] font-bold">
+          <div className="font-be-vn md:min-w-[340px] xl:min-w-[440px] text-[40px] xl:text-[60px] leading-[50px] xl:leading-[72px] font-[700]">
             Talk with us
           </div>
           <p className="font-be-vn xl:text-[20px] xl:leading-[28px] font-[300] opacity-[0.8]">

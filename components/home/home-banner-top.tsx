@@ -17,7 +17,7 @@ const HomeBannerTop = () => {
         <HeaderComponent />
         <h1
           className={clsx(
-            "text-center text-[48px] leading-[60px] mt-[120px] px-5 font-bold",
+            "text-center text-[48px] leading-[60px] mt-[120px] px-5 font-[700]",
             "md:text-[58px] md:leading-[100px] md:mt-[80px]",
             "xl:text-[88px] xl:leading-[123px] xl:mt-[100px]"
           )}
@@ -45,7 +45,7 @@ const HomeBannerTop = () => {
             </button>
           </Link>
         </div>
-        <div className="text-[12px] mt-auto pb-3 md:mt-[160px] xl:mt-[130px] flex items-center gap-[6px] justify-center">
+        <div className="text-[12px] mt-auto pb-3 md:mt-[160px] xl:mt-[130px] font-[300] flex items-center gap-[6px] justify-center">
           Powered by
           <ImageComponent
             src={"/images/home/icetea_logo.svg"}
@@ -60,23 +60,23 @@ const HomeBannerTop = () => {
           <div className="h-[80px] md:h-[100px] bg-white" />
           <div className="md:flex px-5 md:px-[70px] gap-[30px] justify-between">
             <div>
-              <div className="text-[14px] text-center md:text-left md:text-[16px] xl:text-[20px] font-bold">
+              <div className="text-[14px] uppercase text-center md:text-left md:text-[16px] xl:text-[20px] font-[700]">
                 Our Mission
               </div>
               <p
                 className={clsx(
-                  "text-[28px] font-[600] text-center max-w-[740px]",
-                  "md:text-[30px] md:text-left",
-                  "xl:text-[40px]"
+                  "text-[28px] leading-[36px] font-[600] text-center max-w-[740px]",
+                  "md:text-[30px] md:leading-[40px] md:text-left",
+                  "xl:text-[40px] xl:leading-[50px]"
                 )}
               >
                 Icetea Solutions combines platform expertise, product thinking,
                 and exceptional customer experiences to develop{" "}
                 <span
                   className={clsx(
-                    "text-[28px] font-[600] text-transparent bg-clip-text bg-gradient-to-r from-[#2F34E1] to-[#DC52FF]",
-                    "md:text-[30px]",
-                    "xl:text-[40px]"
+                    "text-[28px] leading-[36px] font-[600] text-transparent bg-clip-text bg-gradient-to-r from-[#2F34E1] to-[#DC52FF]",
+                    "md:text-[30px] md:leading-[40px]",
+                    "xl:text-[40px] xl:leading-[50px]"
                   )}
                 >
                   high-performing agile software delivery capabilities
@@ -85,7 +85,7 @@ const HomeBannerTop = () => {
               </p>
             </div>
             <ImageComponent
-              className="w-full md:w-[378px] md:min-w-[378px] h-[300px] md:h-[437px]"
+              className="w-full md:w-[283px] xl:w-[378px] md:min-w-[283px] xl:min-w-[378px] h-[300px] md:h-[327px] xl:h-[437px]"
               imageClass="object-contain"
               src="/images/home/earth_model.png"
               alt="earth model"
