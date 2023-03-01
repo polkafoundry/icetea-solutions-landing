@@ -11,13 +11,7 @@ const NEXT_PUBLIC_PRIVATE_KEY = process?.env?.NEXT_PUBLIC_PRIVATE_KEY;
 const NEXT_PUBLIC_CLIENT_EMAIL = process?.env?.NEXT_PUBLIC_CLIENT_EMAIL;
 const NEXT_PUBLIC_SHEET_ID = process?.env?.NEXT_PUBLIC_SHEET_ID;
 
-const listFormData = [
-  "name",
-  "email",
-  "country",
-  "howKnow",
-  "tellAbout",
-];
+const listFormData = ["name", "email", "country", "howKnow", "tellAbout"];
 
 const Contact = () => {
   const router = useRouter();
@@ -97,86 +91,120 @@ const Contact = () => {
       </div>
       <div className="max-w-[880px] px-5 mx-auto mt-10 md:mt-[80px] pb-[100px]">
         <div className="md:flex gap-[40px]">
-          <input
-            className={clsx(
-              "h-[64px] w-full md:w-[400px] mt-5 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
-              isSubmitAction && !formData["name"]
-                ? "border-[#FF3434]"
-                : "border-transparent"
-            )}
-            placeholder="Your name*"
-            type={"text"}
-            onChange={(e) => handleChangeData(e?.target?.value, "name")}
-          />
-          <input
-            className={clsx(
-              "h-[64px] w-full md:w-[400px] mt-5 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
-              isSubmitAction && !formData["email"]
-                ? "border-[#FF3434]"
-                : "border-transparent"
-            )}
-            placeholder="Your email address*"
-            type={"email"}
-            defaultValue={
-              router?.query?.email ? (router?.query?.email as string) : ""
-            }
-            onChange={(e) => handleChangeData(e?.target?.value, "email")}
-          />
-        </div>
-        <div className="md:flex gap-[40px] mt-5">
-          <input
-            className="h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] xl:w-[400px] bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px] border-transparent"
-            placeholder="Phone number"
-            type={"text"}
-            onChange={(e) => handleChangeData(e?.target?.value, "phone")}
-          />
-          <div className="select-wrap w-full md:w-fit">
-            <select
+          <div className="w-full md:w-fit">
+            <input
               className={clsx(
-                "appearance-none h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] xl:w-[400px] mt-5 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
-                isSubmitAction && !formData["country"]
+                "h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] mt-5 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
+                isSubmitAction && !formData["name"]
                   ? "border-[#FF3434]"
                   : "border-transparent"
               )}
-              placeholder="Your country*"
-              required
-              onChange={(e) => handleChangeData(e?.target?.value, "country")}
-            >
-              <option value={""} disabled selected hidden>
-                Your country*
-              </option>
-              {countries?.map((country, index) => {
-                return (
-                  <option key={index} value={country?.name}>
-                    {country?.name}
-                  </option>
-                );
-              })}
-            </select>
+              placeholder="Your name*"
+              type={"text"}
+              onChange={(e) => handleChangeData(e?.target?.value, "name")}
+            />
+            <div className="text-[12px] leading-[14px] pl-3 mt-1 h-[14px] text-[#FF3434]">
+              {isSubmitAction && !formData["name"]
+                ? "Your name is required"
+                : ""}
+            </div>
+          </div>
+          <div className="w-full md:w-fit">
+            <input
+              className={clsx(
+                "h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] mt-5 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
+                isSubmitAction && !formData["email"]
+                  ? "border-[#FF3434]"
+                  : "border-transparent"
+              )}
+              placeholder="Your email address*"
+              type={"email"}
+              defaultValue={
+                router?.query?.email ? (router?.query?.email as string) : ""
+              }
+              onChange={(e) => handleChangeData(e?.target?.value, "email")}
+            />
+            <div className="text-[12px] leading-[14px] pl-3 mt-1 h-[14px] text-[#FF3434]">
+              {isSubmitAction && !formData["name"]
+                ? "Your email is required"
+                : ""}
+            </div>
           </div>
         </div>
-        <div className="md:flex gap-[40px] mt-5">
-          <input
-            className="h-[64px] w-full md:w-[400px] bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px] border-transparent"
-            placeholder="Your company name"
-            type={"text"}
-            onChange={(e) => handleChangeData(e?.target?.value, "company")}
-          />
-          <input
-            className={clsx(
-              "h-[64px] w-full md:w-[400px] mt-5 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
-              isSubmitAction && !formData["howKnow"]
-                ? "border-[#FF3434]"
-                : "border-transparent"
-            )}
-            placeholder="How did you know about us?*"
-            type={"text"}
-            onChange={(e) => handleChangeData(e?.target?.value, "howKnow")}
-          />
+        <div className="md:flex gap-[40px] mt-3">
+          <div className="w-full md:w-fit">
+            <input
+              className="h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] xl:w-[400px] bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px] border-transparent"
+              placeholder="Phone number"
+              type={"text"}
+              onChange={(e) => handleChangeData(e?.target?.value, "phone")}
+            />
+            <div className="text-[12px] leading-[14px] pl-3 mt-1 h-[14px] text-[#FF3434]"></div>
+          </div>
+          <div className="w-full md:w-fit">
+            <div className="select-wrap w-full md:w-fit">
+              <select
+                className={clsx(
+                  "appearance-none h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] xl:w-[400px] mt-3 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
+                  isSubmitAction && !formData["country"]
+                    ? "border-[#FF3434]"
+                    : "border-transparent"
+                )}
+                placeholder="Your country*"
+                required
+                onChange={(e) => handleChangeData(e?.target?.value, "country")}
+              >
+                <option value={""} disabled selected hidden>
+                  Your country*
+                </option>
+                {countries?.map((country, index) => {
+                  return (
+                    <option key={index} value={country?.name}>
+                      {country?.name}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+            <div className="text-[12px] leading-[14px] pl-3 mt-1 h-[14px] text-[#FF3434]">
+              {isSubmitAction && !formData["name"]
+                ? "Your country is required"
+                : ""}
+            </div>
+          </div>
+        </div>
+        <div className="md:flex gap-[40px] mt-3">
+          <div className="w-full md:w-fit">
+            <input
+              className="h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px] border-transparent"
+              placeholder="Your company name"
+              type={"text"}
+              onChange={(e) => handleChangeData(e?.target?.value, "company")}
+            />
+            <div className="text-[12px] leading-[14px] pl-3 mt-1 h-[14px] text-[#FF3434]"></div>
+          </div>
+          <div className="w-full md:w-fit">
+            <input
+              className={clsx(
+                "h-[64px] w-full md:w-[45.1vw] md:max-w-[400px] mt-3 md:mt-0 bg-[#EFEFEF] rounded-[8px] outline-none px-5 border-[1px]",
+                isSubmitAction && !formData["howKnow"]
+                  ? "border-[#FF3434]"
+                  : "border-transparent"
+              )}
+              placeholder="How did you know about us?*"
+              type={"text"}
+              onChange={(e) => handleChangeData(e?.target?.value, "howKnow")}
+            />
+            <div className="text-[12px] leading-[14px] pl-3 mt-1 h-[14px] text-[#FF3434]">
+              {isSubmitAction && !formData["name"]
+                ? "This field is required"
+                : ""}
+            </div>
+          </div>
         </div>
         <textarea
           className={clsx(
-            "h-[280px] w-[100%] mt-5 resize-none bg-[#EFEFEF] rounded-[8px] outline-none p-5 border-[1px]",
+            "h-[280px] w-[100%] mt-3 resize-none bg-[#EFEFEF] rounded-[8px] outline-none p-5 border-[1px]",
             isSubmitAction && !formData["tellAbout"]
               ? "border-[#FF3434]"
               : "border-transparent"
@@ -184,6 +212,9 @@ const Contact = () => {
           placeholder="Tell us about your inquiries*"
           onChange={(e) => handleChangeData(e?.target?.value, "tellAbout")}
         />
+        <div className="text-[12px] leading-[14px] pl-3 mt-1 h-[14px] text-[#FF3434]">
+          {isSubmitAction && !formData["name"] ? "This field is required" : ""}
+        </div>
         <div className="text-center mt-5">
           <button
             className="px-[60px] py-[10px] text-white rounded-[40px] text-[18px] bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
