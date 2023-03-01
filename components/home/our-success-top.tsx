@@ -147,7 +147,7 @@ const OurSuccessTop = () => {
             alt="gamefi.org"
           />
           <div className="bg-hover-card">
-            <Link href={"https://metaforce.gurucore.com/"} target={"_blank"}>
+            <Link href={"https://metaforce.org/"} target={"_blank"}>
               <button className="flex hover:scale-110 duration-500 flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[20px] font-[600] items-center">
                 Visit website
                 <FaArrowRight fontSize={"16px"} color="white" />
