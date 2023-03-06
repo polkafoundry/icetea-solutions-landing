@@ -27,7 +27,7 @@ const OurSuccessTop = () => {
               color={"#61FF8D"}
               className="mt-[4px] min-w-[14px]"
             />
-            Cosmos SDK, Tendermint BFT Consensus, Golang, Protobuf/gRPC
+            Dapps Wyvern Opensea, React Nextjs, nestjs, Tailwind Css, NFT indexing
           </p>
           <Link href={"https://gamefi.org/nft/marketplace"} target={"_blank"}>
             <button className="hidden md:flex hover:scale-110 duration-500 flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[20px] font-[600] items-center">
