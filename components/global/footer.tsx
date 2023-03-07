@@ -116,7 +116,7 @@ const FooterComponent = ({ isMail }: Props) => {
           </div>
           <div className="w-full max-w-[1280px] mx-auto h-[1px] mt-5 bg-white opacity-[0.1]" />
           <div className="py-[12px] text-center text-[14px] text-white">
-            Copyright © 2023, Icetea Solutions. All rights reserved.
+            Copyright © 2023, Icetea Software. All rights reserved.
           </div>
         </div>
       </div>

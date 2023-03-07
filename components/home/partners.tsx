@@ -5,7 +5,7 @@ import { ImageComponent } from "../global/image";
 const Partners = () => {
   return (
     <div className="pt-[80px] md:pt-[100px] max-w-[1240px] px-[20px] pb-[80px] mx-auto">
-      <div className="md:flex text-black text-center md:text-left gap-[40px]">
+      <div className="text-black text-center md:text-left gap-[40px]">
         <div
           className={clsx(
             "text-[40px] leading-[48px] w-[100%] min-w-[100%] font-[700]",
@@ -16,9 +16,7 @@ const Partners = () => {
           Valued Partners
         </div>
         <div className="text-[16px] font-[300] xl:text-[20px] opacity-[0.8] mt-[20px]">
-          Understanding your aspirations, readiness, and capabilities allows us
-          to become the lifelong partner that deliver sustainable success and
-          competitive edge.
+          Industry-leading names pioneering innovation and evolution.
         </div>
       </div>
       {listPartners?.map((partner, index) => {

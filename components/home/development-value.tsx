@@ -12,7 +12,7 @@ const DevelopmentValue = () => {
             "xl:text-[60px] xl:leading-[72px] xl:w-[440px] xl:min-w-[440px]"
           )}
         >
-          Development Value Add-On
+          Development Value Add-on
         </div>
         <div className="text-[16px] font-[300] xl:text-[20px] opacity-[0.8] mt-[20px]">
           Understanding your aspirations, readiness, and capabilities allows us

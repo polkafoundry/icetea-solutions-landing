@@ -125,7 +125,12 @@ export const cloudTechnicalStack = [
 export const chainPartners = [
   "/images/home/partners/binance.png",
   "/images/home/partners/polygon.png",
+  "/images/home/partners/solana.png",
+  "/images/home/partners/near.png",
+  "/images/home/partners/avalanche.png",
   "/images/home/partners/aptos.png",
+  "/images/home/partners/telos.png",
+  "/images/home/partners/arbitrum.png",
 ];
 
 export const technicalPartners = [

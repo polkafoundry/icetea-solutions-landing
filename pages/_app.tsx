@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
-        <title>Icetea Solutions</title>
+        <title>Icetea Software</title>
       </Head>
       <Component {...pageProps} />
     </div>

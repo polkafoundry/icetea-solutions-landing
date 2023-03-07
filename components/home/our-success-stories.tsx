@@ -19,7 +19,7 @@ const OurSuccessStories = () => {
           Our success stories
         </div>
         <div className="text-[16px] xl:text-[20px] font-[300] opacity-[0.8] mt-[20px]">
-          Icetea Solutions incorporates customer experience-led design thinking
+          Icetea Software incorporates customer experience-led design thinking
           with software engineering excellence to transform your digital journey
           and meet customer&apos;s expanding demands.
         </div>

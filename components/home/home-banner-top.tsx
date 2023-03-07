@@ -70,7 +70,7 @@ const HomeBannerTop = () => {
                   "xl:text-[40px] xl:leading-[50px]"
                 )}
               >
-                Icetea Solutions combines platform expertise, product thinking,
+                Icetea Software combines platform expertise, product thinking,
                 and exceptional customer experiences to develop{" "}
                 <span
                   className={clsx(
