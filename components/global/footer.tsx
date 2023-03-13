@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { ImageComponent } from "./image";
 
-const email = "iceteasolutions@icetea.io";
+const email = "contact@icetea-software.com";
 
 interface Props {
   isMail?: boolean;
