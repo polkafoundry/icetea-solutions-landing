@@ -29,7 +29,7 @@ export default function Document() {
           itemProp="twitter:description"
           content="One-Stop Digital Transformation Services"
         />
-        <meta itemProp="twitter:image" content="/linkedin_img_org.png" />
+        <meta itemProp="twitter:image" content="/telegram_img_org.png" />
 
         <meta
           name="og:description"
@@ -40,7 +40,7 @@ export default function Document() {
           itemProp="og:description"
           content="One-Stop Digital Transformation Services"
         />
-        <meta itemProp="og:image" content="/telegram_img_org.png" />
+        <meta itemProp="og:image" content="/linkedin_img_org.png" />
       </Head>
       <body>
         <Main />
