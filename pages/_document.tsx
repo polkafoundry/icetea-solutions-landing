@@ -11,34 +11,34 @@ export default function Document() {
         <script src="script.js" defer></script>
         <meta
           name="description"
-          content="One-Stop Digital Transformation Services"
+          content="One-stop Web3 Development and Digital"
         />
         <meta itemProp="name" content="Web3 Development Hub" />
         <meta
           itemProp="description"
-          content="One-Stop Digital Transformation Services"
+          content="One-stop Web3 Development and Digital"
         />
         <meta itemProp="image" content="/fb_img_org.png" />
 
         <meta
           name="twitter:description"
-          content="One-Stop Digital Transformation Services"
+          content="One-stop Web3 Development and Digital"
         />
         <meta itemProp="twitter:name" content="Web3 Development Hub" />
         <meta
           itemProp="twitter:description"
-          content="One-Stop Digital Transformation Services"
+          content="One-stop Web3 Development and Digital"
         />
         <meta itemProp="twitter:image" content="/telegram_img_org.png" />
 
         <meta
           name="og:description"
-          content="One-Stop Digital Transformation Services"
+          content="One-stop Web3 Development and Digital"
         />
         <meta itemProp="og:name" content="Web3 Development Hub" />
         <meta
           itemProp="og:description"
-          content="One-Stop Digital Transformation Services"
+          content="One-stop Web3 Development and Digital"
         />
         <meta itemProp="og:image" content="/linkedin_img_org.png" />
       </Head>
