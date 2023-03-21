@@ -25,7 +25,7 @@ const PoweredBy = () => {
           <div className="w-[120px] md:w-full max-w-[180px]">
             <p className="text-[40px] xl:text-[58px] font-[700]">60+</p>
             <p className="text-[14px] xl:text-[16px] font-[300] opacity-[0.7]">
-              Games Onboarded into Binance Chain
+              Games Onboarded into BNB Chain
             </p>
           </div>
           <div className="w-[120px] md:w-full max-w-[180px]">
