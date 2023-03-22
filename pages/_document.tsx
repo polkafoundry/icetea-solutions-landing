@@ -11,36 +11,73 @@ export default function Document() {
         <script src="script.js" defer></script>
         <meta
           name="description"
-          content="One-stop Web3 Development and Digital"
+          property="description"
+          content="One-stop Web3 Development and Digital Transformation Services"
         />
-        <meta itemProp="name" content="Web3 Development Hub" />
+        <meta
+          itemProp="name"
+          name="name"
+          property="name"
+          content="Web3 Development Hub"
+        />
         <meta
           itemProp="description"
-          content="One-stop Web3 Development and Digital"
+          name="description"
+          property="description"
+          content="One-stop Web3 Development and Digital Transformation Services"
         />
-        <meta itemProp="image" content="/fb_img_org.png" />
+        <meta
+          itemProp="image"
+          name="image"
+          property="image"
+          content="/fb_img_org.png"
+        />
 
         <meta
           name="twitter:description"
-          content="One-stop Web3 Development and Digital"
+          property="twitter:description"
+          content="One-stop Web3 Development and Digital Transformation Services"
         />
-        <meta itemProp="twitter:name" content="Web3 Development Hub" />
+        <meta
+          itemProp="twitter:name"
+          name="twitter:name"
+          property="twitter:name"
+          content="Web3 Development Hub"
+        />
         <meta
           itemProp="twitter:description"
-          content="One-stop Web3 Development and Digital"
+          property="twitter:description"
+          content="One-stop Web3 Development and Digital Transformation Services"
         />
-        <meta itemProp="twitter:image" content="/telegram_img_org.png" />
+        <meta
+          itemProp="twitter:image"
+          name="twitter:image"
+          property="twitter:image"
+          content="/telegram_img_org.png"
+        />
 
         <meta
           name="og:description"
-          content="One-stop Web3 Development and Digital"
+          property="og:description"
+          content="One-stop Web3 Development and Digital Transformation Services"
         />
-        <meta itemProp="og:name" content="Web3 Development Hub" />
+        <meta
+          itemProp="og:name"
+          name="og:name"
+          property="og:name"
+          content="Web3 Development Hub"
+        />
         <meta
           itemProp="og:description"
-          content="One-stop Web3 Development and Digital"
+          property="og:description"
+          content="One-stop Web3 Development and Digital Transformation Services"
         />
-        <meta itemProp="og:image" content="/linkedin_img_org.png" />
+        <meta
+          itemProp="og:image"
+          name="og:image"
+          property="og:image"
+          content="/linkedin_img_org.png"
+        />
       </Head>
       <body>
         <Main />
