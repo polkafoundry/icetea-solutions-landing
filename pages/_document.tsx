@@ -18,7 +18,7 @@ export default function Document() {
           itemProp="name"
           name="name"
           property="name"
-          content="Web3 Development Hub"
+          content="Icetea Software"
         />
         <meta
           itemProp="description"
@@ -42,7 +42,7 @@ export default function Document() {
           itemProp="twitter:name"
           name="twitter:name"
           property="twitter:name"
-          content="Web3 Development Hub"
+          content="Icetea Software"
         />
         <meta
           itemProp="twitter:description"
@@ -65,7 +65,7 @@ export default function Document() {
           itemProp="og:name"
           name="og:name"
           property="og:name"
-          content="Web3 Development Hub"
+          content="Icetea Software"
         />
         <meta
           itemProp="og:description"
