@@ -21,6 +21,12 @@ export default function Document() {
           content="Icetea Software"
         />
         <meta
+          itemProp="name"
+          name="title"
+          property="title"
+          content="Icetea Software"
+        />
+        <meta
           itemProp="description"
           name="description"
           property="description"
@@ -45,6 +51,12 @@ export default function Document() {
           content="Icetea Software"
         />
         <meta
+          itemProp="twitter:name"
+          name="twitter:title"
+          property="twitter:title"
+          content="Icetea Software"
+        />
+        <meta
           itemProp="twitter:description"
           property="twitter:description"
           content="One-stop Web3 Development and Digital Transformation Services"
@@ -65,6 +77,12 @@ export default function Document() {
           itemProp="og:name"
           name="og:name"
           property="og:name"
+          content="Icetea Software"
+        />
+        <meta
+          itemProp="og:name"
+          name="og:title"
+          property="og:title"
           content="Icetea Software"
         />
         <meta
