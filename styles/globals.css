@@ -133,6 +133,13 @@ body {
   background-position: center;
 }
 
+.desport_bg {
+  background-image: url("/images/home/desport_bg.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .redkite-chain-bg {
   background-image: url("/images/home/red_kite_launchpad.png");
   background-size: auto 100%;
@@ -252,7 +259,8 @@ select[disabled] {
   }
 
   .gamefi_market_bg,
-  .redkite-chain-bg {
+  .redkite-chain-bg,
+  .desport_bg {
     background: #050512;
   }
 

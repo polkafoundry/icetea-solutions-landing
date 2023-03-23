@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import { ImageComponent } from "../global/image";
 
@@ -99,6 +100,54 @@ const OurSuccessBot = () => {
           </div>
         </div>
       </div>
+
+      <div className="desport_bg md:h-[456px] mt-5">
+        <div className="w-full bg-card md:max-w-[500px] px-5 md:px-[40px] pt-[30px] md:pt-[60px] bg-[#050512] h-full">
+          <p className="text-[14px] text-[#FF58D0] uppercase font-[700]">
+            eSports platform development
+          </p>
+          <p className="hidden md:block text-[40px] leading-[50px] text-white">
+            Desports
+          </p>
+          <p className="md:hidden text-[40px] leading-[50px] text-white mt-3">
+            Gamefi.org
+          </p>
+          <p className="text-[16px] text-white font-[300] opacity-[0.7] mt-3">
+            A decentralized eSports platform that offers comprehensive
+            infrastructure for tournament organizers, players, KOLs, streamers
+            and more
+          </p>
+          <p className="flex text-[#FF58D0] font-[300] text-[16px] gap-[8px] mt-5 mb-5">
+            <FaCheckCircle
+              size={"14px"}
+              color={"#FF58D0"}
+              className="mt-[4px] min-w-[14px]"
+            />
+            Node JS, TypeScripts, NestJS, React, NextJS, Tailwind CSS, MUI,
+            Google Cloud Platform, Github Actions, Java, MongoDB Atlas
+          </p>
+          <Link href={"https://desports.gg/"} target={"_blank"}>
+            <button className="hidden md:flex hover:scale-110 duration-500 flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[20px] font-[600] items-center">
+              Visit website
+              <FaArrowRight fontSize={"16px"} color="white" />
+            </button>
+          </Link>
+          <ImageComponent
+            src="/images/home/desport_bg_mobile.png"
+            className="w-full md:hidden h-[50vw] md:h-[200px] mt-auto"
+            alt="gamefi.org"
+          />
+          <div className="bg-hover-card bg-hover-card-big">
+            <Link href={"https://desports.gg/"} target={"_blank"}>
+              <button className="flex hover:scale-110 duration-500 flex-nowrap gap-[8px] text-white border-white border-[1px] px-[30px] py-[10px] rounded-[40px] mt-[20px] font-[600] items-center">
+                Visit website
+                <FaArrowRight fontSize={"16px"} color="white" />
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <div className="xl:flex mt-5 gap-5 flex-wrap">
         <div className="bg-card token_airdrop_bg xl:w-[590px] p-[40px] text-white">
           <p className="text-[14px] text-[#618CFF] font-[700]">
