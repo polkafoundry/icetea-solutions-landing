@@ -12,8 +12,6 @@ const HeaderComponent = () => {
 
   const handleShow = () => setIsShow(!isShow);
 
-  console.log(router);
-
   return (
     <header
       className={clsx(

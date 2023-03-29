@@ -22,6 +22,7 @@ export const ImageComponent = ({
         src={src}
         className={imageClass}
         fill
+        sizes="auto"
         alt={alt}
         priority={priority}
       />

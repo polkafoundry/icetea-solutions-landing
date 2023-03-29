@@ -150,11 +150,12 @@ const Contact = () => {
                     ? "border-[#FF3434]"
                     : "border-transparent"
                 )}
+                defaultValue=""
                 placeholder="Your country*"
                 required
                 onChange={(e) => handleChangeData(e?.target?.value, "country")}
               >
-                <option value={""} disabled selected hidden>
+                <option value={""} disabled hidden>
                   Your country*
                 </option>
                 {countries?.map((country, index) => {

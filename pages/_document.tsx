@@ -8,7 +8,6 @@ export default function Document() {
         <link rel="icon" href="/logo-blue.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <script src="script.js" defer></script>
         <meta
           name="description"
           property="description"
