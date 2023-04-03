@@ -71,19 +71,19 @@ const FooterComponent = ({ isMail }: Props) => {
         <div
           className={clsx(
             "footer_bg",
-            isMail ? "pt-[80px] md:pt-[170px]" : "pt-[50px]"
+            isMail ? "pt-[40px] md:pt-[170px]" : "pt-[50px]"
           )}
         >
           <div className="w-full md:flex justify-between items-center max-w-[1240px] px-5 text-white mx-auto">
-            <div className="text-center md:text-left">
+            <div className="text-left">
               <Link href="/">
                 <ImageComponent
-                  src="/images/logo_icetea_solution.svg"
-                  className="w-[266px] md:w-[290px] h-[29px] md:h-[40px] mx-auto md:mx-0"
+                  src="/images/logo.svg"
+                  className="w-[193px] md:w-[175px] h-[88px] md:h-[80px] md:mx-0"
                   alt="logo"
                 />
               </Link>
-              <p className="mt-5 xl:mt-8 text-[14px] xl:text-[16px]">
+              <p className="mt-5 max-w-[270px] md:max-w-full xl:mt-4 text-[14px] xl:text-[16px]">
                 11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
               </p>
               <p className="mt-2 text-[14px] xl:text-[16px]">
@@ -99,7 +99,7 @@ const FooterComponent = ({ isMail }: Props) => {
               </Link>
             </div>
             <div className="flex md:w-1/2 justify-between items-center">
-              <div className="opacity-[0.8]">
+              <div className="opacity-[0.8] mt-3">
                 <p className="hover:scale-110 duration-500 text-[14px] md:text-[16px]">
                   <Link href={`/${nextPath.PORTFOLIO}`}>Our Portfolio</Link>
                 </p>

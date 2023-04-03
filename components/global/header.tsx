@@ -22,8 +22,8 @@ const HeaderComponent = () => {
     >
       <Link href="/">
         <ImageComponent
-          src="/images/logo_icetea_solution.svg"
-          className="w-[160px] md:w-[233px] h-[18px] md:h-[32px]"
+          src="/images/logo.svg"
+          className="w-[96px] md:w-[130px] h-[44px] md:h-[60px]"
           alt="logo"
         />
       </Link>
