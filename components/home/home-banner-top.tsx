@@ -11,10 +11,47 @@ const HomeBannerTop = () => {
       <div
         className={clsx(
           "relative home-top-banner h-[840px] flex flex-col text-white",
-          "md:h-[680px] md:block"
+          "md:h-fit md:block"
         )}
       >
         <HeaderComponent />
+        <div
+          className={clsx(
+            "flex relative justify-between items-center px-[20px] text-white",
+            "md:px-[40px]",
+            "xl:px-[100px]"
+          )}
+        >
+          <ImageComponent
+            src="/images/banner.png"
+            className="hidden md:block w-full md:h-[7vw] xl:h-[6vw]"
+            imageClass="object-cover md:object-contain"
+            alt="banner"
+          />
+          <ImageComponent
+            src="/images/banner_mobile.png"
+            className="block md:hidden w-full h-[31vw]"
+            imageClass="object-contain"
+            alt="banner"
+          />
+          <Link
+            href={
+              "https://docs.google.com/forms/d/15k2L_1KEi6eVdW_P3TjMWt5R6JC7w0vN5k0hy_mDEi8/edit"
+            }
+            target={"_blank"}
+          >
+            <button
+              className={clsx(
+                "absolute w-full h-full left-0 top-0 md:top-[24%] bg-transparent text-transparent",
+                "justify-center items-center font-sans font-semibold rounded-[100px] md:left-auto md:right-[15%] md:text-[14px]",
+                "md:w-[16%] xl:w-[14%] md:h-[50%] xl:text-[16px] xl:right-[17%]",
+                "md:bg-gradient-to-r flex flex-nowrap from-[#9F6DCA] to-[#1353F8] md:text-white"
+              )}
+            >
+              Register here 🡒
+            </button>
+          </Link>
+        </div>
         <h1
           className={clsx(
             "text-center text-[48px] leading-[60px] mt-[120px] px-5 font-[700]",
@@ -57,7 +94,7 @@ const HomeBannerTop = () => {
 
       <div className="md:h-[200px] relative">
         <div className="md:absolute w-[100%] max-w-[1340px] md:translate-x-[-50%] md:left-[50%] md:top-[-80px]">
-          <div className="h-[80px] md:h-[100px] bg-white" />
+          <div className="h-[80px] md:h-[140px] bg-transparent" />
           <div className="md:flex px-5 md:px-[70px] gap-[30px] justify-between">
             <div>
               <div className="text-[14px] uppercase text-center md:text-left md:text-[16px] xl:text-[20px] font-[700]">
