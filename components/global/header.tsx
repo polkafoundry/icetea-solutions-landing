@@ -69,8 +69,8 @@ const HeaderComponent = () => {
           <div className="flex max-h-[70px] justify-between items-center px-[20px] py-[14px]">
             <Link href="/">
               <ImageComponent
-                src="/images/logo_icetea_solution.svg"
-                className="w-[160px] h-[18px]"
+                src="/images/logo.svg"
+                className="w-[96px] h-[44px]"
                 alt="logo"
               />
             </Link>
