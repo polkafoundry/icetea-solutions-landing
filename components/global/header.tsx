@@ -78,7 +78,7 @@ const HeaderComponent = () => {
               <FaRegTimesCircle size={"26px"} />
             </div>
           </div>
-
+          {/* <div></div> */}
           <div className="h-fit">
             <div className="text-center mt-[120px]">
               <Link href={`/${nextPath.PORTFOLIO}`} className="text-[20px]">
