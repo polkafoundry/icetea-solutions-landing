@@ -1,190 +1,344 @@
-export const blockchainService = [
-  "Public & Private Blockchain Development",
-  "Smart Contract Development & Audit",
-  "Marketplace & NFT related services ",
-  "Wallet & Web3 applications ",
-];
+import AIIcon from "@/components/svg/home/ai";
+import AndroidIcon from "@/components/svg/home/android";
+import AngularIcon from "@/components/svg/home/angular";
+import AppiumIcon from "@/components/svg/home/appium";
+import AwsIcon from "@/components/svg/home/aws";
+import AzureIcon from "@/components/svg/home/azure";
+import BlockchainIcon from "@/components/svg/home/blockchain";
+import BootstrapIcon from "@/components/svg/home/bootstrap";
+import CssIcon from "@/components/svg/home/css";
+import CypressIcon from "@/components/svg/home/cypress";
+import DigitalOceanIcon from "@/components/svg/home/digital-ocean";
+import DjangoIcon from "@/components/svg/home/django";
+import DockerIcon from "@/components/svg/home/docker";
+import DotnetIcon from "@/components/svg/home/dotnet";
+import DotnetFoundationIcon from "@/components/svg/home/dotnet-foundation";
+import FlutterIcon from "@/components/svg/home/flutter";
+import GoogleCloudIcon from "@/components/svg/home/google-cloud";
+import HtmlIcon from "@/components/svg/home/html";
+import JavaIcon from "@/components/svg/home/java";
+import JavaScriptIcon from "@/components/svg/home/javascript";
+import JmeterIcon from "@/components/svg/home/jmeter";
+import JpFlagIcon from "@/components/svg/home/jp-flag";
+import KotlinIcon from "@/components/svg/home/kotlin";
+import KubernetesIcon from "@/components/svg/home/kubernetes";
+import LaravelIcon from "@/components/svg/home/laravel";
+import NodeJsIcon from "@/components/svg/home/nodejs";
+import ObjectiveCIcon from "@/components/svg/home/objective-c";
+import PhpIcon from "@/components/svg/home/php";
+import PostmanIcon from "@/components/svg/home/postman";
+import PythonIcon from "@/components/svg/home/python";
+import ReactIcon from "@/components/svg/home/react";
+import ReactNativeIcon from "@/components/svg/home/react-native";
+import SeleniumIcon from "@/components/svg/home/selenium";
+import SpringIcon from "@/components/svg/home/spring";
+import SwiftIcon from "@/components/svg/home/swift";
+import TerraformIcon from "@/components/svg/home/terraform";
+import UkFlagIcon from "@/components/svg/home/uk-flag";
+import VnFlagIcon from "@/components/svg/home/vn-flag";
+import VueJsIcon from "@/components/svg/home/vuejs";
 
-export const whiteLabelService = [
-  "Launchpad & Cross-chain bridge",
-  "Taskforce-gamification community building",
-  "DeepBlue - augmented web3 content",
-  "NFT Marketplace",
-  "Token Vesting",
-  "Defi Staking",
-];
-
-export const technicalStackType = {
-  LAYER: "layer",
-  CONTRACT: "contract",
-  PROGRAMING: "programming",
-  FRAMEWORKS: "framework",
-  DATABASE: "database",
-  CLOUD: "cloud",
-};
-
-export const listTechnicalStack = [
+export const homeDevelopments = [
   {
-    type: technicalStackType.LAYER,
-    title: "Layer 1 & 2",
+    title: "OUTSOURCING SERVICES",
+    contents: [
+      "Website Development",
+      "Mobile development",
+      "Web App Development",
+      "Custom Software Development",
+      "QC & Testing Services",
+      "Frontend Design and Development",
+      "Complex Backend System with API Integrations",
+    ],
   },
   {
-    type: technicalStackType.CONTRACT,
-    title: "Smart contract",
+    title: "OFFSHORE DEVELOPMENT",
+    contents: [
+      "IT Staff augmentation (Remote / Onsite / Hybrid)",
+      "Offshore development center (ODC)",
+      "Dedicated team with hands-on experiences",
+      "Start Immediately",
+      "Flexible to scale up and scale down in short time",
+      "Effective cost",
+    ],
   },
   {
-    type: technicalStackType.PROGRAMING,
-    title: "Programming",
+    title: "CUTTING-EDGE TECHONOLOGIES",
+    contents: [
+      "Artificial Intelligence (AI)",
+      "Generative AI",
+      "Low-Code (Outsystems)",
+      "Internet of Things (IOT)",
+      "Apps for weareables & smart devices",
+      "Live-streaming",
+      "Most Viable Product (MVP)",
+    ],
   },
   {
-    type: technicalStackType.FRAMEWORKS,
-    title: "Frameworks",
+    title: "BLOCKCHAIN & WEB3 DEVELOPMENT",
+    contents: [
+      "Chain development",
+      "NFT related services development",
+      "Smart contract development & audit",
+      "Wallet",
+      "Marketplace",
+      "Decentralized application",
+    ],
+  },
+];
+
+export const whyChooseContents = [
+  {
+    img: "/images/home/why_choose_1.png",
+    title: "Experienced in ITO industry",
+    content:
+      "Our peersonnel with over 15 years of expeerience in the ITO industry have been providing a wide range of comprehensive  IT services, from consulting to implementing, meeting the highest level of requirements.",
   },
   {
-    type: technicalStackType.DATABASE,
-    title: "Database",
+    img: "/images/home/why_choose_2.png",
+    title: "Strict QC & Security Standard",
+    content:
+      "By following strict quality management procedure & comply with international security standards such as ISO 27001:2013, CMMI, etc. We bring toyou IT outsourcing services with world-class ISMS.",
   },
   {
-    type: technicalStackType.CLOUD,
-    title: "Cloud & devops",
-  },
-];
-
-export const layerTechnicalStack = [
-  "/images/home/layers/polkadot.png",
-  "/images/home/layers/ethereum.png",
-  "/images/home/layers/polygon.png",
-  "/images/home/layers/cardano.png",
-  "/images/home/layers/binance.png",
-  "/images/home/layers/solana.png",
-  "/images/home/layers/algorand.png",
-  "/images/home/layers/aptos.png",
-  "/images/home/layers/avalanche.png",
-  "/images/home/layers/cosmos.png",
-  "/images/home/layers/near.png",
-  "/images/home/layers/tron.png",
-  "/images/home/layers/oasis.png",
-  "/images/home/layers/arbitrum.png",
-];
-
-export const contractTechnicalStack = [
-  "/images/home/contracts/solidity.png",
-  "/images/home/contracts/rust.png",
-  "/images/home/contracts/move.png",
-];
-
-export const programingTechnicalStack = [
-  "/images/home/programing/go.png",
-  "/images/home/programing/scala.png",
-  "/images/home/programing/java.png",
-  "/images/home/programing/laravel.png",
-  "/images/home/programing/obj_c.png",
-  "/images/home/programing/java_script.png",
-  "/images/home/programing/swift.png",
-  "/images/home/programing/python.png",
-  "/images/home/programing/c_sharp.png",
-];
-
-export const frameworksTechnicalStack = [
-  "/images/home/frameworks/nodejs.png",
-  "/images/home/frameworks/nextjs.png",
-  "/images/home/frameworks/nestjs.png",
-  "/images/home/frameworks/adonis.png",
-  "/images/home/frameworks/reactjs.png",
-  "/images/home/frameworks/spring.png",
-  "/images/home/frameworks/vuejs.png",
-  "/images/home/frameworks/kafka.png",
-  "/images/home/frameworks/redux.png",
-  "/images/home/frameworks/angular.png",
-  "/images/home/frameworks/unreal.png",
-  "/images/home/frameworks/unity.png",
-  "/images/home/frameworks/flutter.png",
-  "/images/home/frameworks/react_native.png",
-];
-
-export const databaseTechnicalStack = [
-  "/images/home/database/postgre_sql.png",
-  "/images/home/database/click_house.png",
-  "/images/home/database/couchbase.png",
-  "/images/home/database/mysql.png",
-  "/images/home/database/sql_server.png",
-  "/images/home/database/oracle.png",
-];
-
-export const cloudTechnicalStack = [
-  "/images/home/cloud/amazon.png",
-  "/images/home/cloud/google_cloud.png",
-  "/images/home/cloud/jenkins.png",
-  "/images/home/cloud/docker.png",
-  "/images/home/cloud/kubernetes.png",
-  "/images/home/cloud/netlify.png",
-  "/images/home/cloud/vercel.png",
-  "/images/home/cloud/github_actions.png",
-];
-
-export const chainPartners = [
-  "/images/home/partners/binance.png",
-  "/images/home/partners/polygon.png",
-  "/images/home/partners/solana.png",
-  "/images/home/partners/near.png",
-  "/images/home/partners/avalanche.png",
-  "/images/home/partners/aptos.png",
-  "/images/home/partners/telos.png",
-  "/images/home/partners/arbitrum.png",
-];
-
-export const technicalPartners = [
-  "/images/home/partners/filecoin.png",
-  "/images/home/partners/amazon.png",
-  "/images/home/partners/certik.png",
-  "/images/home/partners/consensys.png",
-  "/images/home/partners/nodereal.png",
-];
-
-export const businessPartners = [
-  "/images/home/partners/bybit.png",
-  "/images/home/partners/gamefi.png",
-  "/images/home/partners/dao_maker.png",
-  "/images/home/partners/avocado.png",
-  "/images/home/partners/ygg_sea.png",
-  "/images/home/partners/salad.png",
-  "/images/home/partners/funtap.png",
-  "/images/home/partners/redkite.png",
-  "/images/home/partners/desports.png",
-  "/images/home/partners/icandy.png",
-  "/images/home/partners/topebox.png",
-  "/images/home/partners/dvision.png",
-  "/images/home/partners/bitkeep.png",
-  "/images/home/partners/alpha_lab.png",
-];
-
-export const mediaPartners = [
-  "/images/home/partners/coin_market_cap.png",
-  "/images/home/partners/m_6.png",
-  "/images/home/partners/crypto_banter.png",
-  "/images/home/partners/altcoin_buzz.png",
-  "/images/home/partners/r.png",
-  "/images/home/partners/crypto_differ.png",
-  "/images/home/partners/satoshi_club.png",
-  "/images/home/partners/top_7_ico.png",
-  "/images/home/partners/hg_ventures.png",
-];
-
-export const listPartners = [
-  {
-    title: "Chain Partners",
-    partners: chainPartners,
+    img: "/images/home/why_choose_3.png",
+    title: "Global Know-how",
+    content:
+      "Our rich insights of international markets and understanding of cultural integration help our staffs always strive to bring localized knowledge in every step of the entire process.",
   },
   {
-    title: "TECHNICAL PARTNERS",
-    partners: technicalPartners,
+    img: "/images/home/why_choose_1.png",
+    title: "Seamless Support & Communication",
+    content:
+      "With our global presence and staffs highly proficient in English and other foreign languages, we can not only understand your request but also can help you complete your idea and turn in into real products.",
   },
   {
-    title: "Business partners",
-    partners: businessPartners,
+    img: "/images/home/why_choose_4.png",
+    title: "Experienced in ITO industry",
+    content:
+      "Our peersonnel with over 15 years of expeerience in the ITO industry have been providing a wide range of comprehensive  IT services, from consulting to implementing, meeting the highest level of requirements.",
   },
   {
-    title: "MEDIA PARTNERS",
-    partners: mediaPartners,
+    img: "/images/home/why_choose_5.png",
+    title: "Recommendations",
+    content:
+      "We value all our customers and always ensure they are happy with our service quality by asking for their regular feedbacks and recommendations. Therefore, we often keep the retention rate high and appreciate all customers' reference.",
   },
+];
+
+export const engineeringsData = [
+  {
+    title: "Backend",
+    contents: [
+      {
+        title: ".NET",
+        component: <DotnetIcon />,
+      },
+      {
+        title: "PHP",
+        component: <PhpIcon />,
+      },
+      {
+        title: "Laravel",
+        component: <LaravelIcon />,
+      },
+      {
+        title: "Java",
+        component: <JavaIcon />,
+      },
+      {
+        title: "Spring",
+        component: <SpringIcon />,
+      },
+      {
+        title: "Node JS",
+        component: <NodeJsIcon />,
+      },
+      {
+        title: "Python",
+        component: <PythonIcon />,
+      },
+      {
+        title: "Django",
+        component: <DjangoIcon />,
+      },
+    ],
+  },
+  {
+    title: "Frontend",
+    contents: [
+      {
+        title: "HTML",
+        component: <HtmlIcon />,
+      },
+      {
+        title: "Javascript",
+        component: <JavaScriptIcon />,
+      },
+      {
+        title: "CSS",
+        component: <CssIcon />,
+      },
+      {
+        title: "React",
+        component: <ReactIcon />,
+      },
+      {
+        title: "Angular",
+        component: <AngularIcon />,
+      },
+      {
+        title: "VueJS",
+        component: <VueJsIcon />,
+      },
+      {
+        title: "Bootstrap",
+        component: <BootstrapIcon />,
+      },
+      {
+        title: ".NET foundation",
+        component: <DotnetFoundationIcon />,
+      },
+    ],
+  },
+  {
+    title: "Mobile",
+    contents: [
+      {
+        title: "ObjectiveC",
+        component: <ObjectiveCIcon />,
+      },
+      {
+        title: "Swift",
+        component: <SwiftIcon />,
+      },
+      {
+        title: "Android",
+        component: <AndroidIcon />,
+      },
+      {
+        title: "Kotlin",
+        component: <KotlinIcon />,
+      },
+      {
+        title: "React Native",
+        component: <ReactNativeIcon />,
+      },
+      {
+        title: "Flutter",
+        component: <FlutterIcon />,
+      },
+    ],
+  },
+  {
+    title: "Infrastructure",
+    contents: [
+      {
+        title: "Azure",
+        component: <AzureIcon />,
+      },
+      {
+        title: "AWS",
+        component: <AwsIcon />,
+      },
+      {
+        title: "Digital Ocean",
+        component: <DigitalOceanIcon />,
+      },
+      {
+        title: "Google Cloud",
+        component: <GoogleCloudIcon />,
+      },
+    ],
+  },
+  {
+    title: "DevOps",
+    contents: [
+      {
+        title: "Kubernetes",
+        component: <KubernetesIcon />,
+      },
+      {
+        title: "Docker",
+        component: <DockerIcon />,
+      },
+      {
+        title: "Terraform",
+        component: <TerraformIcon />,
+      },
+    ],
+  },
+  {
+    title: "Testing",
+    contents: [
+      {
+        title: "Postman",
+        component: <PostmanIcon />,
+      },
+      {
+        title: "Appium",
+        component: <AppiumIcon />,
+      },
+      {
+        title: "Selenium",
+        component: <SeleniumIcon />,
+      },
+      {
+        title: "Jmeter",
+        component: <JmeterIcon />,
+      },
+      {
+        title: "Cypress",
+        component: <CypressIcon />,
+      },
+    ],
+  },
+  {
+    title: "New other technology",
+    contents: [
+      {
+        title: "Blockchain",
+        component: <BlockchainIcon />,
+      },
+      {
+        title: "AI",
+        component: <AIIcon />,
+      },
+    ],
+  },
+];
+
+export const deliverYourIdea = [
+  {
+    img: "/images/home/banking_system.png",
+    title: "A comprehensive open banking system with APIs",
+    flag: <VnFlagIcon />,
+    position: "United Kingdom",
+    tech: "Software",
+  },
+  {
+    img: "/images/home/learning_platform.png",
+    title: "Online language learning platform",
+    flag: <JpFlagIcon />,
+    position: "Indonesia",
+    tech: "Edtech",
+  },
+  {
+    img: "/images/home/booking_service.png",
+    title: "Transportation booking service",
+    flag: <UkFlagIcon />,
+    position: "Australia",
+    tech: "Logistics",
+  },
+];
+
+export const partnerAndClients = [
+  "/images/home/logo_mirai.png",
+  "/images/home/logo_gamefi.png",
+  "/images/home/logo_redkite.png",
+  "/images/home/logo_firebird.png",
+  "/images/home/logo_desports.png",
+  "/images/home/logo_cyradar.png",
+  "/images/home/logo_sotatek.png",
+  "/images/home/logo_ekoios.png",
 ];

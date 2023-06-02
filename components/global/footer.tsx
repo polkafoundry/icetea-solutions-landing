@@ -1,126 +1,126 @@
-import { useState } from "react";
-import { nextPath } from "@/constants";
-import clsx from "clsx";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
-import { ImageComponent } from "./image";
+import Image from "next/image";
+import { LogoTextWhite } from "../svg/logo-text";
+import { PositionIcon } from "../svg/position";
+import { LinkedInIcon } from "../svg/linked-in";
+import { FacebookIcon } from "../svg/facebook";
+import { YoutubeIcon } from "../svg/youtube";
 
-const email = "contact@icetea-software.com";
-
-interface Props {
-  isMail?: boolean;
-}
-
-const FooterComponent = ({ isMail }: Props) => {
-  const [emailInput, setEmailInput] = useState<string>("");
-
-  const handleChangeData = (value: string) => {
-    setEmailInput(value);
-  };
-
+const FooterComponent = () => {
   return (
-    <div>
-      {isMail && (
-        <div className="md:h-[100px] relative">
-          <div
-            className={clsx(
-              "consult_us_bg w-full max-w-[1320px] px-5 py-[60px] mx-auto text-center justify-between text-white items-center",
-              "md:absolute md:translate-x-[-50%] md:left-[50%] md:flex md:text-left xl:px-[80px]"
-            )}
-          >
-            <div className="max-w-[520px]">
-              <p className="text-[24px] xl:text-[40px] leading-[30px] xl:leading-[50px]">
-                Didn&apos;t find what you were looking for?
-              </p>
-              <p className="mt-[12px] opacity-[0.8]">
-                Contact us for a custom-made solution.
-              </p>
+    <footer className="relative mt-[120px] overflow-hidden text-white">
+      <div className="absolute w-full h-full top-0 left-0 z-0">
+        <Image
+          src="/images/footer_bg.png"
+          className="w-full h-full"
+          width={1920}
+          height={1225}
+          priority
+          alt="footer"
+        />
+      </div>
+      <div className="relative max-w-[1440px] px-5 mx-auto z-[1] pb-[90px]">
+        <div className="grid grid-cols-2 py-[240px] items-center">
+          <div>
+            <div className="text-[48px] leading-[70px] font-semibold text-white capitalize">
+              Do you want to turn your ideas into reality?
             </div>
-            <div className="hidden md:block max-w-[480px] w-full">
-              <div className="w-full flex border-[1.5px] p-[4px] border-white rounded-[40px] flex-nowrap">
-                <input
-                  type="email"
-                  className="w-full px-[20px] outline-none bg-transparent"
-                  placeholder="Enter your email address"
-                  onChange={(e) => handleChangeData(e?.target?.value)}
-                />
-                <Link href={`/${nextPath?.CONTACT}?email=${emailInput}`}>
-                  <button className="w-[160px] min-w-[160px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
-                    Consult with us
-                  </button>
-                </Link>
-              </div>
+            <div className="text-[16px] leading-[23px] text-white mt-5">
+              We’re here to help you innovate with success. Our experts will
+              conduct an in-depth analysis of your business model and industry
+              to advise on implementing the most optimal technology solutions.
             </div>
-            <div className="w-full md:hidden mt-10">
-              <input
-                type="email"
-                className="w-full h-[64px] px-[20px] text-[18px] outline-none bg-transparent border-[1.5px] p-[4px] border-white rounded-[40px]"
-                placeholder="Enter your email address"
-                onChange={(e) => handleChangeData(e?.target?.value)}
-              />
-              <Link href={`/${nextPath?.CONTACT}?email=${emailInput}`}>
-                <button className="w-full h-[64px] min-w-[160px] text-[18px] mt-[12px] px-[20px] py-[10px] bg-white rounded-[40px] text-black">
-                  Consult with us
-                </button>
-              </Link>
-            </div>
+          </div>
+          <div className="text-center">
+            <button className="btn-fill-white px-[30px] py-2">
+              Contact Us
+            </button>
           </div>
         </div>
-      )}
-      <div className="bg-[#111239]">
-        <div
-          className={clsx(
-            "footer_bg",
-            isMail ? "pt-[40px] md:pt-[170px]" : "pt-[50px]"
-          )}
-        >
-          <div className="w-full md:flex justify-between items-center max-w-[1240px] px-5 text-white mx-auto">
-            <div className="text-left">
-              <Link href="/">
-                <ImageComponent
-                  src="/images/logo.svg"
-                  className="w-[193px] md:w-[175px] h-[88px] md:h-[80px] md:mx-0"
-                  alt="logo"
-                />
-              </Link>
-              <p className="mt-5 max-w-[270px] md:max-w-full xl:mt-4 text-[14px] xl:text-[16px]">
-                11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
-              </p>
-              <p className="mt-2 text-[14px] xl:text-[16px]">
-                +84 246 658 5248
-              </p>
-              <Link href={`mailto:${email}`}>
-                <button className="button_gradient_purple_blue text-white flex items-center gap-[10px] mt-[12px] px-[20px] py-[10px] mx-auto md:mx-0 hover:scale-110 duration-500">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#57BAFF] to-[#907CFE]">
-                    {email}
-                  </span>
-                  <FaArrowRight fontSize={"14px"} color={"#00C7F4"} />
-                </button>
-              </Link>
+        <div className="grid grid-cols-2">
+          <div className="pr-[190px]">
+            <LogoTextWhite />
+            <div className="mt-6 text-[24px] leading-[35px] font-semibold text-white capitalize">
+              Deliver bespoke solutions with expertise
             </div>
-            <div className="flex md:w-1/2 justify-between items-center">
-              <div className="opacity-[0.8] mt-3">
-                <p className="hover:scale-110 duration-500 text-[14px] md:text-[16px]">
-                  <Link href={`/${nextPath.PORTFOLIO}`}>Our Portfolio</Link>
-                </p>
-                <p className="mt-[12px] hover:scale-110 duration-500 text-[14px] md:text-[16px]">
-                  <Link href={`/${nextPath.CONTACT}`}>Contact Us</Link>
-                </p>
-              </div>
-              <ImageComponent
-                src="/images/mail.png"
-                className="w-[160px] xl:w-[266px] h-[160px] xl:h-[300px]"
-                alt="mail"
-              />
+            <div className="text-[14px] leading-[23px] text-white mt-3">
+              We offer IT experts who bring data-driven and innovative digital
+              transformation approaches to our clients. Our skills and
+              experience in Software Development have enabled sustainable growth
+              for enterprises of all sizes.
+            </div>
+            <div className="flex gap-2 items-center mt-9 text-white text-[23px] leading-[30px] font-bold">
+              <PositionIcon />
+              Ha Noi
+            </div>
+            <div className="mt-1 text-[18px] leading-[28px] font-semibold text-white">
+              +84 246 658 5248
+            </div>
+            <div className="w-full h-[1px] bg-white mt-[10px]" />
+            <div className="mt-4 text-[16px] leading-[26px] text-white">
+              11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
+              <br />
+              contact@icetea-software.com
             </div>
           </div>
-          <div className="w-full max-w-[1280px] mx-auto h-[1px] mt-5 bg-white opacity-[0.1]" />
-          <div className="py-[12px] text-center text-[14px] text-white">
-            Copyright © 2023, Icetea Software. All rights reserved.
+          <div>
+            <div className="grid grid-cols-2 gap-2 justify-between text-white">
+              <div>
+                <div className="text-[24px] leading-[35px] font-semibold mb-6">
+                  About us
+                </div>
+                <div className="text-[16px] leading-[23px] mb-3">
+                  Who we are
+                </div>
+                <div className="text-[16px] leading-[23px] mb-3">Adward</div>
+                <div className="text-[16px] leading-[23px] mb-3">
+                  Leadership
+                </div>
+                <div className="text-[16px] leading-[23px]">Contact</div>
+              </div>
+              <div>
+                <div className="text-[24px] leading-[35px] font-semibold mb-6">
+                  Services
+                </div>
+                <div className="text-[16px] leading-[23px] mb-3">
+                  Offshore Development
+                </div>
+                <div className="text-[16px] leading-[23px] mb-3">
+                  Salesforce Development
+                </div>
+                <div className="text-[16px] leading-[23px]">
+                  Product and Service
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-between items-center mt-[63px]">
+              <div>Get in touch</div>
+              <div className="flex gap-3 items-center">
+                <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
+                  <LinkedInIcon />
+                </div>
+                <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
+                  <FacebookIcon />
+                </div>
+                <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
+                  <YoutubeIcon />
+                </div>
+              </div>
+            </div>
+            <div className="mt-4">
+              <div className="flex px-[10px] py-2 bg-white rounded-[60px]">
+                <input
+                  className="w-full px-3 outline-none border-none text-black"
+                  placeholder="Enter your email Address"
+                />
+                <button className="btn-fill-gradient px-8 py-2 font-semibold">
+                  Subscribe
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

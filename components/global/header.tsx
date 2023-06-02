@@ -1,10 +1,11 @@
-import { nextPath } from "@/constants";
+import { navItems, nextPath } from "@/constants";
 import clsx from "clsx";
 import Link from "next/link";
 import { ImageComponent } from "./image";
 import { useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { useRouter } from "next/router";
+import { LogoText } from "../svg/logo-text";
 
 const HeaderComponent = () => {
   const router = useRouter();
@@ -13,113 +14,31 @@ const HeaderComponent = () => {
   const handleShow = () => setIsShow(!isShow);
 
   return (
-    <header
-      className={clsx(
-        "flex justify-between items-center px-[20px] py-[14px] text-white",
-        "md:px-[40px]",
-        "xl:px-[100px]"
-      )}
-    >
-      <Link href="/">
-        <ImageComponent
-          src="/images/logo.svg"
-          className="w-[96px] md:w-[130px] h-[44px] md:h-[60px]"
-          alt="logo"
-        />
-      </Link>
-      <div className="hidden gap-[10px] md:flex">
-        <Link href={`/${nextPath.PORTFOLIO}`}>
-          <button
-            className={clsx(
-              "px-[30px] py-[10px] font-[600] rounded-[40px]",
-              router?.pathname === `/${nextPath.PORTFOLIO}`
-                ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
-                : "hover:scale-110 duration-500"
-            )}
-          >
-            Portfolio
-          </button>
-        </Link>
-        <Link href={`/${nextPath.CONTACT}`}>
-          <button
-            className={clsx(
-              "px-[30px] py-[10px] font-[600] rounded-[40px]",
-              router?.pathname === `/${nextPath.CONTACT}`
-                ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
-                : "hover:scale-110 duration-500"
-            )}
-          >
-            Contact Us
-          </button>
-        </Link>
-      </div>
-      <div className="md:hidden" onClick={() => handleShow()}>
-        {isShow ? (
-          <FaRegTimesCircle size={"26px"} />
-        ) : (
-          <ImageComponent
-            className="w-[25px] h-[16px]"
-            src="/images/menu.svg"
-            alt="menu"
-          />
-        )}
-      </div>
-      {isShow && (
-        <div className="mobile_menu_bg flex flex-col md:hidden fixed w-[100vw] h-[100vh] z-10 top-0 left-0">
-          <div className="flex max-h-[70px] justify-between items-center px-[20px] py-[14px]">
-            <Link href="/">
-              <ImageComponent
-                src="/images/logo.svg"
-                className="w-[96px] h-[44px]"
-                alt="logo"
-              />
-            </Link>
-            <div onClick={() => handleShow()}>
-              <FaRegTimesCircle size={"26px"} />
-            </div>
-          </div>
-          {/* <div></div> */}
-          <div className="h-fit">
-            <div className="text-center mt-[120px]">
-              <Link href={`/${nextPath.PORTFOLIO}`} className="text-[20px]">
-                <button
-                  className={clsx(
-                    "px-[60px] py-[10px] font-[600] rounded-[40px] text-[18px]",
-                    router?.pathname === `/${nextPath.PORTFOLIO}`
-                      ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
-                      : "hover:scale-110 duration-500"
-                  )}
-                >
-                  Portfolio
-                </button>
-              </Link>
-            </div>
-            <div className="text-center mt-8">
-              <Link href={`/${nextPath.CONTACT}`}>
-                <button
-                  className={clsx(
-                    "px-[60px] py-[10px] font-[600] rounded-[40px] text-[18px]",
-                    router?.pathname === `/${nextPath.CONTACT}`
-                      ? "bg-gradient-to-bl hover:bg-gradient-to-br from-[#18C8FF] to-[#933FFE]"
-                      : "hover:scale-110 duration-500"
-                  )}
-                >
-                  Contact Us
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex gap-[12px] items-center justify-center mt-auto pb-[16px]">
-            Powered by
-            <ImageComponent
-              className="w-[150px] h-[28px]"
-              src="/images/home/icetea_logo.svg"
-              alt="logo"
-            />
+    <header className="h-[73px]">
+      <div className="fixed w-full top-0 left-0 z-50 py-[14px] text-white bg-white">
+        <div className="px-5 max-w-[1440px] mx-auto flex justify-between items-center">
+          <Link href="/">
+            <LogoText />
+          </Link>
+          <div className="flex gap-5 items-center">
+            {navItems?.map((navItem: any, index: number) => {
+              return (
+                <Link key={index} href={`/${navItem?.value}`}>
+                  <div>
+                    <div className="text-[16px] leading-[22px] text-[#0030C0]">
+                      {navItem?.title}
+                    </div>
+                    <div></div>
+                  </div>
+                </Link>
+              );
+            })}
+            <button className="btn-fill-gradient px-[18px] py-[10px] border border-[#0083FF]">
+              Contact Us
+            </button>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 };

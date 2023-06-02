@@ -3,94 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Be Vietnam";
-  font-weight: 200;
-  src: url("/font/BeVietnam-Thin.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 200;
-  font-style: italic;
-  src: url("/font/BeVietnam-ThinItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 300;
-  src: url("/font/BeVietnam-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 300;
-  font-style: italic;
-  src: url("/font/BeVietnam-LightItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 400;
-  src: url("/font/BeVietnam-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 400;
-  font-style: italic;
-  src: url("/font/BeVietnam-Italic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 500;
-  src: url("/font/BeVietnam-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 500;
-  font-style: italic;
-  src: url("/font/BeVietnam-MediumItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 600;
-  src: url("/font/BeVietnam-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 600;
-  font-style: italic;
-  src: url("/font/BeVietnam-SemiBoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 700;
-  src: url("/font/BeVietnam-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 700;
-  font-style: italic;
-  src: url("/font/BeVietnam-BoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 900;
-  src: url("/font/BeVietnam-ExtraBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Be Vietnam";
-  font-weight: 900;
-  font-style: italic;
-  src: url("/font/BeVietnam-ExtraBoldItalic.woff") format("woff");
+  font-family: "VL Code Next Variable";
+  src: url("/font/VLCODENEXT_VARIABLE.ttf") format("truetype");
 }
 
 * {
@@ -98,7 +12,7 @@
   padding: 0;
   margin: 0;
   font-weight: 400;
-  font-family: "Be Vietnam", sans-serif;
+  font-family: "VL Code Next Variable", sans-serif;
   font-size: 16px;
 }
 
@@ -108,167 +22,47 @@ body {
   overflow-x: hidden;
 }
 
-.home-top-banner {
-  background-image: url("/images/home/top_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+.btn-fill-gradient {
+  background: linear-gradient(180deg, #c1e1ff 0%, #0083ff 50%, #01289d 100%);
+  border-radius: 24px;
+  duration: 2s linear;
 
-.home-bottom-banner {
-  background-image: url("/images/home/under_top_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.white-label-bg {
-  background-image: url("/images/home/white_label_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.gamefi_market_bg {
-  background-image: url("/images/home/gamefi_market.png");
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.desport_bg {
-  background-image: url("/images/home/desport_bg.png");
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.redkite-chain-bg {
-  background-image: url("/images/home/red_kite_launchpad.png");
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.powered-bg {
-  background-image: url("/images/home/powered_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.consult_us_bg {
-  background-image: url("/images/consult_us_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.footer_bg {
-  background-image: url("/images/footer_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.portfolio_bg {
-  background-image: url("/images/portfolio/banner_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.token_airdrop_bg {
-  background-image: url("/images/home/token_airdrop.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.front_running_bg {
-  background-image: url("/images/home/front_running.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.mobile_menu_bg {
-  background-image: url("/images/mobile_menu_bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.button_gradient_purple_blue {
-  position: relative;
-}
-
-.button_gradient_purple_blue::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50px;
-  padding: 1px;
-  background: linear-gradient(200deg, #18c8ff, #933ffe);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-
-select:invalid,
-select[disabled] {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.select-wrap::after {
-  margin-left: -3em;
-  font-size: 0.75em;
-  pointer-events: none;
-  content: url("/images/arrow_down.svg");
-}
-
-.background-modal {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.tick_done_bg {
-  background: url("/images/contact/tick_border.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  mix-blend-mode: lighten;
-}
-
-.bg-card {
-  position: relative;
-}
-
-.bg-card:hover .bg-hover-card {
-  display: flex;
-}
-
-.bg-hover-card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 20;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.bg-hover-card-big {
-  display: none !important;
-}
-
-@media (max-width: 767px) {
-  .home-top-banner {
-    background-image: url("/images/home/top_bg_mobile.png");
+  &:hover {
+    transform: scale(1.04);
   }
+}
 
-  .gamefi_market_bg,
-  .redkite-chain-bg,
-  .desport_bg {
-    background: #050512;
-  }
+.btn-fill-white {
+  background: #ffffff;
+  border-radius: 36px;
+  color: #0030c0;
+  duration: 2s linear;
 
-  .powered-bg {
-    background-image: url("/images/home/powered_bg_mobile.png");
+  &:hover {
+    transform: scale(1.04);
   }
+}
 
-  .bg-card:hover .bg-hover-card-big {
-    display: flex !important;
+.btn-line-gradient {
+  border: 1px solid #0030c0;
+  border-radius: 36px;
+  color: #0030c0;
+
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      #61b2ff 0.49%,
+      #0083ff 21.99%,
+      #01289d 100%
+    );
+    color: #ffffff;
   }
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.our-value {
+  padding-left: calc((100vw - 1400px) / 2);
 }
