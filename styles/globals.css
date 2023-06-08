@@ -23,7 +23,7 @@ body {
 }
 
 .btn-fill-gradient {
-  background: linear-gradient(180deg, #c1e1ff 0%, #0083ff 50%, #01289d 100%);
+  background: linear-gradient(180deg, #61b2ff 0%, #0083ff 50%, #01289d 100%);
   border-radius: 24px;
   duration: 2s linear;
 
@@ -65,4 +65,71 @@ body {
 
 .our-value {
   padding-left: calc((100vw - 1400px) / 2);
+}
+
+.working-process-content-bg-left {
+  background-image: url("/images/home/working_process_bg_left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.working-process-content-bg-right {
+  background-image: url("/images/home/working_process_bg_right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-position: calc(100% - 12px) center !important;
+  background: url("data:image/svg+xml,<svg width='25px' height='24px' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6.38477 9L12.3848 15L18.3848 9' stroke='blue' stroke-width='2px' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+    no-repeat;
+  padding: 8px 32px 8px 16px;
+}
+/* To remove the arrow of select element in IE */
+select1::-ms-expand {
+  display: none;
+}
+
+input[type="number"] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  font: inherit;
+  color: currentColor;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.2);
+  border-radius: 5px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "✔";
+  width: 16px;
+  height: 22px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  border: 1px solid rgba($color: #000000, $alpha: 1);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(0.7);
 }

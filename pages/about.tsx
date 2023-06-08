@@ -14,11 +14,12 @@ const AboutUs = () => {
             width={2880}
             height={356}
             priority
+            loading="eager"
             alt="multi block"
           />
         </div>
         <div className="relative z-[1] max-w-[754px] mx-auto pt-[50px] text-white">
-          <h1 className="text-[60px] leading-[60px] font-semibold capitalize">
+          <h1 className="text-[60px] leading-[60px] font-semibold capitalize text-center">
             Your Trusted Software Development Partner
           </h1>
           <div className="mt-3 text-[16px] leading-[23px] text-center">

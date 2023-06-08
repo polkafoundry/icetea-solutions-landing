@@ -38,7 +38,7 @@ const ITSStory = () => {
           Icetea Software&apos;s lean process and working model are
           professional, speedy, and suitable for every need. With Icetea
           Software, businesses can trust that we are working with a team of
-          experts dedicated to our project's success.
+          experts dedicated to our project&apos;s success.
           <br />
           <br />
           Our Mission is to boost up customers’ business growth with Agile

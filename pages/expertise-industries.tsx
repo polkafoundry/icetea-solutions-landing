@@ -17,11 +17,12 @@ const ExpertiseIndustries = () => {
             width={2880}
             height={356}
             priority
+            loading="eager"
             alt="multi block"
           />
         </div>
         <div className="relative z-[1] max-w-[754px] mx-auto pt-[50px] text-white">
-          <h1 className="text-[60px] leading-[87px] font-semibold capitalize">
+          <h1 className="text-[60px] leading-[87px] font-semibold capitalize text-center">
             Expertise and Industries
           </h1>
           <div className="text-[16px] leading-[23px] text-center">

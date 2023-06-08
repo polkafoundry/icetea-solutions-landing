@@ -4,6 +4,7 @@ import { PositionIcon } from "../svg/position";
 import { LinkedInIcon } from "../svg/linked-in";
 import { FacebookIcon } from "../svg/facebook";
 import { YoutubeIcon } from "../svg/youtube";
+import Link from "next/link";
 
 const FooterComponent = () => {
   return (
@@ -38,7 +39,9 @@ const FooterComponent = () => {
         </div>
         <div className="grid grid-cols-2">
           <div className="pr-[190px]">
-            <LogoTextWhite />
+            <Link href="/">
+              <LogoTextWhite />
+            </Link>
             <div className="mt-6 text-[24px] leading-[35px] font-semibold text-white capitalize">
               Deliver bespoke solutions with expertise
             </div>
