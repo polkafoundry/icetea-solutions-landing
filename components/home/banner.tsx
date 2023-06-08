@@ -15,17 +15,17 @@ const BannerHome = () => {
           alt="banner background"
         />
       </div>
-      <div className="relative z-[1] text-white pt-[123px] text-center px-5 max-w-[1440px] mx-auto">
-        <h1 className="text-[80px] leading-[90px] font-semibold uppercase">
+      <div className="relative z-[1] text-white pt-[100px] xl:pt-[123px] text-center px-5 max-w-[1040px] xl:max-w-[1440px] mx-auto">
+        <h1 className="text-[50px] leading-[60px] xl:text-[80px] xl:leading-[90px] font-semibold uppercase">
           Deliver bespoke solutions
         </h1>
-        <h2 className="text-[70px] leading-[80px] uppercase font-[300]">
+        <h2 className="text-[40px] xl:text-[70px] leading-[50px] xl:leading-[80px] uppercase font-[300]">
           with expertise
         </h2>
-        <button className="btn-fill-white text-[24px] leading-[31px] font-semibold px-6 py-2 mt-5 uppercase">
+        <button className="btn-fill-white text-[16px] leading-[23px] xl:text-[24px] xl:leading-[31px] font-semibold px-6 py-2 mt-5 uppercase">
           start your idea now
         </button>
-        <div className="mt-[123px] grid grid-cols-4 gap-5">
+        <div className="mt-[50px] xl:mt-[123px] grid grid-cols-4 gap-5">
           {homeDevelopments?.map((item: any, index: number) => {
             return (
               <div
@@ -34,14 +34,14 @@ const BannerHome = () => {
               >
                 <div
                   className={clsx(
-                    "px-1 h-[80px] flex items-center justify-center bg-white rounded-t-[24px]",
-                    "text-[#01168D] uppercase text-[20px] leading-[28px] font-semibold"
+                    "px-1 h-[60px] xl:h-[80px] flex items-center justify-center bg-white rounded-t-[24px]",
+                    "text-[#01168D] uppercase text-[16px] leading-[23px] xl:text-[20px] xl:leading-[28px] font-semibold"
                   )}
                 >
                   {item?.title}
                 </div>
-                <div className="py-5 px-2">
-                  <ul className="list-disc text-left pl-5">
+                <div className="py-2 xl:py-5 px-2">
+                  <ul className="list-disc text-left pl-5 xl:text-[16px] text-[14px]">
                     {item?.contents?.map((content: any, idx: number) => {
                       return (
                         <li key={idx} className="mb-2">

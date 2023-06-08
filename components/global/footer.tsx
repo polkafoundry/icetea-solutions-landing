@@ -5,10 +5,11 @@ import { LinkedInIcon } from "../svg/linked-in";
 import { FacebookIcon } from "../svg/facebook";
 import { YoutubeIcon } from "../svg/youtube";
 import Link from "next/link";
+import { pathname } from "@/constants";
 
 const FooterComponent = () => {
   return (
-    <footer className="relative mt-[120px] overflow-hidden text-white">
+    <footer className="relative mt-[60px] xl:mt-[120px] overflow-hidden text-white">
       <div className="absolute w-full h-full top-0 left-0 z-0">
         <Image
           src="/images/footer_bg.png"
@@ -19,10 +20,10 @@ const FooterComponent = () => {
           alt="footer"
         />
       </div>
-      <div className="relative max-w-[1440px] px-5 mx-auto z-[1] pb-[90px]">
-        <div className="grid grid-cols-2 py-[240px] items-center">
+      <div className="relative max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto z-[1] pb-[90px]">
+        <div className="grid grid-cols-2 py-[120px] xl:py-[240px] items-center">
           <div>
-            <div className="text-[48px] leading-[70px] font-semibold text-white capitalize">
+            <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] font-semibold text-white capitalize">
               Do you want to turn your ideas into reality?
             </div>
             <div className="text-[16px] leading-[23px] text-white mt-5">
@@ -32,13 +33,15 @@ const FooterComponent = () => {
             </div>
           </div>
           <div className="text-center">
-            <button className="btn-fill-white px-[30px] py-2">
-              Contact Us
-            </button>
+            <Link href={`/${pathname?.CONTACT}`}>
+              <button className="btn-fill-white px-[30px] py-2">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2">
-          <div className="pr-[190px]">
+        <div className="grid grid-cols-2 gap-5 xl:gap-0">
+          <div className="xl:pr-[190px]">
             <Link href="/">
               <LogoTextWhite />
             </Link>

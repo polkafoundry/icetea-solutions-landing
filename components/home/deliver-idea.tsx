@@ -6,11 +6,11 @@ import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
 
 const DeliverIdea = () => {
   return (
-    <div className="pt-[120px]">
-      <div className="text-[48px] leading-[70px] text-[#0030C0] text-center font-semibold capitalize">
+    <div className="pt-[60px] xl:pt-[120px]">
+      <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-[#0030C0] text-center font-semibold capitalize">
         Deliver your ideas to tech life
       </div>
-      <div className="max-w-[1440px] px-5 mx-auto">
+      <div className="max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto">
         <Swiper
           slidesPerView={3}
           spaceBetween={48}
@@ -23,29 +23,29 @@ const DeliverIdea = () => {
           {deliverYourIdea?.map((value: any, index: number) => {
             return (
               <SwiperSlide key={index}>
-                <div className="relative pt-[60px] h-full">
+                <div className="relative pt-[30px] xl:pt-[60px] h-full">
                   <Image
                     src={value?.img}
-                    className="w-full h-[333px]"
+                    className="w-full hl-[200px] xl:h-[333px]"
                     width={657}
                     height={501}
                     alt="icon"
                   />
                   <div
-                    className="px-[30px] pb-[30px] pt-6"
+                    className="p-5 xl:px-[30px] xl:pb-[30px] xl:pt-6"
                     style={{ boxShadow: "0px 4px 32px rgba(0, 0, 0, 0.08)" }}
                   >
-                    <div className="text-[20px] leading-[30px] text-[#0030C0] font-semibold capitalize">
+                    <div className="xl:text-[20px] text-[18px] xl:leading-[30px] text-[#0030C0] font-semibold capitalize">
                       {value?.title}
                     </div>
-                    <div className="flex gap-1 justify-between items-center mt-6">
+                    <div className="flex gap-1 justify-between items-center mt-3 xl:mt-6">
                       <div className="flex gap-1 items-center">
                         {value?.flag}
-                        <div>{value?.position}</div>
+                        <div className="text-[12px] xl:text-[16px]">{value?.position}</div>
                       </div>
                       <div className="flex gap-1 items-center">
                         <FeatherIcon />
-                        <div>{value?.tech}</div>
+                        <div className="text-[12px] xl:text-[16px]">{value?.tech}</div>
                       </div>
                     </div>
                   </div>
