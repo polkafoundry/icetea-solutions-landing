@@ -5,14 +5,22 @@ import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
 
 const CaseStudy = () => {
   return (
-    <div>
-      <div className="text-[48px] leading-[70px] text-center text-[#01289D] font-semibold mt-[120px] capitalize">
+    <div className="px-5">
+      <div className="text-[35px] xl:text-[48px] xl:leading-[70px] text-center text-[#01289D] font-semibold mt-[120px] capitalize">
         Our case study
       </div>
       <div className="mt-10 max-w-[1400px] mx-auto">
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
           loop={true}
           pagination={{
             clickable: true,

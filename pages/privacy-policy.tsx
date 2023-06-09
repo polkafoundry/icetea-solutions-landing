@@ -1,15 +1,15 @@
 const PrivacyPolicy = () => {
   return (
-    <div className="pt-12 max-w-[1440px] px-5 mx-auto text-[#0030C0]">
-      <div className="text-[48px] leading-[70px] font-semibold">
+    <div className="pt-6 xl:pt-12 max-w-[1440px] px-5 mx-auto text-[#0030C0]">
+      <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold">
         Privacy Policy
       </div>
-      <div className="mt-12 grid gap-12">
+      <div className="mt-5 xl:mt-12 grid gap-5 xl:gap-12">
         <div>
-          <div className="text-[24px] leading-[30px] font-semibold">
+          <div className="text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold">
             I. Personal Information we may collect and process:
           </div>
-          <div className="text-[16px] leading-[32px] mt-3">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[32px] mt-3">
             You can assess or visit our website at any time without informing us
             who you are or providing us with any personal information. However,
             we may collect information at our websites in two ways: (1) directly
@@ -30,16 +30,16 @@ const PrivacyPolicy = () => {
           </div>
         </div>
         <div>
-          <div className="text-[24px] leading-[30px] font-semibold">
+          <div className="text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold">
             II. Use of collected information:
           </div>
-          <div className="text-[16px] leading-[32px] mt-3">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[32px] mt-3">
             We use personal data to provide you with information you request,
             process online job applications, and for other purposes which we
             would describe to you at the point where it is collected or which
             will be evident to you. For example:
           </div>
-          <ul className="text-[16px] leading-[32px] list-disc pl-5">
+          <ul className="text-[14px] xl:text-[16px] xl:leading-[32px] list-disc pl-5">
             <li>
               To further fulfill your requirements on products and services
             </li>
@@ -58,11 +58,11 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div>
-          <div className="text-[24px] leading-[30px] font-semibold">
+          <div className="text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold">
             III. Data recipients, transfer, and disclosure of personal
             information:
           </div>
-          <div className="text-[16px] leading-[32px] mt-3">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[32px] mt-3">
             We do not share your personal information with third parties without
             your prior permission. We will seek your consent before using or
             sharing personal information for any purpose beyond the requirement
@@ -83,10 +83,10 @@ const PrivacyPolicy = () => {
           </div>
         </div>
         <div>
-          <div className="text-[24px] leading-[30px] font-semibold">
+          <div className="text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold">
             IV. Cookies policy
           </div>
-          <div className="text-[16px] leading-[32px] mt-3">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[32px] mt-3">
             Like many websites, when you access our websites, we will use
             “website assessment diary”- a cookie technology to collect
             additional website usage data. A cookie is a small data file that we
@@ -111,10 +111,10 @@ const PrivacyPolicy = () => {
           </div>
         </div>
         <div>
-          <div className="text-[24px] leading-[30px] font-semibold">
+          <div className="text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold">
             V. Data Security
           </div>
-          <div className="text-[16px] leading-[32px] mt-3">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[32px] mt-3">
             Icetea Software commits to secure your personal information with
             securities measures in place. The measures will help protect data
             from the misuse, loss, leakage, and/or alteration of information.
@@ -134,10 +134,10 @@ const PrivacyPolicy = () => {
           </div>
         </div>
         <div>
-          <div className="text-[24px] leading-[30px] font-semibold">
+          <div className="text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold">
             VI. Links to other websites
           </div>
-          <div className="text-[16px] leading-[32px] mt-3">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[32px] mt-3">
             This site contains links to other websites, but they are neither
             Icetea Software’s websites nor under the control of Icetea Software.
             Icetea Software is not responsible for the privacy practices or the
@@ -149,10 +149,10 @@ const PrivacyPolicy = () => {
           </div>
         </div>
         <div>
-          <div className="text-[24px] leading-[30px] font-semibold">
+          <div className="text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold">
             VII. Changes on Privacy Statements
           </div>
-          <div className="text-[16px] leading-[32px] mt-3">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[32px] mt-3">
             Icetea Software reserves the rights to change, modify, add or remove
             in whole or in part this Privacy Statement at its sole discretion,
             at any time. Therefore, you are responsible for regularly reviewing

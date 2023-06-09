@@ -37,22 +37,22 @@ const TechnicalStack = () => {
   }, [currentTechnical]);
 
   return (
-    <div className="mt-[120px] py-12 bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D]">
+    <div className="mt-[60px] xl:mt-[120px] py-6 xl:py-12 bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D]">
       <div className="max-w-[1440px] px-5 mx-auto text-white">
-        <div className="text-[60px] leading-[60px] text-center font-semibold">
+        <div className="text-[40px] xl:text-[60px] xl:leading-[60px] text-center font-semibold">
           Technical Stacks
         </div>
-        <div className="max-w-[606px] mx-auto text-center text-[16px] leading-[23px]">
+        <div className="max-w-[606px] mx-auto text-center text-[14px] xl:text-[16px] xl:leading-[23px]">
           An elite engineering team and the latest technologies joined with
           agile and modern business practices.
         </div>
-        <div className="flex gap-[6px] flex-wrap justify-between mt-5 md:mt-[50px]">
+        <div className="flex gap-[6px] flex-wrap justify-center xl:justify-between mt-3 xl:mt-[50px]">
           {listTechnicalStack?.map((item, index) => {
             return (
               <button
                 key={index}
                 className={clsx(
-                  "px-[38px] py-3 bg-white rounded-[60px] text-[#0030C0] text-[20px] leading-[29px] cursor-pointer font-semibold capitalize",
+                  "xl:px-[38px] px-5 py-2 xl:py-3 bg-white rounded-[60px] text-[#0030C0] text-[14px] xl:text-[20px] xl:leading-[29px] cursor-pointer font-semibold capitalize",
                   item?.type === currentTechnical ? "" : "opacity-[0.5]"
                 )}
                 onClick={() => setCurrentTechnical(item?.type)}

@@ -18,7 +18,7 @@ const WebApp = () => {
       <WebAppSmallBanner />
       <OurEngineering />
       <DeliverIdea />
-      <div className="mt-[120px] max-w-[1400px] mx-auto">
+      <div className="mt-[120px] px-5 xl:px-0 max-w-[1400px] mx-auto">
         <GetQuote />
       </div>
     </div>

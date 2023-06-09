@@ -103,40 +103,39 @@ export const mainContentConsultingData = [
   {
     title: "BA (Business Analyst)",
     subTitle:
-      "In the project-based model (fixed-price software development), the client and the development vendor agree upon a fixed cost to deliver a project. This engagement model is compared",
+      "Throughout the project timeline, our main goal is to understand and specify customer’s pain-points, visualize for mutual understanding and design a structural solution to resolve all problems in a simplest and most optimized way possible. With the aid of our consulting, the benefits include:",
     img: "/images/home/BA.png",
     contents: [
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Using tools in order to manage the progress carefully.",
+      "Define problems and create a solution with the aim to covers all the customers’ issues.",
+      "Collaborate regularly with the customer to break down the solution into details.",
+      "Consult and produce a system that solve the goal and provide the best user experience.",
+      "Create and update project documents to save all the changes and updates.",
+      "Review, gather and elicit requirement fast and frequently to improve and keep the initial solution up-to-date .",
     ],
   },
   {
     title: "PQA (Process Quality Assurance)",
     subTitle:
-      "In the project-based model (fixed-price software development), the client and the development vendor agree upon a fixed cost to deliver a project. This engagement model is compared",
+      "As a ISTQB Platinum partner, we aim to help you maintain control over software delivery by streamlining your Quality Assurance workflows. The following services are provided:",
     img: "/images/home/PQA.png",
     contents: [
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Using tools in order to manage the progress carefully.",
+      "Designing a comprehensive and systematic Quality assurance process.",
+      "Reviewing & fine-tuning current Quality assurance practices to meet international standards.",
+      "Suggesting how to strategically reshape legacy & operation workflows.",
+      "Optimizing the cost of software quality assurance.",
+      "Training and examing ISTQB certification.",
     ],
   },
   {
     title: "Sofware Architecture",
     subTitle:
-      "In the project-based model (fixed-price software development), the client and the development vendor agree upon a fixed cost to deliver a project. This engagement model is compared",
+      "Our professionals conduct research and analysis to suggest the most suitable software solution and right technology. The scope of services can be:",
     img: "/images/home/SA.png",
     contents: [
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Comparing the market between America and Japan",
-      "Using tools in order to manage the progress carefully.",
+      "Consulting the best-matching architectural solutions and IT & infrastructure to meet business needs.",
+      "Analyzing the existing IT architecture & infrastructure to improve.",
+      "Recommending the right technology to scale or upgrade.",
+      "Offering dynamic methodologies & powerful tools to prevent the product from IT risks and errors or cyber security.",
     ],
   },
 ];

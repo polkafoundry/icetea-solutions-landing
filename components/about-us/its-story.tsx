@@ -3,12 +3,14 @@ import { ITSBox } from "../svg/about-us/its-box";
 const ITSStory = () => {
   return (
     <div className="mt-[120px] max-w-[1440px] px-5 mx-auto text-white">
-      <div className="bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D] px-[57px] pt-[34px] pb-[57px] rounded-[24px]">
-        <div className="flex gap-6 text-[48px] leading-[70px] font-semibold items-center">
-          <ITSBox />
+      <div className="bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D] p-5 lg:px-[57px] lg:pt-[34px] lg:pb-[57px] rounded-[24px]">
+        <div className="flex gap-6 text-[30px] lg:text-[38px] xl:text-[48px] xl:leading-[70px] font-semibold items-center">
+          <div className="min-w-[42px]">
+            <ITSBox />
+          </div>
           Icetea Software’s story
         </div>
-        <p className="mt-6 text-[20px] leading-[29px]">
+        <p className="mt-6 text-[16px] xl:text-[20px] xl:leading-[29px]">
           Icetea Software was officially established on March 3, 2023. According
           to Mr. Luong, the CEO of Icetea Software, our mission is to provide
           real value to our customers by delivering breakthrough technology

@@ -2,6 +2,7 @@ import { whyChooseContents } from "@/constants/home";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
+import clsx from "clsx";
 
 const WhyChooseUs = () => {
   return (
@@ -15,10 +16,17 @@ const WhyChooseUs = () => {
         dedicated talents and a rigorous process, we confidently provide
         international-standard IT services and solutions.
       </div>
-      <div className="max-w-[1000px] xl:max-w-[1576px] mx-auto mt-12">
+      <div className="max-w-[1000px] xl:max-w-[1576px] px-5 mx-auto mt-12">
         <div className="max-w-[1400px] mx-auto">
           <Swiper
-            slidesPerView={3}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
             spaceBetween={24}
             loop={true}
             pagination={{
@@ -39,11 +47,16 @@ const WhyChooseUs = () => {
                         alt="icon"
                       />
                     </div>
-                    <div className="pt-[60px] xl:pt-[85px] px-6 pb-10 border border-[#0083FF] rounded-[24px] h-full">
-                      <div className="xl:text-[24px] text-[20px] leading-[23px] xl:leading-[35px] text-[#0030C0] font-semibold">
+                    <div
+                      className={clsx(
+                        "pt-[60px] xl:pt-[85px] px-6 pb-10 border border-[#0083FF] rounded-[24px] h-full",
+                        "hover:bg-gradient-to-b from-[#C1E1FF] via-[#0083FF] to-[#01289D] group"
+                      )}
+                    >
+                      <div className="xl:text-[24px] text-[20px] leading-[23px] xl:leading-[35px] text-[#0030C0] group-hover:text-white font-semibold">
                         {value?.title}
                       </div>
-                      <div className="xl:text-[16px] text-[14px] xl:leading-[23px] text-[#0030C0] mt-1 xl:mt-3">
+                      <div className="xl:text-[16px] text-[14px] xl:leading-[23px] text-[#0030C0] group-hover:text-white mt-1 xl:mt-3 capitalize">
                         {value?.content}
                       </div>
                     </div>

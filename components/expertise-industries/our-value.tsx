@@ -6,13 +6,13 @@ import { ourValues } from "@/constants/expertise-industries";
 
 const OurValue = () => {
   return (
-    <div className="our-value relative mt-[120px]">
-      <div className="relative pl-[433px] pb-9">
-        <div className="absolute w-full bottom-0 left-0">
+    <div className="our-value relative mt-[60px] xl:mt-[120px]">
+      <div className="relative px-5 lg:pl-[300px] xl:pl-[433px] pb-3 xl:pb-9">
+        <div className="lg:absolute w-full bottom-0 left-0">
           <div></div>
-          <div className="relative flex h-[366px] border-l border-y border-[#0083FF] rounded-l-[24px] items-end overflow-hidden">
-            <div className="absolute w-[340px] h-[340px] top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-[#0083FF] rounded-full blur-[160px]" />
-            <div className="text-[48px] leading-[70px] text-[#0030C0] pl-[38px] pb-[29px] max-w-[413px] font-semibold">
+          <div className="relative lg:flex lg:h-[366px] lg:border-l lg:border-y border-[#0083FF] rounded-l-[24px] items-end overflow-hidden">
+            <div className="hidden lg:block absolute w-[340px] h-[340px] top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-[#0083FF] rounded-full blur-[160px]" />
+            <div className="text-[35px] xl:text-[48px] xl:leading-[70px] text-[#0030C0] lg:pl-[38px] pb-[29px] text-center lg:text-left lg:max-w-[413px] font-semibold">
               Our value propositions
             </div>
           </div>
@@ -25,7 +25,10 @@ const OurValue = () => {
         >
           {ourValues?.map((value: any, index: number) => {
             return (
-              <SwiperSlide key={index} style={{ width: "452px" }}>
+              <SwiperSlide
+                key={index}
+                style={{ width: "100%", maxWidth: "452px" }}
+              >
                 <div className="w-full">
                   <Image
                     src={value?.img}
@@ -42,11 +45,11 @@ const OurValue = () => {
                       "flex items-center justify-center text-white text-[18px] leading-[26px] font-semibold"
                     )}
                   >{`0${index + 1}`}</div>
-                  <div className="text-[24px] leading-[30px] text-[#0030C0] font-semibold">
+                  <div className="text-[20px] xl:text-[24px] xl:leading-[30px] text-[#0030C0] font-semibold">
                     {value?.title}
                   </div>
                 </div>
-                <ul className="text-[#0030C0] text-[16px] leading-[23px] pl-10 list-disc">
+                <ul className="text-[#0030C0] text-[14px] xl:text-[16px] xl:leading-[23px] pl-10 list-disc">
                   {value?.contents?.map((content: any, idx: number) => {
                     return (
                       <li key={idx} className="mt-2">

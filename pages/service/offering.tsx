@@ -12,7 +12,7 @@ import Image from "next/image";
 const Offering = () => {
   return (
     <div>
-      <div className="relative h-[310px]">
+      <div className="relative h-[310px] px-5">
         <div className="absolute w-full h-full top-0 left-0 z-0">
           <Image
             src="/images/home/multi_block_bg_big.png"
@@ -24,11 +24,11 @@ const Offering = () => {
             alt="multi block"
           />
         </div>
-        <div className="relative z-[1] max-w-[754px] mx-auto pt-[50px] text-white">
-          <h1 className="text-[60px] leading-[60px] font-semibold capitalize text-center">
+        <div className="relative z-[1] max-w-[400px] lg:max-w-[550px] xl:max-w-[754px] mx-auto pt-[50px] text-white">
+          <h1 className="text-[30px] lg:text-[50px] lg:leading-[50px] xl:text-[60px] xl:leading-[60px] font-semibold capitalize text-center">
             Icetea Software Services & Offerings
           </h1>
-          <div className="mt-3 text-[16px] leading-[23px] text-center">
+          <div className="mt-3 text-[14px] xl:text-[16px] xl:leading-[23px] text-center">
             With 120+ minds, we reach across the technology & business and
             harness our various talents into one goal - to help Clients deliver
             their ideas to real life.

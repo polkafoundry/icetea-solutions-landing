@@ -25,13 +25,12 @@ import {
 } from "@/components/svg/insight/web-app";
 
 export const testingQAProcessData = [
-  "Inspect finally and hand over",
-  "Make inquiries and clarify requirements",
-  "Consult and estimate",
-  "Make a contract",
-  "Kick-off project",
-  "Deliver outcomes",
-  "Inspect finally and hand over",
+  "Requirements Analysis Outputs: Knowhow in team, Question list",
+  "Test Strategy Outputs: Test Strategy, Test Plan, Test Schedule",
+  "Test Viewpoint / Environment Outputs: Test Environment, Test Viewpoint, Test Design",
+  "Test Case / Test Script Outputs: Test Scripts, Test Scenarios, Test Cases",
+  "Test Execution Outputs: Bugs Report, Test Log, Test Report",
+  "Test ReportQuality Report",
 ];
 
 export const testingQAServiceData = [

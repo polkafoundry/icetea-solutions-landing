@@ -20,10 +20,13 @@ const FooterComponent = () => {
           alt="footer"
         />
       </div>
-      <div className="relative max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto z-[1] pb-[90px]">
-        <div className="grid grid-cols-2 py-[120px] xl:py-[240px] items-center">
+      <div className="relative max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto z-[1] pb-8 lg:pb-[90px]">
+        <div className="grid lg:grid-cols-2 py-5 lg:py-[120px] xl:py-[240px] items-center">
+          <Link href="/" className="my-5 lg:hidden">
+            <LogoTextWhite />
+          </Link>
           <div>
-            <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] font-semibold text-white capitalize">
+            <div className="text-[24px] lg:text-[35px] lg:leading-[50px] xl:text-[48px] xl:leading-[70px] font-semibold text-white capitalize">
               Do you want to turn your ideas into reality?
             </div>
             <div className="text-[16px] leading-[23px] text-white mt-5">
@@ -32,7 +35,7 @@ const FooterComponent = () => {
               to advise on implementing the most optimal technology solutions.
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-center mt-5 lg:mt-0">
             <Link href={`/${pathname?.CONTACT}`}>
               <button className="btn-fill-white px-[30px] py-2">
                 Contact Us
@@ -40,9 +43,9 @@ const FooterComponent = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-5 xl:gap-0">
+        <div className="grid lg:grid-cols-2 gap-5 xl:gap-0">
           <div className="xl:pr-[190px]">
-            <Link href="/">
+            <Link href="/" className="hidden lg:block">
               <LogoTextWhite />
             </Link>
             <div className="mt-6 text-[24px] leading-[35px] font-semibold text-white capitalize">
@@ -54,18 +57,20 @@ const FooterComponent = () => {
               experience in Software Development have enabled sustainable growth
               for enterprises of all sizes.
             </div>
-            <div className="flex gap-2 items-center mt-9 text-white text-[23px] leading-[30px] font-bold">
-              <PositionIcon />
-              Ha Noi
-            </div>
-            <div className="mt-1 text-[18px] leading-[28px] font-semibold text-white">
-              +84 246 658 5248
-            </div>
-            <div className="w-full h-[1px] bg-white mt-[10px]" />
-            <div className="mt-4 text-[16px] leading-[26px] text-white">
-              11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
-              <br />
-              contact@icetea-software.com
+            <div className="hidden lg:block">
+              <div className="flex gap-2 items-center mt-9 text-white text-[23px] leading-[30px] font-bold">
+                <PositionIcon />
+                Ha Noi
+              </div>
+              <div className="mt-1 text-[18px] leading-[28px] font-semibold text-white">
+                +84 246 658 5248
+              </div>
+              <div className="w-full h-[1px] bg-white mt-[10px]" />
+              <div className="mt-4 text-[16px] leading-[26px] text-white">
+                11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
+                <br />
+                contact@icetea-software.com
+              </div>
             </div>
           </div>
           <div>
@@ -122,6 +127,21 @@ const FooterComponent = () => {
                   Subscribe
                 </button>
               </div>
+            </div>
+          </div>
+          <div className="lg:hidden">
+            <div className="flex gap-2 items-center mt-9 text-white text-[23px] leading-[30px] font-bold">
+              <PositionIcon />
+              Ha Noi
+            </div>
+            <div className="mt-1 text-[18px] leading-[28px] font-semibold text-white">
+              +84 246 658 5248
+            </div>
+            <div className="w-full h-[1px] bg-white mt-[10px]" />
+            <div className="mt-4 text-[16px] leading-[26px] text-white">
+              11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
+              <br />
+              contact@icetea-software.com
             </div>
           </div>
         </div>

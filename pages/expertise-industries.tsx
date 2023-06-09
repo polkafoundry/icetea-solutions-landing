@@ -22,10 +22,10 @@ const ExpertiseIndustries = () => {
           />
         </div>
         <div className="relative z-[1] max-w-[754px] mx-auto pt-[50px] text-white">
-          <h1 className="text-[60px] leading-[87px] font-semibold capitalize text-center">
+          <h1 className="text-[30px] lg:text-[50px] lg:leading-[50px] xl:text-[60px] xl:leading-[87px] font-semibold capitalize text-center">
             Expertise and Industries
           </h1>
-          <div className="text-[16px] leading-[23px] text-center">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[23px] text-center">
             As a leading company in the field of software development in
             Vietnam,Icetea Software is always ready to bring the best solutions
             to customers

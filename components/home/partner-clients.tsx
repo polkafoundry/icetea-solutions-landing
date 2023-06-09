@@ -1,4 +1,5 @@
 import { partnerAndClients } from "@/constants/home";
+import clsx from "clsx";
 import Image from "next/image";
 
 const PartnerAndClient = () => {
@@ -7,7 +8,12 @@ const PartnerAndClient = () => {
       <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-[#0030C0] text-center font-semibold capitalize">
         Partner and cilents
       </div>
-      <div className="max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto grid grid-cols-4 gap-6 mt-6 xl:mt-12">
+      <div
+        className={clsx(
+          "max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto grid lg:grid-cols-4 lg:gap-6 mt-6 xl:mt-12",
+          "grid-cols-2 gap-5"
+        )}
+      >
         {partnerAndClients?.map((data: any, index: number) => {
           return (
             <div key={index}>

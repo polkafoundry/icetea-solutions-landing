@@ -32,24 +32,12 @@ export const pathname = {
 
 export const navItems = [
   {
+    value: pathname.ABOUTUS,
+    title: "About us",
+  },
+  {
     value: pathname.SERVICE,
     title: "Service",
-    subMenu: [
-      { value: pathname?.OFFERING, title: "Service & Offerings" },
-      { value: pathname?.DELIVERY, title: "Delivery Models" },
-    ],
-  },
-  {
-    value: pathname.EXPERTISE,
-    title: "Expertise & Industries",
-  },
-  {
-    value: pathname.CASESTUDY,
-    title: "Case study",
-  },
-  {
-    value: pathname.INSIGHT,
-    title: "Insight",
     subMenu: [
       {
         value: pathname?.CONSULTING,
@@ -61,11 +49,13 @@ export const navItems = [
         value: pathname?.BLOCKCHAINDEVELOPMENT,
         title: "Blockchain Development",
       },
+      { value: pathname?.OFFERING, title: "Service & Offerings" },
     ],
   },
+  { value: pathname?.DELIVERY, title: "Delivery Models" },
   {
-    value: pathname.ABOUTUS,
-    title: "About us",
+    value: pathname.EXPERTISE,
+    title: "Expertise & Industries",
   },
 ];
 
@@ -92,19 +82,19 @@ export const ITServiceOffering = [
     img: <CustomSoftwareDevelopment />,
     title: "Custom Software Development",
     content:
-      "Icetea Software delivers the full-cycle software development services, from IT consulting to roadmaps designing and developing end to end scalable technology solutions. By analysing your project requirements and business needs, we are able to adapt seamlessly to your requests.",
+      "Icetea Software delivers the full-cycle software development services, from IT consulting to roadmaps designing and developing end-to-end scalable technology solutions. By analysing your project requirements and business needs, we are able to adapt seamlessly to your requests.",
   },
   {
     img: <MachineLearning />,
     title: "Ai and machine learning",
     content:
-      "Icetea Software ffers a variety of professional technical services that leverage Artificial Intelligence (AI), Data Analysis and Machine Learning. We create optimized solutions by integrating technologies to solve any business challenge.",
+      "Icetea Software offers a variety of professional technical services that leverage Artificial Intelligence (AI), Data Analysis and Machine Learning. We create optimized solutions by integrating technologies to solve any business challenge.",
   },
   {
     img: <CloudMigration />,
     title: "Cloud Migration",
     content:
-      "Live your moment and meet all people around the world. We help clients migrate data into cloud, legacy migration and so son.",
+      "Live your moment and meet all people around the world. We help clients migrate data into cloud, legacy migration and so on.",
   },
   {
     img: <GameDevelopment />,
@@ -116,35 +106,32 @@ export const ITServiceOffering = [
     img: <QATesting />,
     title: "qa and testing",
     content:
-      "Icetea Software offers a wide range of independent software testing & QA services that satisfy the highest level of security and industry standards. Using our testing labs, QA expertise and team flexibility, we are able to increase the quality of your product while reducing time-to-market, management risks and operating costs.business needs, we are able to adapt seamlessly to your requests.",
+      "Icetea Software offers a wide range of independent software testing & QA services that satisfy the highest level of security and industry standards. Using our testing labs, QA expertise and team flexibility, we are able to increase the quality of your product while reducing time-to-market, managing risks and operating costs for business needs, we are able to adapt seamlessly to your requests.",
   },
 ];
 
 export const offeringContractTypes = [
   {
     title: "ODC (Dedicated teams)",
-    subTitle:
-      "At ITS, we will make proposals that meet the needs of our customers. Solve customer problems quickly and with quality",
+    subTitle: "Recommend this model if you:",
     contents: [
-      "Desire to build a team of system engineers",
-      "There is always a shortage of engineer resources",
+      "Struggle with the shortage of engineer resources",
+      "Have unstable partner resouces acquisition.",
+      "Desire to build a team of system engineers.",
       "Desire to reduce recruitment cost",
-      "Engineers are working with external partners",
-      "Partner resource acquisition is unstable",
-      "Desire to take time to create a dedicated team over the long term",
-      "Reduce development cost",
+      "Desire to build a long-term dedicated team.",
     ],
   },
   {
     title: "Project - Based Development",
     subTitle:
-      "At ITS, we will make proposals that meet the needs of our customers. Solve customer problems quickly and with quality",
+      "Recommend this model if you:",
     contents: [
-      "Desire to request system development",
-      "There is a specification or design document",
-      "No development resources",
-      "Desire to reduce development cost",
-      "Desire to do Labo Development for a long time but still worried",
+      "Have a specification or design document.",
+      "Have no development resources.",
+      "Desire to request system development.",
+      "Desire to reduce development cost.",
+      "Desire to do long-term labo development without worries",
     ],
   },
 ];

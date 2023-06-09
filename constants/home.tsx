@@ -57,9 +57,9 @@ export const homeDevelopments = [
       "IT Staff augmentation (Remote / Onsite / Hybrid)",
       "Offshore development center (ODC)",
       "Dedicated team with hands-on experiences",
-      "Start Immediately",
-      "Flexible to scale up and scale down in short time",
-      "Effective cost",
+      "Immediate Start",
+      "Agile Scaling",
+      "Cost Efficiency",
     ],
   },
   {
@@ -92,19 +92,19 @@ export const whyChooseContents = [
     img: "/images/home/why_choose_1.png",
     title: "Experienced in ITO industry",
     content:
-      "Our peersonnel with over 15 years of expeerience in the ITO industry have been providing a wide range of comprehensive  IT services, from consulting to implementing, meeting the highest level of requirements.",
+      "Our personnel with over 15 years of expeerience in the ITO industry have been providing a wide range of comprehensive  IT services, from consulting to implementing, meeting the highest level of requirements.",
   },
   {
     img: "/images/home/why_choose_2.png",
     title: "Strict QC & Security Standard",
     content:
-      "By following strict quality management procedure & comply with international security standards such as ISO 27001:2013, CMMI, etc. We bring toyou IT outsourcing services with world-class ISMS.",
+      "By following strict quality management procedure & comply with international security standards such as ISO 27001:2013, CMMI, etc. we bring you the IT outsourcing services with world-class isms.",
   },
   {
     img: "/images/home/why_choose_3.png",
     title: "Global Know-how",
     content:
-      "Our rich insights of international markets and understanding of cultural integration help our staffs always strive to bring localized knowledge in every step of the entire process.",
+      "Our rich insights of international markets and understanding of cultural integration help our staffs always strive to bring localized knowledge in every step of the entire process. Meanwhile, with many years of hands-on experiences in the business domains, we are confident to follow client's processes.",
   },
   {
     img: "/images/home/why_choose_1.png",
@@ -122,7 +122,7 @@ export const whyChooseContents = [
     img: "/images/home/why_choose_5.png",
     title: "Recommendations",
     content:
-      "We value all our customers and always ensure they are happy with our service quality by asking for their regular feedbacks and recommendations. Therefore, we often keep the retention rate high and appreciate all customers' reference.",
+      "We proud to keep our clients happy with each frequent Customer Service Suvey results and we strive to win their heart with the best service qualities. Therefore, we are always recommended by our satisfactory customers.",
   },
 ];
 

@@ -7,9 +7,9 @@ import { pathname } from "@/constants";
 const GetQuote = () => {
   return (
     <div className="w-full flex border border-[#0083FF] rounded-[24px] bg-white overflow-hidden">
-      <div className="w-full p-[48px]">
-        <div className="max-w-[606px] text-[#0030C0] text-[16px] leading-[23px]">
-          <div className="text-[48px] leading-[70px] font-semibold">
+      <div className="w-full px-5 py-8 lg:p-[48px]">
+        <div className="lg:max-w-[606px] text-[#0030C0] text-[16px] leading-[23px]">
+          <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold">
             Get Quote
           </div>
           <div className="mt-4">
@@ -106,7 +106,7 @@ const GetQuote = () => {
           </button>
         </div>
       </div>
-      <div className="relative w-[597px] min-w-[597px] bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D]">
+      <div className="relative hidden lg:block w-[480px] min-w-[480px] xl:w-[597px] xl:min-w-[597px] bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D]">
         <Image
           src="/images/home/quote_bg.png"
           className="absolute top-0 left-0 w-full h-full mix-blend-screen pointer-events-none select-none z-0"
