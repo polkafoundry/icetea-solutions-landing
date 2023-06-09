@@ -2,6 +2,8 @@ import { caseStudyData } from "@/constants/consulting";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
+import { Navigation } from "swiper";
+import { ArrowSwiperNext, ArrowSwiperPrev } from "../svg/home/arrow-swiper";
 
 const CaseStudy = () => {
   return (
@@ -9,7 +11,7 @@ const CaseStudy = () => {
       <div className="text-[35px] xl:text-[48px] xl:leading-[70px] text-center text-[#01289D] font-semibold mt-[120px] capitalize">
         Our case study
       </div>
-      <div className="mt-10 max-w-[1400px] mx-auto">
+      <div className="relative mt-10 max-w-[1400px] mx-auto">
         <Swiper
           breakpoints={{
             0: {
@@ -25,6 +27,11 @@ const CaseStudy = () => {
           pagination={{
             clickable: true,
           }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          modules={[Navigation]}
           className="mySwiper"
         >
           {caseStudyData?.map((value: any, index: number) => {
@@ -53,6 +60,12 @@ const CaseStudy = () => {
             );
           })}
         </Swiper>
+        <div className="swiper-button-prev absolute hidden lg:block lg:top-1/2 left-[-30px] cursor-pointer z-10">
+          <ArrowSwiperPrev />
+        </div>
+        <div className="swiper-button-next absolute hidden lg:block lg:top-1/2 right-[-30px] cursor-pointer z-10">
+          <ArrowSwiperNext />
+        </div>
       </div>
 
       <div className="text-center">

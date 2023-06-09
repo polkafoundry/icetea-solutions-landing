@@ -68,7 +68,7 @@ const TechnicalStack = () => {
               return (
                 <div
                   key={index}
-                  className="w-[150px] md:w-[213px] h-[80px] md:h-[100px] p-5"
+                  className="w-[150px] md:w-[213px] h-[80px] md:h-[100px] p-5 grayscale"
                 >
                   <Image
                     className="w-full h-full object-contain"

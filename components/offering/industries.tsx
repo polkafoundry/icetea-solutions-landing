@@ -1,6 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
+import { EffectCoverflow, Navigation, Pagination } from "swiper";
 import Image from "next/image";
+import {
+  ArrowSwiperNextCore,
+  ArrowSwiperNextCoreHover,
+  ArrowSwiperNextPrevHover,
+  ArrowSwiperPrevCore,
+} from "../svg/home/arrow-swiper";
+import clsx from "clsx";
 
 const Industries = () => {
   return (
@@ -16,6 +23,26 @@ const Industries = () => {
             <br /> Icetea Software produces bespoke software and implements
             platform-based solutions for many industries.
           </div>
+          <div className="hidden lg:flex pt-8 gap-12">
+            <div
+              className={clsx(
+                "swiper-button-prev group flex items-center justify-center w-[72px] h-[72px] rounded-full border border-[#0083FF]",
+                "hover:bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D] cursor-pointer"
+              )}
+            >
+              <ArrowSwiperPrevCore className="hidden group-hover:block" />
+              <ArrowSwiperNextPrevHover className="block group-hover:hidden" />
+            </div>
+            <div
+              className={clsx(
+                "swiper-button-next group flex items-center justify-center w-[72px] h-[72px] rounded-full border border-[#0083FF]",
+                "hover:bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D] cursor-pointer"
+              )}
+            >
+              <ArrowSwiperNextCore className="hidden group-hover:block" />
+              <ArrowSwiperNextCoreHover className="block group-hover:hidden" />
+            </div>
+          </div>
         </div>
         <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[789px] mx-auto lg:mx-0">
           <Swiper
@@ -30,7 +57,11 @@ const Industries = () => {
               modifier: 2,
               slideShadows: false,
             }}
-            modules={[EffectCoverflow, Pagination]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
             {[...Array(3)].map((_, index: number) => {

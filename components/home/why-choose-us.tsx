@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
 import clsx from "clsx";
+import { ArrowSwiperNext, ArrowSwiperPrev } from "../svg/home/arrow-swiper";
+import { Navigation } from "swiper";
 
 const WhyChooseUs = () => {
   return (
@@ -16,7 +18,7 @@ const WhyChooseUs = () => {
         dedicated talents and a rigorous process, we confidently provide
         international-standard IT services and solutions.
       </div>
-      <div className="max-w-[1000px] xl:max-w-[1576px] px-5 mx-auto mt-12">
+      <div className="relative max-w-[1000px] xl:max-w-[1576px] px-5 mx-auto mt-12">
         <div className="max-w-[1400px] mx-auto">
           <Swiper
             breakpoints={{
@@ -32,6 +34,11 @@ const WhyChooseUs = () => {
             pagination={{
               clickable: true,
             }}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            modules={[Navigation]}
             className="mySwiper"
           >
             {whyChooseContents?.map((value: any, index: number) => {
@@ -65,6 +72,12 @@ const WhyChooseUs = () => {
               );
             })}
           </Swiper>
+          <div className="swiper-button-prev absolute hidden lg:block lg:top-1/2 cursor-pointer left-0">
+            <ArrowSwiperPrev />
+          </div>
+          <div className="swiper-button-next absolute hidden lg:block lg:top-1/2 cursor-pointer right-0">
+            <ArrowSwiperNext />
+          </div>
         </div>
       </div>
       <div className="overflow-hidden">

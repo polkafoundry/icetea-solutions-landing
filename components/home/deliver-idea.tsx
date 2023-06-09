@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import FeatherIcon from "../svg/home/feather";
 import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
+import { Navigation } from "swiper";
+import { ArrowSwiperNext, ArrowSwiperPrev } from "../svg/home/arrow-swiper";
 
 const DeliverIdea = () => {
   return (
@@ -10,7 +12,7 @@ const DeliverIdea = () => {
       <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-[#0030C0] text-center font-semibold capitalize">
         Deliver your ideas to tech life
       </div>
-      <div className="max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto">
+      <div className="relative max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto">
         <Swiper
           breakpoints={{
             0: {
@@ -26,6 +28,11 @@ const DeliverIdea = () => {
           pagination={{
             clickable: true,
           }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          modules={[Navigation]}
           className="mySwiper"
         >
           {deliverYourIdea?.map((value: any, index: number) => {
@@ -66,6 +73,12 @@ const DeliverIdea = () => {
             );
           })}
         </Swiper>
+        <div className="swiper-button-prev absolute hidden lg:block lg:top-[40%] cursor-pointer left-[-20px]">
+          <ArrowSwiperPrev />
+        </div>
+        <div className="swiper-button-next absolute hidden lg:block lg:top-[40%] cursor-pointer right-[-20px]">
+          <ArrowSwiperNext />
+        </div>
       </div>
       <div className="overflow-hidden">
         <button className="flex w-fit mt-6 lg:mt-12 gap-2 text-white items-center btn-fill-gradient px-6 py-2 mx-auto">
