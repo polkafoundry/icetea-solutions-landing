@@ -5,6 +5,8 @@ import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
 import clsx from "clsx";
 import { ArrowSwiperNext, ArrowSwiperPrev } from "../svg/home/arrow-swiper";
 import { Navigation } from "swiper";
+import Link from "next/link";
+import { pathname } from "@/constants";
 
 const WhyChooseUs = () => {
   return (
@@ -81,10 +83,12 @@ const WhyChooseUs = () => {
         </div>
       </div>
       <div className="overflow-hidden">
-        <button className="flex w-fit mt-6 xl:mt-12 gap-2 text-white items-center btn-fill-gradient px-6 py-2 mx-auto">
-          See more about us
-          <AboutUsArrowRight />
-        </button>
+        <Link href={`/${pathname?.ABOUTUS}`}>
+          <button className="flex w-fit mt-6 xl:mt-12 gap-2 text-white items-center btn-fill-gradient px-6 py-2 mx-auto">
+            See more about us
+            <AboutUsArrowRight />
+          </button>
+        </Link>
       </div>
     </div>
   );

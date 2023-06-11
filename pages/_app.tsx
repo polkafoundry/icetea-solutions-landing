@@ -6,6 +6,7 @@ import Head from "next/head";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -20,7 +20,7 @@ const TestingQA = () => {
         data={testingQAProcessData}
         title="QA & Testing Process"
       />
-      <DeliverIdea />
+      <DeliverIdea title="Our successful projects" />
       <WebAppSmallBanner />
       <TestingQAService />
     </div>

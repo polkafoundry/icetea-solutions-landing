@@ -37,7 +37,7 @@ const ExpertiseIndustries = () => {
       <Compentencies />
       <SoftwareDevService />
       <EngineeringSkillSet />
-      <DeliverIdea />
+      <DeliverIdea title="Deliver your ideas to tech life" />
     </div>
   );
 };

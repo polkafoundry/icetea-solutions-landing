@@ -37,13 +37,13 @@ export const navItems = [
   },
   {
     value: pathname.SERVICE,
-    title: "Service",
+    title: "Our Services",
     subMenu: [
+      { value: pathname?.WEBAPP, title: "Web App Development" },
       {
         value: pathname?.CONSULTING,
-        title: "Development & Consulting",
+        title: "Custom Software Development",
       },
-      { value: pathname?.WEBAPP, title: "Web App Development" },
       { value: pathname?.TESTINGQA, title: "Software Testing & QA" },
       {
         value: pathname?.BLOCKCHAINDEVELOPMENT,

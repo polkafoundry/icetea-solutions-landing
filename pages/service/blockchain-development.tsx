@@ -1,3 +1,4 @@
+import CostOptimized from "@/components/blockchain-dev/cost-optimized";
 import OurPortfolio from "@/components/blockchain-dev/our-portfolio";
 import TechnicalStack from "@/components/blockchain-dev/technical-stack";
 import WhyChooseBlockchainDev from "@/components/blockchain-dev/why-choose-blockchain-dev";
@@ -13,6 +14,7 @@ const BlockchainDevelopment = () => {
         contents={bannerBlockchainDevelopmentData}
         isThree
       />
+      <CostOptimized />
       <WhyChooseBlockchainDev />
       <TechnicalStack />
       <OurPortfolio />

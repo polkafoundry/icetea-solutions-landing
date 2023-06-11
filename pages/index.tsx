@@ -12,7 +12,7 @@ export default function Home() {
       <WhyChooseUs />
       <WhoWeAre />
       <OurEngineering />
-      <DeliverIdea />
+      <DeliverIdea title="Deliver your ideas to tech life" />
       <PartnerAndClient />
     </div>
   );

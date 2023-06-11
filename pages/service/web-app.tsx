@@ -17,7 +17,7 @@ const WebApp = () => {
       <LifeCycle />
       <WebAppSmallBanner />
       <OurEngineering />
-      <DeliverIdea />
+      <DeliverIdea title="Our successful projects" />
       <div className="mt-[120px] px-5 xl:px-0 max-w-[1400px] mx-auto">
         <GetQuote />
       </div>

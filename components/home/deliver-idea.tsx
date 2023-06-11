@@ -6,11 +6,15 @@ import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
 import { Navigation } from "swiper";
 import { ArrowSwiperNext, ArrowSwiperPrev } from "../svg/home/arrow-swiper";
 
-const DeliverIdea = () => {
+interface Props {
+  title: string;
+}
+
+const DeliverIdea = ({ title }: Props) => {
   return (
     <div className="pt-[60px] xl:pt-[120px]">
       <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-[#0030C0] text-center font-semibold capitalize">
-        Deliver your ideas to tech life
+        {title}
       </div>
       <div className="relative max-w-[1000px] xl:max-w-[1440px] px-5 mx-auto">
         <Swiper
@@ -47,10 +51,10 @@ const DeliverIdea = () => {
                     alt="icon"
                   />
                   <div
-                    className="p-5 xl:px-[30px] flex-1 xl:pb-[30px] xl:pt-6"
+                    className="p-5 xl:px-[30px] flex flex-col flex-1 xl:pb-[30px] xl:pt-6"
                     style={{ boxShadow: "0px 4px 32px rgba(0, 0, 0, 0.08)" }}
                   >
-                    <div className="xl:text-[20px] text-[18px] xl:leading-[30px] text-[#0030C0] font-semibold capitalize">
+                    <div className="xl:text-[20px] flex-1 text-[18px] xl:leading-[30px] text-[#0030C0] font-semibold capitalize">
                       {value?.title}
                     </div>
                     <div className="flex gap-1 justify-between items-center mt-3 xl:mt-6">
