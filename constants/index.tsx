@@ -124,8 +124,7 @@ export const offeringContractTypes = [
   },
   {
     title: "Project - Based Development",
-    subTitle:
-      "Recommend this model if you:",
+    subTitle: "Recommend this model if you:",
     contents: [
       "Have a specification or design document.",
       "Have no development resources.",
@@ -134,4 +133,20 @@ export const offeringContractTypes = [
       "Desire to do long-term labo development without worries",
     ],
   },
+];
+
+export const typeOfConsultation = [
+  "Web App Development",
+  "Game Development",
+  "Mobile App Development",
+  "Business App Development",
+  "Testing & QA",
+  "Blockchain Development",
+];
+
+export const listFormData = [
+  "typeOfConsultation",
+  "firstName",
+  "lastName",
+  "email",
 ];

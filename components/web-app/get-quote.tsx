@@ -2,9 +2,77 @@ import Image from "next/image";
 import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
 import { SmallLogoInWebApp } from "../svg/insight/small-logo";
 import Link from "next/link";
-import { pathname } from "@/constants";
+import { listFormData, pathname, typeOfConsultation } from "@/constants";
+import { useState } from "react";
+import { GoogleSpreadsheet } from "google-spreadsheet";
+import clsx from "clsx";
+
+const NEXT_PUBLIC_PRIVATE_KEY = process?.env?.NEXT_PUBLIC_PRIVATE_KEY;
+const NEXT_PUBLIC_CLIENT_EMAIL = process?.env?.NEXT_PUBLIC_CLIENT_EMAIL;
+const NEXT_PUBLIC_SHEET_ID = process?.env?.NEXT_PUBLIC_SHEET_ID;
 
 const GetQuote = () => {
+  const formDataDefault: { [key: string]: string } = {
+    ["typeOfConsultation"]: "",
+    ["firstName"]: "",
+    ["lastName"]: "",
+    ["phoneNumber"]: "",
+    ["email"]: "",
+    ["role"]: "",
+    ["company"]: "",
+    ["message"]: "",
+  };
+  const doc = new GoogleSpreadsheet(NEXT_PUBLIC_SHEET_ID);
+  const [formData, setFormData] = useState<any>(formDataDefault);
+  const [isSubmitAction, setIsSubmitAction] = useState<boolean>(false);
+  const [isSubmit, setIsSubmit] = useState<boolean>(false);
+  const [isCheckPolicy, setIsCheckPolicy] = useState<boolean>(false);
+  const [errorMessage, setErrorMessage] = useState<string>("");
+
+  const handleSubmit = async () => {
+    try {
+      setIsSubmitAction(true);
+      if (!isCheckPolicy) {
+        setErrorMessage("Please confirm that you have read privacy policy");
+        return;
+      }
+      if (listFormData?.some((data) => !formData[data])) {
+        setErrorMessage("Please enter fields are required");
+        return;
+      }
+      setErrorMessage("");
+      setIsSubmit(true);
+      const privateKey = NEXT_PUBLIC_PRIVATE_KEY as string;
+      await doc.useServiceAccountAuth({
+        client_email: NEXT_PUBLIC_CLIENT_EMAIL as string,
+        private_key: privateKey?.replace(/\\n/g, "\n"),
+      });
+      await doc.loadInfo();
+      const sheet = doc.sheetsByIndex[0];
+      const formatedDate = new Date().toUTCString();
+      await sheet.addRow({
+        ["Time"]: formatedDate,
+        ["Type Of Consultation"]: formData["typeOfConsultation"],
+        ["First Name"]: formData["firstName"],
+        ["Last Name"]: formData["lastName"],
+        ["Phone Number"]: formData["phoneNumber"],
+        ["Email"]: formData["email"],
+        ["Role"]: formData["role"],
+        ["Company"]: formData["company"],
+        ["Message"]: formData["message"],
+      });
+      setIsSubmit(false);
+    } catch (err) {
+      setIsSubmit(false);
+    }
+  };
+
+  const handleChangeData = (value: string, key: string) => {
+    const cloneData = { ...formData };
+    cloneData[key] = value;
+    setFormData(cloneData);
+  };
+
   return (
     <div className="w-full flex border border-[#0083FF] rounded-[24px] bg-white overflow-hidden">
       <div className="w-full px-5 py-8 lg:p-[48px]">
@@ -16,10 +84,32 @@ const GetQuote = () => {
             You are welcome to fill in the form below, and our IT experts will
             reach out to you during business hours to discuss your project.
           </div>
-          <select className="w-full h-[46px] mt-8 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none">
+          {errorMessage && (
+            <div className="text-[14px] mt-3 py-2 px-4 bg-[#ff7070] text-white">
+              {errorMessage}
+            </div>
+          )}
+          <select
+            className={clsx(
+              "w-full h-[46px] mt-8 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none",
+              isSubmitAction && !formData["typeOfConsultation"]
+                ? "border-[#FF3434]"
+                : "border-[#0030C0]"
+            )}
+            onChange={(e) =>
+              handleChangeData(e?.target?.value, "typeOfConsultation")
+            }
+          >
             <option disabled selected>
               Type of consultation
             </option>
+            {typeOfConsultation?.map((type: any, index: number) => {
+              return (
+                <option key={index} value={type}>
+                  {type}
+                </option>
+              );
+            })}
           </select>
           <div className="grid grid-cols-2 gap-6 mt-8">
             <div>
@@ -28,7 +118,15 @@ const GetQuote = () => {
               </div>
               <input
                 placeholder="Enter name"
-                className="w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none"
+                className={clsx(
+                  "w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none",
+                  isSubmitAction && !formData["firstName"]
+                    ? "border-[#FF3434]"
+                    : "border-[#0030C0]"
+                )}
+                onChange={(e) =>
+                  handleChangeData(e?.target?.value, "firstName")
+                }
               />
             </div>
             <div>
@@ -37,7 +135,13 @@ const GetQuote = () => {
               </div>
               <input
                 placeholder="Enter name"
-                className="w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none"
+                className={clsx(
+                  "w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none",
+                  isSubmitAction && !formData["lastName"]
+                    ? "border-[#FF3434]"
+                    : "border-[#0030C0]"
+                )}
+                onChange={(e) => handleChangeData(e?.target?.value, "lastName")}
               />
             </div>
           </div>
@@ -50,6 +154,9 @@ const GetQuote = () => {
                 type="number"
                 placeholder="Enter phone number"
                 className="w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none"
+                onChange={(e) =>
+                  handleChangeData(e?.target?.value, "phoneNumber")
+                }
               />
             </div>
             <div>
@@ -58,7 +165,13 @@ const GetQuote = () => {
               </div>
               <input
                 placeholder="Enter email"
-                className="w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none"
+                className={clsx(
+                  "w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none",
+                  isSubmitAction && !formData["email"]
+                    ? "border-[#FF3434]"
+                    : "border-[#0030C0]"
+                )}
+                onChange={(e) => handleChangeData(e?.target?.value, "email")}
               />
             </div>
           </div>
@@ -66,9 +179,9 @@ const GetQuote = () => {
             <div>
               <div className="font-[500] text-[20px] leading-[29px]">Role</div>
               <input
-                type="number"
                 placeholder="Enter your role"
                 className="w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none"
+                onChange={(e) => handleChangeData(e?.target?.value, "role")}
               />
             </div>
             <div>
@@ -78,6 +191,7 @@ const GetQuote = () => {
               <input
                 placeholder="Enter company"
                 className="w-full h-[46px] mt-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none"
+                onChange={(e) => handleChangeData(e?.target?.value, "company")}
               />
             </div>
           </div>
@@ -86,12 +200,14 @@ const GetQuote = () => {
             <textarea
               placeholder="Enter message"
               className="w-full h-[150px] mt-2 py-2 px-4 border border-[#0030C0] text-[#757575] rounded-[6px] outline-none resize-none"
+              onChange={(e) => handleChangeData(e?.target?.value, "message")}
             />
           </div>
           <div className="flex gap-2 mt-8">
             <input
               type="checkbox"
               className="w-[20px] h-[20px] border border-[#0030C0] rounded-[4px]"
+              onChange={(e) => setIsCheckPolicy(e?.target?.checked)}
             />
             <div className="text-[#757575]">
               I agree to the{" "}
@@ -100,8 +216,12 @@ const GetQuote = () => {
               </span>
             </div>
           </div>
-          <button className="flex w-fit mt-8 gap-2 text-white items-center btn-fill-gradient px-6 py-2">
-            Confirm the infomation
+          <button
+            className="flex w-[278px] mt-8 gap-2 text-white items-center justify-between btn-fill-gradient px-6 py-2"
+            onClick={() => handleSubmit()}
+            disabled={isSubmit}
+          >
+            {isSubmit ? "Loading..." : "Confirm the infomation"}
             <AboutUsArrowRight />
           </button>
         </div>
