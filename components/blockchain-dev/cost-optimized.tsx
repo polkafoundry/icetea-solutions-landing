@@ -79,7 +79,10 @@ const CostOptimized = () => {
           >
             {costOptimizedData?.map((data: any, index: number) => {
               return (
-                <SwiperSlide key={index} style={{ width: "100%" }}>
+                <SwiperSlide
+                  key={index}
+                  style={{ width: "100%", background: "#ffffff" }}
+                >
                   <Image
                     src={data?.img}
                     className="w-full h-[300px] object-cover lg:h-[400px] xl:h-[521px] rounded-[24px]"
