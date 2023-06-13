@@ -150,3 +150,5 @@ export const listFormData = [
   "lastName",
   "email",
 ];
+
+export const itsEmail = "contact@icetea-software.com";

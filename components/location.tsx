@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { LocationIcon } from "./svg/location";
 import AboutUsArrowRight from "./svg/home/about-us-arrow-right";
+import Link from "next/link";
+import { itsEmail, pathname } from "@/constants";
 
 const OfficeLocation = () => {
   return (
@@ -27,12 +29,17 @@ const OfficeLocation = () => {
           </div>
           <ul className="text-[14px] xl:text-[17px] xl:leading-[26px] list-disc pl-5 mt-1">
             <li>11th Floor, IPH Tower, 241 Xuan Thuy Street, CauGiay, Hanoi</li>
-            <li>contact mail to: contact@icetea-software.com</li>
+            <li>
+              contact mail to:{" "}
+              <Link href={`mailto:${itsEmail}`}>{itsEmail}</Link>
+            </li>
           </ul>
-          <button className="flex w-fit mt-8 gap-2 text-white items-center btn-fill-gradient px-6 py-2">
-            Contact now
-            <AboutUsArrowRight />
-          </button>
+          <Link href={`/${pathname?.CONTACT}`}>
+            <button className="flex w-fit mt-8 gap-2 text-white items-center btn-fill-gradient px-6 py-2">
+              Contact now
+              <AboutUsArrowRight />
+            </button>
+          </Link>
         </div>
         <div>
           <Image

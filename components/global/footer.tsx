@@ -5,7 +5,7 @@ import { LinkedInIcon } from "../svg/linked-in";
 import { FacebookIcon } from "../svg/facebook";
 import { YoutubeIcon } from "../svg/youtube";
 import Link from "next/link";
-import { pathname } from "@/constants";
+import { itsEmail, pathname } from "@/constants";
 
 const FooterComponent = () => {
   return (
@@ -69,7 +69,7 @@ const FooterComponent = () => {
               <div className="mt-4 text-[16px] leading-[26px] text-white">
                 11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
                 <br />
-                contact@icetea-software.com
+                <Link href={`mailto:${itsEmail}`}>{itsEmail}</Link>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ const FooterComponent = () => {
             <div className="mt-4 text-[16px] leading-[26px] text-white">
               11th Floor, IPH Tower, 241 Xuan Thuy Street, Cau Giay, Hanoi
               <br />
-              contact@icetea-software.com
+              <Link href={`mailto:${itsEmail}`}>{itsEmail}</Link>
             </div>
           </div>
         </div>
