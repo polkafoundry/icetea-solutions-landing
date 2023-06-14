@@ -10,7 +10,7 @@ const BlockchainDevelopment = () => {
     <div>
       <InsightBanner
         title="Blockchain Development"
-        subTitle="AWe have rich experience in developing blockchain-based solutions, including advanced Cryptocurrency Exchange, NFT Marketplace, Blockchain-based game, Crypto Wallet, IDO/IEO/STO Consulting, Smart Contracts... with cost-optimized white-label options that can help you enter the blockchain market quickly."
+        subTitle="We have rich experience in developing blockchain-based solutions, including advanced Cryptocurrency Exchange, NFT Marketplace, Blockchain-based game, Crypto Wallet, IDO/IEO/STO Consulting, Smart Contracts... with cost-optimized white-label options that can help you enter the blockchain market quickly."
         contents={bannerBlockchainDevelopmentData}
         isThree
       />

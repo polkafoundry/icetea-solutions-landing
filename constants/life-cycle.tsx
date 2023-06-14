@@ -28,7 +28,7 @@ export const lifeCycleBottom = [
       "We establish APIs to integrate your web applications with external systems and services, ensuring instant data synchronization across systems. Our team of skilled testing engineers work hard to provide flawless, efficient, user-friendly, and secure web solutions for our customers.",
   },
   {
-    title: "Maintaince",
+    title: "Maintenance",
     content:
       "We enhance your web-based software to maintain its efficiency, competitiveness, and alignment with your evolving business requirements. Our established DevOps processes enable us to deploy urgent updates in 1-2 days and release planned functional modules every 2-6 weeks.",
   },

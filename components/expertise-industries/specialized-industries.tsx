@@ -16,7 +16,7 @@ const SpecializedIndustries = () => {
               height={247}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Banking & Finance
             </p>
             <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
@@ -36,7 +36,7 @@ const SpecializedIndustries = () => {
               height={233}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Health Care
             </p>
             <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
@@ -56,7 +56,7 @@ const SpecializedIndustries = () => {
               height={222}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Education
             </p>
             <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
@@ -76,7 +76,7 @@ const SpecializedIndustries = () => {
               height={250}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Retail & E-commerce
             </p>
             <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
@@ -96,7 +96,7 @@ const SpecializedIndustries = () => {
               height={242}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Logistics & <br />
               Transportation
             </p>
@@ -116,7 +116,7 @@ const SpecializedIndustries = () => {
               height={228}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Automotive
             </p>
             <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
@@ -136,7 +136,7 @@ const SpecializedIndustries = () => {
               height={247}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Media & Entertainment
             </p>
             <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
@@ -155,7 +155,7 @@ const SpecializedIndustries = () => {
               height={211}
               alt="banking binance"
             />
-            <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
+            <p className="mt-4 text-[14px] sm:text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Telecommunication
             </p>
             <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">

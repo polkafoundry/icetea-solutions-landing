@@ -29,7 +29,7 @@ const FooterComponent = () => {
             <div className="text-[24px] lg:text-[35px] lg:leading-[50px] xl:text-[48px] xl:leading-[70px] font-semibold text-white capitalize">
               Do you want to turn your ideas into reality?
             </div>
-            <div className="text-[16px] leading-[23px] text-white mt-5 capitalize">
+            <div className="lg:max-w-[600px] text-[16px] leading-[23px] text-white mt-5 capitalize">
               We’re here to help you innovate with success. Our experts will
               conduct an in-depth analysis of your business model and industry
               to advise on implementing the most optimal technology solutions.
@@ -108,15 +108,25 @@ const FooterComponent = () => {
                 Get in touch
               </div>
               <div className="flex gap-3 items-center">
-                <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
-                  <LinkedInIcon />
-                </div>
-                <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
-                  <FacebookIcon />
-                </div>
-                <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
+                <Link
+                  href={"https://www.linkedin.com/company/90634399/"}
+                  target={"_blank"}
+                >
+                  <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
+                    <LinkedInIcon />
+                  </div>
+                </Link>
+                <Link
+                  href={"https://www.facebook.com/IceteaSoftware"}
+                  target={"_blank"}
+                >
+                  <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
+                    <FacebookIcon />
+                  </div>
+                </Link>
+                {/* <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
                   <YoutubeIcon />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="mt-4">

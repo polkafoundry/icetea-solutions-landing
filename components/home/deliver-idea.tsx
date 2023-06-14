@@ -73,7 +73,7 @@ const DeliverIdea = ({ title }: Props) => {
                     <div className="xl:text-[20px] flex-1 text-[18px] xl:leading-[30px] text-[#0030C0] font-semibold capitalize">
                       {value?.title}
                     </div>
-                    <div className="flex gap-1 justify-between items-center mt-3 xl:mt-6">
+                    <div className="grid grid-cols-2 gap-1 justify-between items-center mt-3 xl:mt-6">
                       <div className="flex gap-1 items-center">
                         {value?.flag}
                         <div className="text-[12px] xl:text-[16px] text-[#0030C0]">
@@ -81,8 +81,10 @@ const DeliverIdea = ({ title }: Props) => {
                         </div>
                       </div>
                       <div className="flex gap-1 items-center">
-                        <FeatherIcon />
-                        <div className="text-[12px] xl:text-[16px] text-[#0030C0]">
+                        <div className="min-w-[23px]">
+                          <FeatherIcon />
+                        </div>
+                        <div className="text-[12px] xl:text-[16px] text-[#0030C0] truncate">
                           {value?.tech}
                         </div>
                       </div>
@@ -124,14 +126,14 @@ const DeliverIdea = ({ title }: Props) => {
               <div className="lg:text-[34px] flex-1 text-[20px] lg:leading-[34px] font-semibold capitalize">
                 {deliverYourIdea[indexSelect]?.title}
               </div>
-              <div className="flex gap-5 items-center mt-3 xl:mt-6">
-                <div className="flex gap-1 items-center">
+              <div className="flex gap-5 mt-3 xl:mt-6">
+                <div className="flex gap-1">
                   {deliverYourIdea[indexSelect]?.flag}
                   <div className="text-[12px] xl:text-[16px] font-semibold">
                     {deliverYourIdea[indexSelect]?.position}
                   </div>
                 </div>
-                <div className="flex gap-1 items-center">
+                <div className="flex gap-1">
                   <FeatherIcon />
                   <div className="text-[12px] xl:text-[16px] font-semibold">
                     {deliverYourIdea[indexSelect]?.tech}
@@ -140,19 +142,7 @@ const DeliverIdea = ({ title }: Props) => {
               </div>
               <div className="mt-3 text-[14px] lg:text-[16px] max-h-[170px] overflow-auto custom-scrollbar">
                 <div className="pr-0 lg:pr-5">
-                  Lorem ipsum dolor sit amet. At voluptas recusandae eos
-                  laudantium corporis sed quisquam earum. Qui galisum
-                  dignissimos non animi iste est dicta laborum sed adipisci
-                  voluptatem et modi commodi 33 nihil delectus et molestias
-                  omnis. Eum similique ipsam aut molestiae explicabo aut dolor
-                  iusto est rerum nisi in aliquid voluptas aut eligendi vitae.
-                  33 aliquam optio et dolor eaque aut nemo quia At eaque ipsa
-                  eos quibusdam quos. Ea atque veritatis rem nihil sint ea quas
-                  cupiditate! Non dignissimos sint et omnis eius et dignissimos
-                  dolores 33 dolores placeat? Ea aliquam temporibus hic ipsa
-                  debitis sed eligendi rerum. Aut dolores doloremque ut dolorum
-                  commodi ea galisum maxime et numquam enim nam quia adipisci
-                  nam corporis odio.
+                  {deliverYourIdea[indexSelect]?.content}
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ const TestingQA = () => {
   return (
     <div>
       <InsightBanner
-        title="Software Testing & QA ServicesQB Platinum Partner"
+        title="Software Testing & QA Services"
         subTitle="Icetea Software offers a wide range of independent software testing & QA services that satisfy the highest level of security and industry standards. Using our testing labs, QA expertise and team flexibility, we are able to increase the quality of your product while reducing time-to-market, management risks and operating costs."
         contents={bannerTestingQAData}
       />

@@ -6,7 +6,7 @@ const PartnerAndClient = () => {
   return (
     <div className="pt-[60px] xl:pt-[120px]">
       <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-[#0030C0] text-center font-semibold capitalize">
-        Partner and clients
+        Partners and Clients
       </div>
       <div
         className={clsx(

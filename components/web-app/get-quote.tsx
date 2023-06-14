@@ -217,7 +217,7 @@ const GetQuote = () => {
             </div>
           </div>
           <button
-            className="flex w-[278px] mt-8 gap-2 text-white items-center justify-between btn-fill-gradient px-6 py-2"
+            className="flex w-full sm:w-[290px] mt-8 gap-2 text-white items-center justify-between btn-fill-gradient px-6 py-2 flex-nowrap"
             onClick={() => handleSubmit()}
             disabled={isSubmit}
           >

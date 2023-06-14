@@ -17,7 +17,7 @@ const CostOptimized = () => {
   return (
     <div className="mt-[60px] text-[#0030C0] capitalize">
       <div className="text-[30px] sm:text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold text-center">
-        Cost-optimizedblockchain solutions
+        Cost-optimized Blockchain Solutions
       </div>
       <div className="max-w-[1440px] mt-[83px] px-5 mx-auto grid lg:flex gap-5 xl:gap-[100px] lg:justify-between">
         <div>

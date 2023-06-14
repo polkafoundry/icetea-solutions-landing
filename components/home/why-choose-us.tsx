@@ -14,11 +14,12 @@ const WhyChooseUs = () => {
       <div className="text-center text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-[#01289D] font-semibold capitalize">
         Why Choose us
       </div>
-      <div className="max-w-[843px] text-[14px] xl:text-[16px] mx-auto text-center text-[#01289D]">
+      <div className="max-w-[830px] text-[14px] xl:text-[16px] mx-auto text-center text-[#01289D]">
         Icetea Software is a new subsidiary company of Icetea Labs, one of the
         leading software outsourcing companies based in Hanoi, Vietnam. With
-        dedicated talents and a rigorous process, we confidently provide
-        international-standard IT services and solutions.
+        dedicated talents and a rigorous process,
+        <br /> we confidently provide international-standard IT services and
+        solutions.
       </div>
       <div className="relative max-w-[1000px] xl:max-w-[1576px] px-5 mx-auto mt-12">
         <div className="max-w-[1400px] mx-auto">

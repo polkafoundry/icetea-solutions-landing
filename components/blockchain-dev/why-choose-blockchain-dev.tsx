@@ -2,7 +2,7 @@ const WhyChooseBlockchainDev = () => {
   return (
     <div className="text-[#0030C0] mt-[60px] xl:mt-[120px] max-w-[1440px] px-5 mx-auto capitalize">
       <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold text-center">
-        Why choose us for yourBlockchain project
+        Why choose us for Your Blockchain project
       </div>
       <div className="max-w-[743px] mx-auto text-center text-[14px] xl:text-[16px] xl:leading-[23px]">
         With our hundreds of successful blockchain projects, you are guaranteed

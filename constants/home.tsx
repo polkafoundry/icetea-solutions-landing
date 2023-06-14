@@ -110,13 +110,13 @@ export const whyChooseContents = [
     img: "/images/home/why_choose_1.png",
     title: "Seamless Support & Communication",
     content:
-      "With our global presence and staffs highly proficient in English and other foreign languages, we can not only understand your request but also can help you complete your idea and turn in into real products.",
+      "With our global presence and staffs highly proficient in English and other foreign languages, not only can we understand your request but also can help you complete your idea and turn in into real products.",
   },
   {
     img: "/images/home/why_choose_4.png",
     title: "Experienced in ITO industry",
     content:
-      "Our peersonnel with over 15 years of expeerience in the ITO industry have been providing a wide range of comprehensive  IT services, from consulting to implementing, meeting the highest level of requirements.",
+      "Our personnel with over 15 years of expeerience in the ITO industry have been providing a wide range of comprehensive  IT services, from consulting to implementing, meeting the highest level of requirements.",
   },
   {
     img: "/images/home/why_choose_5.png",
@@ -314,21 +314,27 @@ export const deliverYourIdea = [
     title: "A comprehensive open banking system with APIs",
     flag: <VnFlagIcon />,
     position: "VietNam",
-    tech: "Software",
+    tech: "Java, AWS, React, Micro services",
+    content:
+      "An open banking API platform and system company based in the UK. It is the pioneer and innovator in the global Banking as a Platform (BaaP) sector, enabling banks, businesses and brands to define the future of consumer and SME finance. Their platform enables marketers, product managers, developers to take their financial product vision and rapidly prototype, launch and scale their vision using its open finance platform, financial operations, regulatory licensing and rich set of APIs.",
   },
   {
     img: "/images/home/learning_platform.png",
     title: "Online language learning platform",
     flag: <JpFlagIcon />,
     position: "Japan",
-    tech: "Edtech",
+    tech: "Java, Angular, React, Native Mobile App, AWS",
+    content:
+      "A platform offers a revolutionary new approach to language learning that combines live instruction with native teachers and multimedia-learning content customized to each learner. It allows students to study from home or the office and to avoid inconvenient scheduling, long commute times, high tuition costs, and outdated books.",
   },
   {
     img: "/images/home/booking_service.png",
     title: "Transportation booking service",
     flag: <UkFlagIcon />,
     position: "England",
-    tech: "Logistics",
+    tech: "Java, PHP, Angular, AWS",
+    content:
+      "A startup company in Australia, providing automatic garbage car book services and allowing to franchise their service systems.",
   },
 ];
 

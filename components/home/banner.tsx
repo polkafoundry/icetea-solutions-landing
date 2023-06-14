@@ -25,7 +25,7 @@ const BannerHome = () => {
         <button className="btn-fill-white text-[14px] lg:text-[16px] lg:leading-[23px] xl:text-[24px] xl:leading-[31px] font-semibold px-6 py-2 mt-2 lg:mt-5 uppercase">
           start your idea now
         </button>
-        <div className="mt-[50px] xl:mt-[123px] grid lg:grid-cols-4 gap-5">
+        <div className="mt-[50px] xl:mt-[123px] grid lg:grid-cols-4 gap-5 capitalize">
           {homeDevelopments?.map((item: any, index: number) => {
             return (
               <div

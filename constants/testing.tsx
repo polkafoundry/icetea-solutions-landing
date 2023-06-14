@@ -30,7 +30,7 @@ export const testingQAProcessData = [
   "Test Viewpoint / Environment Outputs: Test Environment, Test Viewpoint, Test Design",
   "Test Case / Test Script Outputs: Test Scripts, Test Scenarios, Test Cases",
   "Test Execution Outputs: Bugs Report, Test Log, Test Report",
-  "Test ReportQuality Report",
+  "Test Report Quality Report",
 ];
 
 export const testingQAServiceData = [
@@ -82,7 +82,7 @@ export const testingQAServiceContents = [
     img: "/images/home/testing_service_2.png",
     title: "Mobile App Testing",
     content:
-      "Many mobile apps are released and disappeared within just weeks of launching due to unsatisfactory experiences and feedback from users, which means all the resources spent on this mobile app development go futile. To avoid such distressing incidents, Sota Tek offers quality Mobile App Testing services for all enterprises. Our Testing packages include both functional and non-functional features of your mobile apps. We investigate specific Upon gaining such insights. We can provide you with solutions",
+      "Many mobile apps are released and disappeared within just weeks of launching due to unsatisfactory experiences and feedback from users, which means all the resources spent on this mobile app development go futile. To avoid such distressing incidents, Icetea Software offers quality Mobile App Testing services for all enterprises. Our Testing packages include both functional and non-functional features of your mobile apps. We investigate specific Upon gaining such insights. We can provide you with solutions",
   },
   {
     img: "/images/home/testing_service_3.png",
@@ -94,7 +94,7 @@ export const testingQAServiceContents = [
     img: "/images/home/testing_service_4.png",
     title: "Usability Testing",
     content:
-      "Usability testing, also known as User Experience testing, aims at monitoring all behaviors of the software and ensure a smooth experience for customers. Sota Tek’s usability testing focuses intensively on end users’ ease of accessing the services and using the software. Through understanding customers’ behaviors deeply, we predict potential issues and guarantee a seamless experience. Upon gaining such insights, we can provide you with solutions",
+      "Usability testing, also known as User Experience testing, aims at monitoring all behaviors of the software and ensure a smooth experience for customers. Icetea Software’s usability testing focuses intensively on end users’ ease of accessing the services and using the software. Through understanding customers’ behaviors deeply, we predict potential issues and guarantee a seamless experience. Upon gaining such insights, we can provide you with solutions",
   },
   {
     img: "/images/home/testing_service_5.png",

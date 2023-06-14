@@ -31,7 +31,7 @@ const BigFormDevelopment = ({
         }}
         className="lg:flex rounded-[27px] overflow-hidden"
       >
-        <div className="w-[570px] min-w-[570px] p-5 lg:py-[65px] lg:pl-[32px] lg:pr-[90px]">
+        <div className="lg:w-[570px] lg:min-w-[570px] p-5 lg:py-[65px] lg:pl-[32px] lg:pr-[90px]">
           <div className="text-[14px] xl:text-[16px] xl:leading-[23px] font-semibold uppercase">
             {devTitle}
           </div>
