@@ -196,7 +196,7 @@ const OurPortfolio = () => {
           app="Node.js, React, Solidity, Redis, AWS"
           img="/images/home/portfolio_redkite.png"
           smallImg="/images/home/portfolio_redkite_small.png"
-          url="https://firebirdchain.com/"
+          url="https://redkitepad.com/"
         />
         <BigFormDevelopment
           color="#3B0087"

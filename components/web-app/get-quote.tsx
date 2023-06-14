@@ -2,7 +2,12 @@ import Image from "next/image";
 import AboutUsArrowRight from "../svg/home/about-us-arrow-right";
 import { SmallLogoInWebApp } from "../svg/insight/small-logo";
 import Link from "next/link";
-import { listFormData, pathname, typeOfConsultation } from "@/constants";
+import {
+  itsEmail,
+  listFormData,
+  pathname,
+  typeOfConsultation,
+} from "@/constants";
 import { useState } from "react";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import clsx from "clsx";
@@ -240,11 +245,12 @@ const GetQuote = () => {
             Let&apos;s make our dreams realized now!
           </div>
           <div className="text-[16px] leading-[23px] mt-2 capitalize">
-            Thank you for your interest! Please fill out the left form, we will
-            contact you as soon as possible.
+            Thank you for your interest! Please fill out the form on the left,
+            we will contact you as soon as possible.
             <br /> If you have something else to share with us, feel free to
-            directly grab a talk via contact@morsoftware.com or hotline at +84
-            869 738 833/ +81 3 5924 6616.
+            directly grab a talk via{" "}
+            <Link href={`mailto:${itsEmail}`}>{itsEmail}</Link> or hotline at
+            +84 246 658 5248.
           </div>
         </div>
       </div>
