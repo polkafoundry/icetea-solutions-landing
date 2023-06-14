@@ -53,7 +53,7 @@ const TestingQAService = () => {
           <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold">
             {testingQAServiceContents[selectedIndex]?.title}
           </div>
-          <div className="text-[14px] xl:text-[16px] xl:leading-[23px] mt-2">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[23px] mt-2 capitalize">
             {testingQAServiceContents[selectedIndex]?.content}
           </div>
         </div>

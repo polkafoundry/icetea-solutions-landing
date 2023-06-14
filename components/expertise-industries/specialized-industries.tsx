@@ -19,7 +19,7 @@ const SpecializedIndustries = () => {
             <p className="mt-4 text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Banking & Finance
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               Top Blockchain Development and Fintech services with extensive
               expertise in Cryptocurrency Exchange and Mining, eWallet
               Development, ICO/IEO/STO, Smart Contracts Development to leverage
@@ -39,7 +39,7 @@ const SpecializedIndustries = () => {
             <p className="mt-4 text-[20px] xl:text-[24px] xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Health Care
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               Develop your digital medical institutions with our IT Strategy
               Consulting, Data Integration and Migration, Patient Engagement,
               Tailored Healthcare Software for radiology and medical record
@@ -59,7 +59,7 @@ const SpecializedIndustries = () => {
             <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Education
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               Outstanding Ed-tech and E-Learning solutions for educational
               institutions, provide immersive learning experience with Virtual
               Reality, E-learning Platforms, Learning Management System,
@@ -79,7 +79,7 @@ const SpecializedIndustries = () => {
             <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Retail & E-commerce
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               Digital Transformation to unlock all potential of the sector,
               including E-commerce development, CRM, ERP data storage and
               analysis, presonalized shopping experiences, Facial Recognition
@@ -100,7 +100,7 @@ const SpecializedIndustries = () => {
               Logistics & <br />
               Transportation
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               We help boost up the digital transformation utilizing the
               application of IoT and AI new technology to facilitate the
               process, operation and reduce cost effectively.
@@ -119,7 +119,7 @@ const SpecializedIndustries = () => {
             <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Automotive
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               Create the next generation of AI, maximize the use of Image and
               Data Annotation techniques with Machine Learning by training
               machines to automatically recognize objects and people in any
@@ -139,7 +139,7 @@ const SpecializedIndustries = () => {
             <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Media & Entertainment
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               Expertized in Livesteaming Apps, Chatbots development, automated
               sutitling and streamline pre-and post-production processes, making
               all steps involved more cohesive, lest costly and faster.
@@ -158,7 +158,7 @@ const SpecializedIndustries = () => {
             <p className="mt-4 text-[20px] xl:text-[24px] break-all xl:leading-[30px] text-center group-hover:text-left font-semibold text-[#0030C0]">
               Telecommunication
             </p>
-            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block">
+            <p className="mt-3 text-[14px] xl:text-[16px] leading-[23px] text-[#0030C0] hidden group-hover:block capitalize">
               The rise of Internet of Things (IoT) helps to unlock billions of
               devices which are brought online. We are working with top ten
               sellular providers for the IoT globally, powering critical

@@ -7,7 +7,7 @@ const EngineeringSkillSet = () => {
       <div className="mt-[60px] xl:mt-[120px] text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold text-[#0030C0] text-center">
         Engineering Skill Sets
       </div>
-      <div className="max-w-[750px] mx-auto text-[14px] xl:text-[16px] xl:leading-[23px] mt-2 text-center">
+      <div className="max-w-[760px] mx-auto text-[14px] xl:text-[16px] xl:leading-[23px] mt-2 text-center capitalize">
         It takes great skills and knowledge to develop software. Anyone who has
         ever created a technology solution understands how the right choice of
         the stack is important. Here you can see a list of programming

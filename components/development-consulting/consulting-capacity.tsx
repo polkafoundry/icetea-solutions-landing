@@ -27,7 +27,7 @@ const ConsultingCapacity = () => {
           return (
             <div
               key={index}
-              className="mt-[60px] grid lg:grid-cols-2 gap-5 lg:gap-[100px] xl:gap-[200px] items-center"
+              className="mt-[60px] grid lg:grid-cols-2 gap-5 lg:gap-[100px] xl:gap-[200px] items-center capitalize"
             >
               <div className={clsx(index === 1 ? "lg:order-last" : "")}>
                 <div className="text-[24px] xl:text-[32px] xl:leading-[40px] font-semibold">

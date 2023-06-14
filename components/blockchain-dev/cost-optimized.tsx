@@ -15,7 +15,7 @@ const CostOptimized = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
-    <div className="mt-[60px] text-[#0030C0]">
+    <div className="mt-[60px] text-[#0030C0] capitalize">
       <div className="text-[30px] sm:text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold text-center">
         Cost-optimizedblockchain solutions
       </div>

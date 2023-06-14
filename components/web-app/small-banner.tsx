@@ -8,7 +8,7 @@ export const WebAppSmallBanner = () => {
         <div className="mx-auto lg:mx-0">
           <WebAppTelegram />
         </div>
-        <div className="w-full px-6 xl:pl-[48px] xl:pr-[100px] text-white text-[30px] xl:text-[40px] xl:leading-[58px] font-semibold">
+        <div className="w-full px-6 xl:pl-[48px] xl:pr-[100px] text-white text-[30px] xl:text-[40px] xl:leading-[58px] font-semibold capitalize">
           Want to know the cost of your software project development?
         </div>
         <button className="flex justify-between btn-fill-white px-6 py-2 items-center gap-3 text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold flex-nowrap whitespace-nowrap">

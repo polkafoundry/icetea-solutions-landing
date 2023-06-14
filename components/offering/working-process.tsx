@@ -57,7 +57,7 @@ const WorkingProcessContentRight = ({ content, number, top }: any) => {
         </div>
         <div
           className={clsx(
-            "w-full h-full xl:pl-[100px] xl:pr-[100px] flex items-center font-semibold text-white capitalize",
+            "w-full h-full xl:pl-[90px] xl:pr-[100px] flex items-center font-semibold text-white capitalize",
             "text-[28px] p-0 lg:pl-[80px] lg:pr-[30px]"
           )}
         >

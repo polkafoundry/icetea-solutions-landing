@@ -1,6 +1,6 @@
 const WhyChooseBlockchainDev = () => {
   return (
-    <div className="text-[#0030C0] mt-[60px] xl:mt-[120px] max-w-[1440px] px-5 mx-auto">
+    <div className="text-[#0030C0] mt-[60px] xl:mt-[120px] max-w-[1440px] px-5 mx-auto capitalize">
       <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold text-center">
         Why choose us for yourBlockchain project
       </div>

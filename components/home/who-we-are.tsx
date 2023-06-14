@@ -50,7 +50,7 @@ const WhoWeAre = () => {
                   170+
                 </div>
                 <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold">
-                  successful Projects
+                  Dedicated employees
                 </div>
               </div>
             </div>

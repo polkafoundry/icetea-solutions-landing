@@ -9,7 +9,7 @@ interface Props {
 
 const InsightBanner = ({ title, subTitle, contents, isThree }: Props) => {
   return (
-    <div className="bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D] py-[55px]">
+    <div className="bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D] py-[55px] capitalize">
       <div className="max-w-[1440px] px-5 mx-auto grid lg:flex gap-10 items-center">
         <div className="text-white">
           <div className="text-[35px] lg:text-[40px] leading-[40px] xl:text-[60px] xl:leading-[60px] font-bold capitalize">

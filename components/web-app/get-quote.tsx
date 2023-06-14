@@ -80,7 +80,7 @@ const GetQuote = () => {
           <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold">
             Get Quote
           </div>
-          <div className="mt-4">
+          <div className="mt-4 capitalize">
             You are welcome to fill in the form below, and our IT experts will
             reach out to you during business hours to discuss your project.
           </div>
@@ -239,7 +239,7 @@ const GetQuote = () => {
           <div className="text-[36px] leading-[46px] font-semibold mt-8 capitalize">
             Let&apos;s make our dreams realized now!
           </div>
-          <div className="text-[16px] leading-[23px] mt-2">
+          <div className="text-[16px] leading-[23px] mt-2 capitalize">
             Thank you for your interest! Please fill out the left form, we will
             contact you as soon as possible.
             <br /> If you have something else to share with us, feel free to

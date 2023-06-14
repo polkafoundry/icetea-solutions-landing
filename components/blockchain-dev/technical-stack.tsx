@@ -42,7 +42,7 @@ const TechnicalStack = () => {
         <div className="text-[40px] xl:text-[60px] xl:leading-[60px] text-center font-semibold">
           Technical Stacks
         </div>
-        <div className="max-w-[606px] mx-auto text-center text-[14px] xl:text-[16px] xl:leading-[23px]">
+        <div className="max-w-[606px] mx-auto text-center text-[14px] xl:text-[16px] xl:leading-[23px] capitalize">
           An elite engineering team and the latest technologies joined with
           agile and modern business practices.
         </div>

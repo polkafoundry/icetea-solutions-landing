@@ -17,7 +17,7 @@ const Industries = () => {
           <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold">
             Industries
           </div>
-          <div className="mt-2 text-[14px] xl:text-[16px]">
+          <div className="mt-2 text-[14px] xl:text-[16px] capitalize">
             Each enterprise is unique and requires specific software products to
             successfully function.
             <br /> Icetea Software produces bespoke software and implements

@@ -22,7 +22,7 @@ const AboutUs = () => {
           <h1 className="text-[30px] lg:text-[50px] lg:leading-[50px] xl:text-[60px] xl:leading-[60px] font-semibold capitalize text-center">
             Your Trusted Software Development Partner
           </h1>
-          <div className="mt-3 text-[14px] xl:text-[16px] xl:leading-[23px] text-center">
+          <div className="mt-3 text-[14px] xl:text-[16px] xl:leading-[23px] text-center capitalize">
             We offer IT experts who bring data-driven and innovative digital
             transformation approaches to our clients. Our skills and experience
             in Software Development have enabled sustainable growth for

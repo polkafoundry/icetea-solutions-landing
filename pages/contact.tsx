@@ -21,7 +21,7 @@ const Contact = () => {
           <h1 className="text-[30px] lg:text-[50px] lg:leading-[50px] xl:text-[60px] xl:leading-[60px] font-semibold capitalize text-center">
             Let&apos;s discuss !
           </h1>
-          <div className="mt-3 text-[16px] leading-[23px] text-center">
+          <div className="mt-3 text-[16px] leading-[23px] text-center capitalize">
             If you have any ideas, please fill out the form below and our
             consultants will get in touch with you shortly.
           </div>

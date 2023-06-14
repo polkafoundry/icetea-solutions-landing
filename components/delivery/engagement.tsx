@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 const Engagement = () => {
   return (
-    <div className="px-5">
+    <div className="px-5 capitalize">
       <div className="mt-[60px] xl:mt-[120px] max-w-[1400px] mx-auto p-5 xl:p-10 border border-[#0083FF] rounded-[24px] text-[#0030C0]">
         <div className="text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold text-center">
           Engagement Models

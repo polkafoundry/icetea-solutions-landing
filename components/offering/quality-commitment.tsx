@@ -10,7 +10,7 @@ const QualityCommitment = () => {
           <div className="text-[45px] xl:text-[60px] xl:leading-[72px] font-bold">
             Quality Commitment
           </div>
-          <div className="mt-5 text-[14px] xl:text-[16px]">
+          <div className="mt-5 text-[14px] xl:text-[16px] capitalize">
             Each enterprise is unique and requires specific software products to
             successfully function. Icetea Software produces Bespoke solutions
             and implements platform-based solutions for many industries.
@@ -42,7 +42,7 @@ const QualityCommitment = () => {
                 </div>
               )}
               {data?.mainContentList && (
-                <ul className="mt-3 text-[14px] xl:text-[16px] list-disc pl-5 text-[#0030C0]">
+                <ul className="mt-3 text-[14px] xl:text-[16px] list-disc pl-5 text-[#0030C0] capitalize">
                   {data?.mainContentList?.map((content: any, idx: number) => {
                     return (
                       <li key={idx}>

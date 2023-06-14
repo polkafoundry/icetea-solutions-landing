@@ -42,7 +42,7 @@ const HeaderComponent = () => {
                       </div>
                       {navItem?.subMenu && <ArrowDownHeader />}
                     </div>
-                    <div className="absolute hidden group-hover:block top-[45px] -left-5 bg-white rounded-[12px] overflow-hidden shadow-md">
+                    <div className="absolute hidden group-hover:block top-[45px] -left-5 bg-white rounded-[12px] overflow-hidden shadow-2xl">
                       {navItem?.subMenu?.map((data: any, idx: number) => {
                         return (
                           <Link

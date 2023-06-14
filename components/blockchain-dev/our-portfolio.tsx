@@ -145,12 +145,12 @@ const OurPortfolio = () => {
       <div className="text-[40px] xl:text-[60px] xl:leading-[60px] text-center text-[#0030C0] font-semibold">
         Our Portfolio
       </div>
-      <div className="max-w-[743px] mt-2 mx-auto text-center xl:text-[16px] text-[14px] text-[#0030C0] xl:leading-[23px]">
+      <div className="max-w-[743px] mt-2 mx-auto text-center xl:text-[16px] text-[14px] text-[#0030C0] xl:leading-[23px] capitalize">
         With our hundreds of successful blockchain projects, you are guaranteed
         to haveyour idea turned into reality, along with cost-efficient
         development options.
       </div>
-      <div className="mt-12 grid gap-5 xl:gap-12 max-w-[1440px] px-5 mx-auto">
+      <div className="mt-12 grid gap-5 xl:gap-12 max-w-[1440px] px-5 mx-auto capitalize">
         <BigFormDevelopment
           color="#00A52E"
           devTitle="MARKETPLACE DEVELOPMENT"

@@ -78,7 +78,7 @@ const OurValue = () => {
                     {value?.title}
                   </div>
                 </div>
-                <ul className="text-[#0030C0] text-[14px] xl:text-[16px] xl:leading-[23px] pl-10 list-disc">
+                <ul className="text-[#0030C0] text-[14px] xl:text-[16px] xl:leading-[23px] pl-10 list-disc capitalize">
                   {value?.contents?.map((content: any, idx: number) => {
                     return (
                       <li key={idx} className="mt-2">

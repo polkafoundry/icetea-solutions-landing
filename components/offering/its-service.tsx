@@ -16,7 +16,7 @@ export const ITSServices = () => {
                 <div className="mt-3 text-[20px] xl:text-[24px] xl:leading-[30px] font-semibold text-center">
                   {service?.title}
                 </div>
-                <div className="mt-3 text-[14px] xl:text-[16px] xl:leading-[23px] text-center">
+                <div className="mt-3 text-[14px] xl:text-[16px] xl:leading-[23px] text-center capitalize">
                   {service?.content}
                 </div>
               </div>

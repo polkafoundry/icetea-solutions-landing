@@ -28,7 +28,7 @@ const Offering = () => {
           <h1 className="text-[30px] lg:text-[50px] lg:leading-[50px] xl:text-[60px] xl:leading-[60px] font-semibold capitalize text-center">
             Icetea Software Services & Offerings
           </h1>
-          <div className="mt-3 text-[14px] xl:text-[16px] xl:leading-[23px] text-center">
+          <div className="mt-3 text-[14px] xl:text-[16px] xl:leading-[23px] text-center capitalize">
             With 120+ minds, we reach across the technology & business and
             harness our various talents into one goal - to help Clients deliver
             their ideas to real life.

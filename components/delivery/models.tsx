@@ -11,7 +11,7 @@ const DeliveryModels = () => {
             <div key={index} className="grid lg:grid-cols-2 gap-5 items-center">
               <div
                 className={clsx(
-                  "text-[#0030C0]",
+                  "text-[#0030C0] capitalize",
                   index === 1 ? "lg:order-last lg:pl-[100px]" : ""
                 )}
               >
@@ -55,7 +55,7 @@ const DeliveryModels = () => {
                     return (
                       <div
                         key={idx}
-                        className="flex gap-5 capitalize pt-3 xl:pt-6 text-[16px] xl:text-[20px] xl:leading-[29px] text-[#0083FF]"
+                        className="flex gap-5 capitalize pt-2 xl:pt-4 text-[16px] xl:text-[20px] xl:leading-[29px] text-[#0083FF]"
                       >
                         <div className="w-full">{assignment?.title}</div>
                         <div className="min-w-[90px] sm:w-[130px] sm:min-w-[130px] flex justify-center">

@@ -29,7 +29,7 @@ const FooterComponent = () => {
             <div className="text-[24px] lg:text-[35px] lg:leading-[50px] xl:text-[48px] xl:leading-[70px] font-semibold text-white capitalize">
               Do you want to turn your ideas into reality?
             </div>
-            <div className="text-[16px] leading-[23px] text-white mt-5">
+            <div className="text-[16px] leading-[23px] text-white mt-5 capitalize">
               We’re here to help you innovate with success. Our experts will
               conduct an in-depth analysis of your business model and industry
               to advise on implementing the most optimal technology solutions.
@@ -62,7 +62,7 @@ const FooterComponent = () => {
                 <PositionIcon />
                 Ha Noi
               </div>
-              <div className="mt-1 text-[18px] leading-[28px] font-semibold text-white">
+              <div className="mt-1 text-[18px] leading-[28px] text-white">
                 +84 246 658 5248
               </div>
               <div className="w-full h-[1px] bg-white mt-[10px]" />
@@ -104,7 +104,9 @@ const FooterComponent = () => {
               </div>
             </div>
             <div className="flex justify-between items-center mt-[63px]">
-              <div>Get in touch</div>
+              <div className="text-[16px] lg:text-[24px] font-semibold">
+                Get in touch
+              </div>
               <div className="flex gap-3 items-center">
                 <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">
                   <LinkedInIcon />

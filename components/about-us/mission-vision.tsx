@@ -10,7 +10,7 @@ const MissionVision = () => {
               <div className="text-[30px] lg:text-[40px] lg:leading-[40px] xl:text-[60px] xl:leading-[87px] font-semibold capitalize">
                 mission
               </div>
-              <div className="text-[16px] xl:text-[20px] xl:leading-[29px]">
+              <div className="text-[16px] xl:text-[20px] xl:leading-[29px] capitalize">
                 Boost up our customers&apos; business growth with Agile services
                 and innovative technology.
               </div>
@@ -55,7 +55,7 @@ const MissionVision = () => {
               <div className="text-[30px] lg:text-[40px] lg:leading-[40px] xl:text-[60px] xl:leading-[87px] font-semibold capitalize">
                 Vision
               </div>
-              <div className="text-[16px] xl:text-[20px] xl:leading-[29px]">
+              <div className="text-[16px] xl:text-[20px] xl:leading-[29px] capitalize">
                 Our journey started with maximizing customer experience and
                 creating unprecedented value for our customers, employees and
                 partners. to contribute to the societal development.

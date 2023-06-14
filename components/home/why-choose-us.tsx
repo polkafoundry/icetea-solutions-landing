@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
             {whyChooseContents?.map((value: any, index: number) => {
               return (
                 <SwiperSlide key={index}>
-                  <div className="relative pt-[40px] xl:pt-[60px] h-full">
+                  <div className="relative pt-[40px] xl:pt-[60px] h-full text-center">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2">
                       <Image
                         src={value?.img}

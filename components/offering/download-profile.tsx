@@ -7,7 +7,7 @@ const DownloadProfileITS = () => {
         <div className="text-[30px] lg:text-[48px] lg:leading-[70px] font-semibold">
           Icetea Software Profile
         </div>
-        <div className="max-w-[653px] mx-auto text-[14px] lg:text-[16px] lg:leading-[23px]">
+        <div className="max-w-[653px] mx-auto text-[14px] lg:text-[16px] lg:leading-[23px] capitalize">
           We’re here to help you innovate with success. Our experts will conduct
           an in-depth analysis of your business model and industry to advise on
           implementing the most optimal technology solutions.

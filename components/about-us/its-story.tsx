@@ -10,7 +10,7 @@ const ITSStory = () => {
           </div>
           Icetea Software’s story
         </div>
-        <p className="mt-6 text-[16px] xl:text-[20px] xl:leading-[29px]">
+        <p className="mt-6 text-[16px] xl:text-[20px] xl:leading-[29px] capitalize">
           Icetea Software was officially established on March 3, 2023. According
           to Mr. Luong, the CEO of Icetea Software, our mission is to provide
           real value to our customers by delivering breakthrough technology

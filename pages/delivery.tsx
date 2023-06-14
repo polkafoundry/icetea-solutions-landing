@@ -21,7 +21,7 @@ const Delivery = () => {
           <h1 className="text-[30px] lg:text-[50px] lg:leading-[50px] xl:text-[60px] xl:leading-[87px] font-semibold capitalize text-center">
             Our Delivery Models
           </h1>
-          <div className="text-[14px] xl:text-[16px] xl:leading-[23px] text-center">
+          <div className="text-[14px] xl:text-[16px] xl:leading-[23px] text-center capitalize">
             Our experts always stay up-to-date with new developments and share
             their insights, knowledge and opinions from all around the world.
           </div>

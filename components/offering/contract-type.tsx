@@ -24,17 +24,17 @@ const ContractType = () => {
                 >
                   {offeringContractType?.title}
                 </div>
-                <div className="text-[#0030C0] text-[16px] leading-[23px] font-semibold">
+                <div className="text-[#0030C0] text-[16px] leading-[23px] xl:text-[24px] xl:leading-[35px] font-semibold">
                   {offeringContractType?.subTitle}
                 </div>
-                <div className="w-full h-[1px] my-8 bg-[#0083FF]" />
+                <div className="w-full h-[1px] mt-5 mb-8 bg-[#0083FF]" />
                 <div className="grid gap-[18px]">
                   {offeringContractType?.contents?.map(
                     (data: any, idx: number) => {
                       return (
                         <div
                           key={idx}
-                          className="flex gap-[10px] text-[16px] leading-[23px] text-[#0030C0]"
+                          className="flex gap-[10px] text-[16px] leading-[23px] text-[#0030C0] capitalize"
                         >
                           <div className="min-w-[24px]">
                             <ContractTypeCheck />
