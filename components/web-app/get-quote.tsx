@@ -6,11 +6,14 @@ import {
   itsEmail,
   listFormData,
   pathname,
+  toastType,
   typeOfConsultation,
 } from "@/constants";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import clsx from "clsx";
+import { ToastContext } from "../context/toast-context";
+// const sgMail = require("@sendgrid/mail");
 
 const NEXT_PUBLIC_PRIVATE_KEY = process?.env?.NEXT_PUBLIC_PRIVATE_KEY;
 const NEXT_PUBLIC_CLIENT_EMAIL = process?.env?.NEXT_PUBLIC_CLIENT_EMAIL;
@@ -27,12 +30,14 @@ const GetQuote = () => {
     ["company"]: "",
     ["message"]: "",
   };
+  const { toast } = useContext(ToastContext);
   const doc = new GoogleSpreadsheet(NEXT_PUBLIC_SHEET_ID);
   const [formData, setFormData] = useState<any>(formDataDefault);
   const [isSubmitAction, setIsSubmitAction] = useState<boolean>(false);
   const [isSubmit, setIsSubmit] = useState<boolean>(false);
   const [isCheckPolicy, setIsCheckPolicy] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
+  // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const handleSubmit = async () => {
     try {
@@ -55,6 +60,7 @@ const GetQuote = () => {
       await doc.loadInfo();
       const sheet = doc.sheetsByIndex[0];
       const formatedDate = new Date().toUTCString();
+      console.log("data: ", formData);
       await sheet.addRow({
         ["Time"]: formatedDate,
         ["Type Of Consultation"]: formData["typeOfConsultation"],
@@ -67,8 +73,28 @@ const GetQuote = () => {
         ["Message"]: formData["message"],
       });
       setIsSubmit(false);
+      // const msg = {
+      //   to: "tung.do@icetea.io",
+      //   from: "dotung.mto@gmail.com",
+      //   subject: "Sending with SendGrid is Fun",
+      //   text: "and easy to do anywhere, even with Node.js",
+      //   html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+      // };
+      // sgMail
+      //   .send(msg)
+      //   .then(() => {
+      //     console.log("Email sent");
+      //   })
+      //   .catch((error: any) => {
+      //     console.error(error);
+      //   });
+      // const result = await sgMail.send(msg);
+      // console.log(result);
+      toast("Your form has been submitted.", toastType?.SUCCESS);
     } catch (err) {
+      console.log(err);
       setIsSubmit(false);
+      toast("Your form has been failed.", toastType?.ERROR);
     }
   };
 
@@ -226,7 +252,9 @@ const GetQuote = () => {
             onClick={() => handleSubmit()}
             disabled={isSubmit}
           >
-            {isSubmit ? "Loading..." : "Confirm the infomation"}
+            <div className="w-full">
+              {isSubmit ? "Loading..." : "Confirm the infomation"}
+            </div>
             <AboutUsArrowRight />
           </button>
         </div>

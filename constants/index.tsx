@@ -152,3 +152,8 @@ export const listFormData = [
 ];
 
 export const itsEmail = "contact@icetea-software.com";
+
+export const toastType = {
+  SUCCESS: "success",
+  ERROR: "error",
+};

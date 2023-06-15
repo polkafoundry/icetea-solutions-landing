@@ -7,16 +7,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-fade";
+import { ToastContextProvider } from "@/components/context/toast-context";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <Head>
-        <title>Icetea Software</title>
-      </Head>
-      <HeaderComponent />
-      <Component {...pageProps} />
-      <FooterComponent />
+      <ToastContextProvider>
+        <Head>
+          <title>Icetea Software</title>
+        </Head>
+        <HeaderComponent />
+        <Component {...pageProps} />
+        <FooterComponent />
+      </ToastContextProvider>
     </div>
   );
 }
