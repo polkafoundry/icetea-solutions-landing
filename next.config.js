@@ -8,17 +8,17 @@ const nextConfig = {
         tls: false,
         fs: false,
         path: false,
-
-      }
+      };
     }
-    return config
+    return config;
   },
   reactStrictMode: true,
   env: {
     NEXT_PUBLIC_PRIVATE_KEY: process?.env?.NEXT_PUBLIC_PRIVATE_KEY,
     NEXT_PUBLIC_CLIENT_EMAIL: process?.env?.NEXT_PUBLIC_CLIENT_EMAIL,
-    NEXT_PUBLIC_SHEET_ID: process?.env?.NEXT_PUBLIC_SHEET_ID
-  }
-}
+    NEXT_PUBLIC_SHEET_ID: process?.env?.NEXT_PUBLIC_SHEET_ID,
+    NEXT_PUBLIC_SENDGRID_API_KEY: process?.env?.NEXT_PUBLIC_SENDGRID_API_KEY,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
