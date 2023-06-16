@@ -18,7 +18,7 @@ export default async function handler(req: any, res: any) {
   const msg = {
     to: itsEmail,
     from: "tung.do@icetea.io",
-    subject: "Message from Website Contact Form",
+    subject: `${firstName} ${lastName} - ${typeOfConsultation}`,
     text: "Message from Website Contact Form",
     html: `<table style="border-collapse: collapse; width: 100%;">
       <tr>
