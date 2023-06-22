@@ -27,7 +27,7 @@ const Model = ({ children, isOpen, handleClose }: Props) => {
         className="fixed bg-black bg-opacity-80 top-0 left-0 z-0 p-4 w-full h-full"
         onClick={() => handleClose()}
       />
-      <div className="p-5 lg:p-10 bg-white z-10 rounded-[24px]">{children}</div>
+      <div className="p-5 lg:p-10 bg-white z-10 rounded-[24px] capitalize">{children}</div>
     </div>
   );
 };

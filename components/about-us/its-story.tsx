@@ -4,7 +4,7 @@ const ITSStory = () => {
   return (
     <div className="mt-[120px] max-w-[1440px] px-5 mx-auto text-white">
       <div className="bg-gradient-to-b from-[#61B2FF] via-[#0083FF] to-[#01289D] p-5 lg:px-[57px] lg:pt-[34px] lg:pb-[57px] rounded-[24px]">
-        <div className="flex gap-6 text-[30px] lg:text-[38px] xl:text-[48px] xl:leading-[70px] font-semibold items-center">
+        <div className="flex gap-6 text-[30px] lg:text-[38px] xl:text-[48px] xl:leading-[70px] font-semibold items-center capitalize">
           <div className="min-w-[42px]">
             <ITSBox />
           </div>

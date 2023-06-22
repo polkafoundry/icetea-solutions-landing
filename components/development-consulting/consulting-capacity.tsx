@@ -8,7 +8,7 @@ import { pathname } from "@/constants";
 
 const ConsultingCapacity = () => {
   return (
-    <div className="text-[#0030C0]">
+    <div className="text-[#0030C0] capitalize">
       <div className="text-[30px] xl:text-[48px] xl:leading-[70px] text-center text-[#01289D] font-semibold mt-8 xl:mt-[60px] capitalize">
         Icetea Software Consulting capacity
       </div>

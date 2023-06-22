@@ -5,10 +5,10 @@ import Image from "next/image";
 const BannerHome = () => {
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute w-full h-fit top-0 left-0 z-0">
+      <div className="absolute w-full lg:h-fit top-0 left-0 z-0">
         <Image
           src="/images/home/banner.png"
-          className="w-full min-w-[768px] lg:min-w-full"
+          className="w-full min-w-[768px] lg:min-w-full h-full lg:h-[590px] xl:h-[780px]"
           width={1920}
           height={869}
           priority

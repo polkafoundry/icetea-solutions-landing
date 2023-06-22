@@ -27,7 +27,7 @@ const OfficeLocation = () => {
             </div>
             Ha Noi - Viet Nam
           </div>
-          <ul className="text-[14px] xl:text-[17px] xl:leading-[26px] list-disc pl-5 mt-1">
+          <ul className="text-[14px] xl:text-[17px] xl:leading-[26px] list-disc pl-5 mt-1 capitalize">
             <li>11th Floor, IPH Tower, 241 Xuan Thuy Street, CauGiay, Hanoi</li>
             <li>
               contact mail to:{" "}

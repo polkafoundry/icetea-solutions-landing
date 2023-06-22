@@ -12,7 +12,7 @@ const SoftwareDevService = () => {
       <div className="mt-[60px] xl:mt-[120px] px-5 text-[35px] xl:text-[48px] xl:leading-[70px] font-semibold text-[#0030C0] text-center">
         Software Development Services
       </div>
-      <div className="mt-6 xl:mt-12 grid lg:grid-cols-2 gap-6 max-w-[1440px] px-5 mx-auto">
+      <div className="mt-6 xl:mt-12 grid lg:grid-cols-2 gap-6 max-w-[1440px] px-5 mx-auto capitalize">
         {softwareDevServiceContent?.map((content: any, index: number) => {
           return (
             <div

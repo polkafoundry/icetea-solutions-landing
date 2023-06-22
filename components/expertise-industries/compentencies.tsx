@@ -52,7 +52,7 @@ const Compentencies = () => {
             return (
               <div key={index}>
                 <div className="w-fit mx-auto">{content?.img}</div>
-                <div className="mt-10 xl:mt-[60px] text-[18px] xl:text-[24px] xl:leading-[30px] font-semibold">
+                <div className="mt-10 xl:mt-[60px] text-[18px] xl:text-[24px] xl:leading-[30px] text-center font-semibold">
                   {content?.title}
                 </div>
                 <ul className="mt-5 xl:mt-[48px] text-[14px] xl:text-[16px] xl:leading-[32px] list-disc pl-5">

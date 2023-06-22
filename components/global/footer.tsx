@@ -77,29 +77,45 @@ const FooterComponent = () => {
             <div className="grid grid-cols-2 gap-2 justify-between text-white">
               <div>
                 <div className="text-[24px] leading-[35px] font-semibold mb-6">
-                  About us
+                  Company
                 </div>
                 <div className="text-[16px] leading-[23px] mb-3">
-                  Who we are
+                  <Link href={`${pathname.ABOUTUS}`}>About Us</Link>
                 </div>
-                <div className="text-[16px] leading-[23px] mb-3">Adward</div>
                 <div className="text-[16px] leading-[23px] mb-3">
-                  Leadership
+                  <Link href={`${pathname.CONTACT}`}>Contact</Link>
                 </div>
-                <div className="text-[16px] leading-[23px]">Contact</div>
+                <div className="text-[16px] leading-[23px] mb-3">
+                  <Link href={`/${pathname.EXPERTISE}`}>
+                    Expertise & Industries
+                  </Link>
+                </div>
               </div>
               <div>
                 <div className="text-[24px] leading-[35px] font-semibold mb-6">
                   Services
                 </div>
                 <div className="text-[16px] leading-[23px] mb-3">
-                  Offshore Development
+                  <Link href={`/${pathname.SERVICE}/${pathname.WEBAPP}`}>
+                    Web App Development
+                  </Link>
                 </div>
                 <div className="text-[16px] leading-[23px] mb-3">
-                  Salesforce Development
+                  <Link href={`/${pathname.SERVICE}/${pathname?.CONSULTING}`}>
+                    Custom Software Development
+                  </Link>
+                </div>
+                <div className="text-[16px] leading-[23px] mb-3">
+                  <Link href={`/${pathname.SERVICE}/${pathname?.TESTINGQA}`}>
+                    Software Testing & QA
+                  </Link>
                 </div>
                 <div className="text-[16px] leading-[23px]">
-                  Product and Service
+                  <Link
+                    href={`/${pathname.SERVICE}/${pathname?.BLOCKCHAINDEVELOPMENT}`}
+                  >
+                    Blockchain Development
+                  </Link>
                 </div>
               </div>
             </div>
@@ -109,7 +125,7 @@ const FooterComponent = () => {
               </div>
               <div className="flex gap-3 items-center">
                 <Link
-                  href={"https://www.linkedin.com/company/90634399/"}
+                  href={"https://www.linkedin.com/company/icetea-software"}
                   target={"_blank"}
                 >
                   <div className="flex w-[42px] h-[42px] items-center justify-center border border-white rounded-full">

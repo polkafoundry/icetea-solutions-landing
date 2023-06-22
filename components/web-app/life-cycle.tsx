@@ -6,7 +6,7 @@ const LifeCycle = () => {
       <div className="text-[35px] xl:text-[48px] xl:leading-[70px] text-center text-[#01289D] font-semibold mt-8 xl:mt-[60px] capitalize">
         Software development life cycle
       </div>
-      <div className="mt-8 xl:mt-[48px] grid lg:block gap-5 max-w-[1440px] px-5 mx-auto text-[#0030C0]">
+      <div className="mt-8 xl:mt-[48px] grid lg:block gap-5 max-w-[1440px] px-5 mx-auto text-[#0030C0] capitalize">
         <div className="grid lg:grid-cols-3 gap-5 lg:gap-9">
           {lifeCycleTop?.map((data: any, index: number) => {
             return (

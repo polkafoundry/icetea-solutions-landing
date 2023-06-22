@@ -202,8 +202,8 @@ export const engineeringSkillSetContent = [
     contents: [
       "PostgreSQL",
       "MonoDB",
-      "MySGL",
-      "Elasticsrearch",
+      "MySQL",
+      "Elasticsearch",
       "Redis",
       "AWS RDS",
     ],

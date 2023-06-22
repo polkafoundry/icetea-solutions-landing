@@ -58,10 +58,10 @@ const DeliveryModels = () => {
                         className="flex gap-5 capitalize pt-2 xl:pt-4 text-[16px] xl:text-[20px] xl:leading-[29px] text-[#0083FF]"
                       >
                         <div className="w-full">{assignment?.title}</div>
-                        <div className="min-w-[90px] sm:w-[130px] sm:min-w-[130px] flex justify-center">
+                        <div className="items-center min-w-[90px] sm:w-[130px] sm:min-w-[130px] flex justify-center">
                           {assignment?.customer}
                         </div>
-                        <div className="min-w-[90px] sm:w-[120px] sm:min-w-[120px] flex justify-center">
+                        <div className="items-center min-w-[90px] sm:w-[120px] sm:min-w-[120px] flex justify-center">
                           {assignment?.offshore}
                         </div>
                       </div>

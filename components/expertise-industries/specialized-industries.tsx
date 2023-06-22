@@ -11,7 +11,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/banking_binance.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={247}
               height={247}
               alt="banking binance"
@@ -31,7 +31,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/health_care.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={240}
               height={233}
               alt="banking binance"
@@ -51,7 +51,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/education.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={213}
               height={222}
               alt="banking binance"
@@ -71,7 +71,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/retail_ecommerce.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={290}
               height={250}
               alt="banking binance"
@@ -91,7 +91,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/logistic.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={283}
               height={242}
               alt="banking binance"
@@ -111,7 +111,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/automotive.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={228}
               height={228}
               alt="banking binance"
@@ -131,7 +131,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/media_entertainment.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={247}
               height={247}
               alt="banking binance"
@@ -150,7 +150,7 @@ const SpecializedIndustries = () => {
           <div className="px-6 pb-5">
             <Image
               src="/images/home/telecommunication.png"
-              className="group-hover:hidden"
+              className="group-hover:hidden md:h-[220px] object-contain"
               width={211}
               height={211}
               alt="banking binance"

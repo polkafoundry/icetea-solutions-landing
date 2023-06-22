@@ -52,7 +52,12 @@ const Engagement = () => {
                   {data?.title}
                 </div>
                 <div className="w-full pr-[80px]">
-                  <ul className="list-disc pl-5 text-[16px] xl:text-[20px] xl:leading-[29px]">
+                  <ul
+                    className={clsx(
+                      "pl-5 text-[16px] xl:text-[20px] xl:leading-[29px]",
+                      data?.offshore?.length <= 1 ? "" : "list-disc"
+                    )}
+                  >
                     {data?.offshore?.map((offshore: any, idx: number) => {
                       return (
                         <li
@@ -66,7 +71,12 @@ const Engagement = () => {
                   </ul>
                 </div>
                 <div className="w-full pr-[80px]">
-                  <ul className="list-disc pl-5 text-[16px] xl:text-[20px] xl:leading-[29px]">
+                  <ul
+                    className={clsx(
+                      "pl-5 text-[16px] xl:text-[20px] xl:leading-[29px]",
+                      data?.project?.length <= 1 ? "" : "list-disc"
+                    )}
+                  >
                     {data?.project?.map((project: any, idx: number) => {
                       return (
                         <li

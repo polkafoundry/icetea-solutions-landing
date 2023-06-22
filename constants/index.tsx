@@ -49,7 +49,7 @@ export const navItems = [
         value: pathname?.BLOCKCHAINDEVELOPMENT,
         title: "Blockchain Development",
       },
-      { value: pathname?.OFFERING, title: "Service & Offerings" },
+      { value: pathname?.OFFERING, title: "Services & Offerings" },
     ],
   },
   { value: pathname?.DELIVERY, title: "Delivery Models" },
@@ -104,7 +104,7 @@ export const ITServiceOffering = [
   },
   {
     img: <QATesting />,
-    title: "qa and testing",
+    title: "QA & Testing",
     content:
       "Icetea Software offers a wide range of independent software testing & QA services that satisfy the highest level of security and industry standards. Using our testing labs, QA expertise and team flexibility, we are able to increase the quality of your product while reducing time-to-market, managing risks and operating costs for business needs, we are able to adapt seamlessly to your requests.",
   },

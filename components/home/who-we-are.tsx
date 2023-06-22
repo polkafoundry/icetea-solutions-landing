@@ -7,7 +7,7 @@ const WhoWeAre = () => {
       <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-center text-[#01289D] font-semibold mt-[60px] xl:mt-[120px] capitalize">
         Who we are
       </div>
-      <div className="max-w-[600px] xl:max-w-[724px] text-center text-[#0030C0] mx-auto text-[14px] xl:text-[16px] xl:leading-[23px]">
+      <div className="max-w-[600px] xl:max-w-[724px] text-center text-[#0030C0] mx-auto text-[14px] xl:text-[16px] xl:leading-[23px] capitalize">
         Icetea Software is committed to delivering top-tier, tailored solutions
         for our clients. We are prepared to establish and evolve systems to meet
         your specific needs. Don&apos;t hesitate to reach out to us for further
@@ -34,7 +34,7 @@ const WhoWeAre = () => {
                 <div className="xl:text-[120px] xl:leading-[175px] text-[50px] lg:text-[80px] lg:leading-[100px] text-white">
                   5+
                 </div>
-                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold">
+                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold capitalize">
                   years of experience
                 </div>
               </div>
@@ -49,7 +49,7 @@ const WhoWeAre = () => {
                 <div className="xl:text-[120px] xl:leading-[175px] text-[50px] lg:text-[80px] lg:leading-[100px] text-white">
                   170+
                 </div>
-                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold">
+                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold capitalize">
                   Dedicated employees
                 </div>
               </div>
@@ -68,7 +68,7 @@ const WhoWeAre = () => {
                 <div className="xl:text-[120px] xl:leading-[175px] text-[50px] lg:text-[80px] lg:leading-[100px] text-white">
                   6+
                 </div>
-                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold">
+                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold capitalize">
                   Countries partnered
                 </div>
               </div>
@@ -83,7 +83,7 @@ const WhoWeAre = () => {
                 <div className="xl:text-[120px] xl:leading-[175px] text-[50px] lg:text-[80px] lg:leading-[100px] text-white">
                   130+
                 </div>
-                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold">
+                <div className="xl:text-[24px] lg:text-[18px] xl:leading-[30px] text-white font-semibold capitalize">
                   successful Projects
                 </div>
               </div>
