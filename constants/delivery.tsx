@@ -1,5 +1,4 @@
-import { AssignmentsAngel } from "@/components/svg/delivery/assignments-angel";
-import { AssignmentsCircle } from "@/components/svg/delivery/assignments-circle";
+import { AssignmentsCheckIcon } from "@/components/svg/delivery/assignments-check";
 import { AssignmentsLine } from "@/components/svg/delivery/assignments-line";
 
 export const deliveryModelsData = [
@@ -16,33 +15,33 @@ export const deliveryModelsData = [
     assignments: [
       {
         title: "project scope",
-        customer: <AssignmentsCircle />,
-        offshore: <AssignmentsAngel />,
+        customer: <AssignmentsCheckIcon />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "analysis",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "high level design",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "development/unit testing",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "intergration/system testing",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "acceptance testing",
-        customer: <AssignmentsCircle />,
-        offshore: <AssignmentsAngel />,
+        customer: <AssignmentsCheckIcon />,
+        offshore: <AssignmentsCheckIcon />,
       },
     ],
   },
@@ -60,33 +59,33 @@ export const deliveryModelsData = [
     assignments: [
       {
         title: "project scope",
-        customer: <AssignmentsCircle />,
-        offshore: <AssignmentsAngel />,
+        customer: <AssignmentsCheckIcon />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "analysis",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "high level design",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "development/unit testing",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "intergration/system testing",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "acceptance testing",
-        customer: <AssignmentsCircle />,
-        offshore: <AssignmentsAngel />,
+        customer: <AssignmentsCheckIcon />,
+        offshore: <AssignmentsCheckIcon />,
       },
     ],
   },
@@ -104,32 +103,32 @@ export const deliveryModelsData = [
     assignments: [
       {
         title: "project scope",
-        customer: <AssignmentsAngel />,
+        customer: <AssignmentsCheckIcon />,
         offshore: <AssignmentsLine />,
       },
       {
         title: "analysis",
-        customer: <AssignmentsCircle />,
+        customer: <AssignmentsCheckIcon />,
         offshore: <AssignmentsLine />,
       },
       {
         title: "high level design",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "development/unit testing",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "intergration/system testing",
         customer: <AssignmentsLine />,
-        offshore: <AssignmentsCircle />,
+        offshore: <AssignmentsCheckIcon />,
       },
       {
         title: "acceptance testing",
-        customer: <AssignmentsAngel />,
+        customer: <AssignmentsCheckIcon />,
         offshore: <AssignmentsLine />,
       },
     ],
