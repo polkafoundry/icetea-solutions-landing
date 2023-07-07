@@ -96,7 +96,7 @@ const DeliverIdea = ({ title }: Props) => {
       <div className="overflow-hidden">
         <Link href={`${pathname.SERVICE}/${pathname.BLOCKCHAINDEVELOPMENT}`}>
           <button className="flex w-fit mt-6 lg:mt-12 gap-2 text-white items-center btn-fill-gradient px-6 py-2 mx-auto">
-            See more Project
+            See more Projects
             <AboutUsArrowRight />
           </button>
         </Link>
