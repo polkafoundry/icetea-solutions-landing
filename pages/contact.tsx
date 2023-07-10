@@ -27,9 +27,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="relative max-w-[1400px] xl:h-[1000px] xl:px-5 mx-auto">
-        <div className="xl:absolute w-full top-[-100px]">
-          <GetQuote />
+      <div className="max-w-[1400px] xl:h-[1000px] xl:px-5 mx-auto">
+        <div className="relative w-full h-full">
+          <div className="xl:absolute w-full top-[-100px]">
+            <GetQuote />
+          </div>
         </div>
       </div>
       <OfficeLocation />

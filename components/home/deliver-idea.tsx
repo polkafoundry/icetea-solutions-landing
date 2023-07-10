@@ -27,7 +27,7 @@ const DeliverIdea = ({ title }: Props) => {
   };
 
   return (
-    <div className="pt-[60px] xl:pt-[120px]">
+    <div className="pt-[60px] xl:pt-[120px] max-w-full overflow-hidden">
       <div className="text-[35px] leading-[50px] xl:text-[48px] xl:leading-[70px] text-[#0030C0] text-center font-semibold capitalize">
         {title}
       </div>
@@ -36,6 +36,10 @@ const DeliverIdea = ({ title }: Props) => {
           breakpoints={{
             0: {
               slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             1024: {
@@ -65,7 +69,7 @@ const DeliverIdea = ({ title }: Props) => {
                     style={{
                       boxShadow: "0px 6px 16px 0px rgba(0, 0, 0, 0.08)",
                     }}
-                    className="p-10 h-[80vw] md:h-[208px] xl:h-[314px] flex items-center justify-center rounded-[12px]"
+                    className="p-10 h-[80vw] md:h-[400px] lg:h-[208px] xl:h-[314px] flex items-center justify-center rounded-[12px]"
                   >
                     <Image
                       src={value?.img}
