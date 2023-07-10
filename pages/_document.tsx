@@ -35,7 +35,7 @@ export default function Document() {
           itemProp="image"
           name="image"
           property="image"
-          content="/image_org.svg"
+          content="/telegram_img_org.png"
         />
 
         <meta
@@ -64,7 +64,7 @@ export default function Document() {
           itemProp="twitter:image"
           name="twitter:image"
           property="twitter:image"
-          content="/image_org_square.svg"
+          content="/telegram_img_org.png"
         />
 
         <meta
@@ -93,7 +93,7 @@ export default function Document() {
           itemProp="og:image"
           name="og:image"
           property="og:image"
-          content="/image_org_square.svg"
+          content="/telegram_img_org.png"
         />
       </Head>
       <body>
