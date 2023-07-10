@@ -122,11 +122,12 @@ const GetQuote = () => {
                 ? "border-[#FF3434]"
                 : "border-[#0030C0]"
             )}
+            defaultValue={""}
             onChange={(e) =>
               handleChangeData(e?.target?.value, "typeOfConsultation")
             }
           >
-            <option disabled selected>
+            <option disabled value={""}>
               Type of consultation
             </option>
             {typeOfConsultation?.map((type: any, index: number) => {

@@ -10,8 +10,8 @@ export const ArrowDownHeader = () => {
       <path
         d="M1.16699 0.5L6.16699 5.5L11.167 0.5"
         stroke="#0030C0"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -29,8 +29,8 @@ export const ArrowDownHeaderWhite = () => {
       <path
         d="M1.16675 0.5L6.16675 5.5L11.1667 0.5"
         stroke="#ffffff"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

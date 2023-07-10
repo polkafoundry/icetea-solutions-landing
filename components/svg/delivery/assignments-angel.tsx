@@ -10,7 +10,7 @@ export const AssignmentsAngel = () => {
       <path
         d="M2.16612 26L16.4111 1.96155L30.6561 26H2.16612Z"
         stroke="#0083FF"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   );

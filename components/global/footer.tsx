@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { LogoTextWhite } from "../svg/logo-text";
 import { PositionIcon } from "../svg/position";
@@ -11,12 +12,9 @@ const FooterComponent = () => {
   return (
     <footer className="relative mt-[60px] xl:mt-[120px] overflow-hidden text-white">
       <div className="absolute w-full h-full top-0 left-0 z-0">
-        <Image
-          src="/images/footer_bg.png"
+        <img
+          src={"/images/footer_bg.png"}
           className="w-full h-full"
-          width={1920}
-          height={1225}
-          priority
           alt="footer"
         />
       </div>

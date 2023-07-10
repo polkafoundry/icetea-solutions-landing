@@ -12,20 +12,20 @@ const DigitalOceanIcon = () => {
         fill="url(#paint0_linear_314_8530)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M46.2997 74.8252H28.4766V57.0021H46.2997V74.8252Z"
         fill="url(#paint1_linear_314_8530)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M28.4766 88.4669H14.835V74.8252H28.4766V88.4669Z"
         fill="url(#paint2_linear_314_8530)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M14.835 74.8252H3.3885V63.3787H14.835L14.835 74.8252Z"
         fill="url(#paint3_linear_314_8530)"
       />

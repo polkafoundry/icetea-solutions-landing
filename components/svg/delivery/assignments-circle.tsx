@@ -7,7 +7,7 @@ export const AssignmentsCircle = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="16" cy="16" r="15" stroke="#0083FF" stroke-width="2" />
+      <circle cx="16" cy="16" r="15" stroke="#0083FF" strokeWidth="2" />
     </svg>
   );
 };

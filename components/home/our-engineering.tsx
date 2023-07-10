@@ -29,7 +29,7 @@ const OurEngineering = () => {
                 >
                   {data?.contents?.map((content: any, idx: number) => {
                     return (
-                      <div key={index}>
+                      <div key={idx}>
                         <div className="flex w-[135px] lg:w-full h-[135px] lg:h-[140px] border items-center justify-center border-[#0083FF] rounded-[28px]">
                           {content?.component}
                         </div>

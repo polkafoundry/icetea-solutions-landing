@@ -7,7 +7,7 @@ export const AssignmentsLine = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M0 1H32" stroke="#0083FF" stroke-width="2" />
+      <path d="M0 1H32" stroke="#0083FF" strokeWidth="2" />
     </svg>
   );
 };
