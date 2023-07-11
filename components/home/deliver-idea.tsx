@@ -106,15 +106,15 @@ const DeliverIdea = ({ title }: Props) => {
         </Link>
       </div>
       <Model isOpen={isShow} handleClose={handleHide}>
-        <div style={{ maxWidth: "980px", width: "calc(100vw - 80px)" }}>
+        <div style={{ maxWidth: "980px", width: "calc(100vw - 40px)" }}>
           <div
             className="relative flex flex-col h-full max-h-[90vh] text-[#0030C0] py-5 pl-5 lg:py-10 lg:pl-10"
             onClick={() => handleShow()}
           >
             <div className="lg:max-h-[850px] overflow-y-auto custom-scrollbar">
-              <div className="grid grid-cols-3 gap-5 pr-5 py-4 lg:pr-10">
+              <div className="md:grid grid-cols-3 gap-5 pr-5 py-4 lg:pr-10">
                 <div>
-                  <div className="flex h-[28vw] lg:h-[317px] p-10 items-center justify-center border-[#0083FF] border rounded-[12px]">
+                  <div className="flex md:h-[28vw] lg:h-[317px] p-10 items-center justify-center border-[#0083FF] border rounded-[12px]">
                     <Image
                       src={deliverYourIdea[indexSelect]?.img}
                       className="w-full auto"
@@ -137,13 +137,13 @@ const DeliverIdea = ({ title }: Props) => {
                       </div>
                     )}
                 </div>
-                <div className="col-span-2 text-[#0030C0]">
-                  <div className="flex gap-2 items-center flex-nowrap">
+                <div className="col-span-2 text-[#0030C0] mt-5 md:mt-0">
+                  <div className="grid md:flex gap-2 items-center flex-nowrap">
                     <span className="text-[30px] lg:text-[48px] font-semibold text-[#0030C0]">
                       {deliverYourIdea[indexSelect]?.title}
                     </span>
                     {deliverYourIdea[indexSelect]?.tag && (
-                      <span className="text-[8px] lg:text-[12px] py-1 px-2 lg:px-4 bg-[#0030C0] rounded-[16px] text-white">
+                      <span className="text-[8px] lg:text-[12px] text-center py-1 px-2 lg:px-4 bg-[#0030C0] rounded-[16px] text-white">
                         {deliverYourIdea[indexSelect]?.tag}
                       </span>
                     )}
